@@ -8,26 +8,28 @@
 
 **[下载最新版本](https://github.com/ylingfeng/wuthering-waves-matrix-planner/releases/latest)** · [所有版本与更新说明](https://github.com/ylingfeng/wuthering-waves-matrix-planner/releases) · [反馈问题](https://github.com/ylingfeng/wuthering-waves-matrix-planner/issues)
 
-## 下载与启动（Windows）
+## 下载与启动
 
 无需安装 Python，也无需运行命令。
 
 1. 打开上方的 **「下载最新版本」**。
-2. 在版本页面底部的 **Assets（附件）** 中，下载 `MatrixPlanner-Web-v版本号.zip`，例如 `MatrixPlanner-Web-v1.2.0.zip`。
-3. 右键 ZIP，选择 **「全部解压缩」**。
-4. 打开解压后的 `MatrixPlanner` 文件夹，双击带上方头像图标的 **`鸣潮矩阵配队.exe`**，浏览器会自动打开配队网页。
+2. 在版本页面底部的 **Assets（附件）** 中，下载适合自己系统的 ZIP 包。
+3. **完整解压 ZIP**，打开其中的 `MatrixPlanner` 文件夹。
+4. 打开 **「鸣潮矩阵配队」启动文件**，浏览器会自动进入配队页面。
 
-解压后的文件结构：
+建议使用最新稳定版 Chrome；HTML 启动文件可右键选择「打开方式 → Google Chrome」。也可以直接用 Chrome 打开 `web/index.html`。
+
+解压后的文件夹：
 
 ```text
 MatrixPlanner/
-├─ 鸣潮矩阵配队.exe    ← 双击这个头像入口
-└─ web/               ← 网页、默认资料与头像，和 EXE 一起保留
+├─ 鸣潮矩阵配队       ← 启动文件
+└─ web/
 ```
 
-请完整解压后再启动，并保持 EXE 与 `web` 文件夹相邻。Release 中的 `Source code (zip)` / `Source code (tar.gz)` 是开发源码；日常使用下载 `MatrixPlanner-Web-…zip` 即可。
+请完整解压后再启动，并保持文件夹结构完整。Release 中的 `Source code (zip)` / `Source code (tar.gz)` 是开发源码；日常使用请选择上表中的发布包。
 
-EXE 用于打开随包附带的网页，无需后台服务。也可以直接用 Chrome 或 Edge 打开 `web/index.html`。
+配队功能运行在浏览器里，启动入口自动打开网页，无需后台服务。
 
 ## 第一次使用
 
@@ -62,13 +64,13 @@ EXE 用于打开随包附带的网页，无需后台服务。也可以直接用 
 
 ### 本地开发
 
-安装 Python 3.10+，双击本目录的 `start.cmd`，打开 <http://127.0.0.1:8765>。
-
-也可以在本目录执行：
+安装 Python 3.10+。Windows 可双击仓库根目录的 `start.cmd`；也可在终端执行：
 
 ```powershell
 python -X utf8 -m tools.planner_dev_server --port 8765
 ```
+
+macOS 在仓库根目录的终端执行 `python3 -X utf8 -m tools.planner_dev_server --port 8765`。启动后打开 <http://127.0.0.1:8765>。
 
 当前网页及开发服务使用浏览器求解器与 Python 标准库，不需要安装战斗脚本的依赖。纯静态使用可直接打开 `web/team_planner/index.html`。
 
