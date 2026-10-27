@@ -73,17 +73,33 @@ class PlannerCardUiTests(unittest.TestCase):
         self.page.mouse.click(button['x'] + button['width']/2, button['y'] + button['height']/2)
         self.assertTrue(self.page.locator('#editor').is_visible())
 
+    def test_rover_displays_first_with_legacy_saved_order(self):
+        before = self.page.evaluate('''()=>{
+            state.characters.reverse();
+            Object.assign(state.characters.find(c=>c.name==='漂泊者'),{weight:2.5,chain:3,weekly:5,available:true});
+            localStorage.setItem('matrix-planner.configuration.v1',JSON.stringify(state));
+            return JSON.stringify(state.characters);
+        }''')
+        self.page.reload()
+        self.page.locator('#tour-skip').click()
+        self.assertEqual(self.page.locator('.character-card').first.get_attribute('data-name'), '漂泊者')
+        self.assertEqual(self.page.evaluate('JSON.stringify(state.characters)'), before)
+        self.assertEqual(self.page.evaluate('PLANNER_SEED.characters[0].name'), '漂泊者')
+        import csv
+        with (Path(__file__).resolve().parents[1] / 'character.csv').open(encoding='utf-8-sig', newline='') as stream:
+            self.assertEqual(next(csv.DictReader(stream))['角色名称'], '漂泊者')
+
     def test_element_update_preserves_saved_personal_settings(self):
         self.page.evaluate('''()=>{
             state.characters.forEach(c=>delete c.element);
-            Object.assign(state.characters[0],{weight:2.5,chain:3,weekly:5,available:false});
+            Object.assign(state.characters.find(c=>c.name==='散华'),{weight:2.5,chain:3,weekly:5,available:false});
             Object.assign(state.teams[0],{user_weight:2.75,locked:true,enabled:true,note:'保留我的配置'});
             localStorage.setItem('matrix-planner.configuration.v1',JSON.stringify(state));
         }''')
         self.page.reload()
         self.page.locator('#tour-skip').wait_for(state='visible')
         self.page.locator('#tour-skip').click()
-        actual = self.page.evaluate('''()=>({character:state.characters[0],team:state.teams[0]})''')
+        actual = self.page.evaluate('''()=>({character:state.characters.find(c=>c.name==='散华'),team:state.teams[0]})''')
         self.assertEqual(actual['character']['element'], '冷凝')
         for key, value in {'weight': 2.5, 'chain': 3, 'weekly': 5, 'available': False}.items():
             self.assertEqual(actual['character'][key], value)
@@ -136,6 +152,230 @@ class PlannerCardUiTests(unittest.TestCase):
         trigger.click()
         self.page.get_by_role('option', name='全部属性', exact=True).click()
         self.assertEqual(trigger.locator('.element-tag').count(), 0)
+
+    def test_ownership_switch_combines_with_role_and_persists_without_changing_account(self):
+        self.page.evaluate('''()=>{
+            state.characters.find(c=>c.name==='安可').available=false;
+            persistLocally();roster();
+        }''')
+        self.page.get_by_role('combobox', name='角色筛选', exact=True).click()
+        self.page.get_by_role('option', name='主 C', exact=True).click()
+        self.assertEqual(self.page.locator('.character-card[data-name="安可"]').count(), 0)
+        self.assertEqual(self.page.locator('.character-card[data-name="爱弥斯"]').count(), 1)
+        self.assertEqual(self.page.locator('.character-card[data-name="散华"]').count(), 0)
+        self.assertEqual(self.page.locator('.character-card[data-name="漂泊者"]').count(), 1)
+        self.page.get_by_role('switch', name='显示未拥有角色', exact=True).check()
+        self.assertEqual(self.page.locator('.character-card[data-name="安可"]').count(), 1)
+        self.page.reload()
+        self.page.locator('#tour-skip').click()
+        self.assertTrue(self.page.locator('#character-show-unowned').is_checked())
+        self.assertEqual(self.page.locator('#character-filter').input_value(), 'main')
+        self.assertFalse(self.page.evaluate('state.characters.find(c=>c.name==="安可").available'))
+        self.assertEqual(self.page.evaluate('LocalPlanner.exportConfig(state).preferences["character-show-unowned"]'), True)
+        self.page.get_by_role('combobox', name='角色筛选', exact=True).click()
+        self.page.get_by_role('option', name='辅助', exact=True).click()
+        self.assertEqual(self.page.locator('.character-card[data-name="漂泊者"]').count(), 1)
+        self.assertEqual(self.page.locator('.character-card[data-name="爱弥斯"]').count(), 0)
+
+    def test_weekly_adjustment_compares_values_for_filter_and_badge(self):
+        self.page.evaluate('''()=>{
+            Object.assign(state.characters.find(c=>c.name==='散华'),{base:1,weekly:1});
+            Object.assign(state.characters.find(c=>c.name==='安可'),{base:1,weekly:0});
+            Object.assign(state.characters.find(c=>c.name==='白芷'),{base:2,weekly:3});
+            Object.assign(state.characters.find(c=>c.name==='秧秧'),{base:0,weekly:0});
+            roster();
+        }''')
+        self.assertEqual(self.page.locator('.character-card[data-name="散华"] .weekly-badge').count(), 0)
+        self.assertEqual(self.page.locator('.character-card[data-name="秧秧"] .weekly-badge').count(), 0)
+        self.page.locator('#character-weekly').check()
+        self.assertCountEqual(self.page.locator('.character-card').evaluate_all('els=>els.map(el=>el.dataset.name)'), ['安可', '白芷'])
+        self.assertEqual(self.page.locator('.weekly-badge').count(), 2)
+        weekly = self.page.locator('.character-card[data-name="白芷"] [data-field="weekly"]')
+        weekly.fill('2')
+        weekly.press('Tab')
+        self.assertEqual(self.page.locator('.character-card[data-name="白芷"]').count(), 0)
+        self.page.locator('#character-weekly').uncheck()
+        self.assertEqual(self.page.locator('.character-card[data-name="白芷"] .weekly-badge').count(), 0)
+        self.assertEqual(self.page.locator('.character-card[data-name="爱弥斯"] .weekly-badge').count(), 0)
+        # Changing the baseline to match an override also clears the adjustment.
+        base = self.page.locator('.character-card[data-name="安可"] [data-field="base"]')
+        base.fill('0')
+        base.press('Tab')
+        self.assertEqual(self.page.locator('.character-card[data-name="安可"] .weekly-badge').count(), 0)
+
+    def test_team_ownership_switch_combines_with_status_and_is_separate_from_calculation(self):
+        self.page.evaluate('''()=>{
+            const base=structuredClone(state.teams[0]);
+            state.characters.find(c=>c.name==='安可').available=false;
+            state.teams=[
+                {...structuredClone(base),id:'owned',members:['爱弥斯','达妮娅','千咲'],locked:true,enabled:true},
+                {...structuredClone(base),id:'missing',members:['安可','散华','白芷'],locked:true,enabled:true},
+                {...structuredClone(base),id:'disabled',members:['安可','秧秧','白芷'],locked:false,enabled:false}
+            ];persistLocally();
+        }''')
+        self.page.locator('[data-tab="teams"]').click()
+        self.assertEqual(self.page.locator('#team-grid .team-card').count(), 1)
+        self.page.get_by_role('switch', name='显示含未拥有角色的队伍', exact=True).check()
+        self.assertEqual(self.page.locator('#team-grid .team-card').count(), 3)
+        self.page.get_by_role('combobox', name='队伍筛选', exact=True).click()
+        self.page.get_by_role('option', name='必须选入', exact=True).click()
+        self.assertEqual(self.page.locator('#team-grid .team-card').count(), 2)
+        self.page.evaluate('''()=>{
+            const scope=document.querySelector('#planning-scope');scope.value='all';scope.dispatchEvent(new Event('change'));
+        }''')
+        self.assertTrue(self.page.locator('#team-show-unowned').is_checked())
+        self.assertEqual(self.page.locator('#team-filter').input_value(), 'locked')
+        self.page.get_by_role('switch', name='显示含未拥有角色的队伍', exact=True).uncheck()
+        self.assertEqual(self.page.locator('#team-grid .team-card').get_attribute('data-id'), 'owned')
+        self.assertFalse(self.page.evaluate('state.characters.find(c=>c.name==="安可").available'))
+
+    def test_legacy_filter_preferences_migrate_to_separate_switches(self):
+        self.page.evaluate('''()=>{
+            state.preferences={'character-filter':'weekly','team-filter':'all'};
+            restorePreferences();roster();teams();
+        }''')
+        self.assertTrue(self.page.locator('#character-show-unowned').is_checked())
+        self.assertTrue(self.page.locator('#character-weekly').is_checked())
+        self.assertEqual(self.page.locator('#character-filter').input_value(), 'all')
+        self.assertTrue(self.page.locator('#team-show-unowned').is_checked())
+        self.assertEqual(self.page.locator('#team-filter').input_value(), 'all')
+        self.page.evaluate('''()=>{
+            state.preferences={'character-filter':'owned','team-filter':'available'};
+            restorePreferences();roster();teams();
+        }''')
+        self.assertFalse(self.page.locator('#character-show-unowned').is_checked())
+        self.assertFalse(self.page.locator('#character-weekly').is_checked())
+        self.assertFalse(self.page.locator('#team-show-unowned').is_checked())
+
+    def test_multiple_carry_filter_combines_with_ownership_search_and_persists(self):
+        self.page.evaluate('''()=>{
+            const base=structuredClone(state.teams[0]);delete base.assigned_roles;
+            state.characters.find(c=>c.name==='卡卡罗').available=false;
+            state.teams=[
+                {id:'two',members:['安可','丹瑾','白芷'],enabled:true},
+                {id:'three',members:['安可','丹瑾','凌阳'],enabled:false},
+                {id:'flex',members:['安可','漂泊者','白芷'],rover_attribute:'湮灭',enabled:true},
+                {id:'missing',members:['安可','卡卡罗','白芷'],enabled:true}
+            ].map(t=>({...structuredClone(base),...t}));persistLocally();
+        }''')
+        self.page.locator('[data-tab="teams"]').click()
+        self.page.get_by_role('combobox', name='队伍筛选', exact=True).click()
+        self.page.get_by_role('option', name='≥2 位仅主 C', exact=True).click()
+        self.assertCountEqual(self.page.locator('#team-grid .team-card').evaluate_all('els=>els.map(el=>el.dataset.id)'), ['two', 'three'])
+        self.page.locator('#team-show-unowned').check()
+        self.assertEqual(self.page.locator('#team-grid .team-card').count(), 3)
+        self.page.locator('#team-search').fill('丹')
+        self.page.locator('#team-search').press('Tab')
+        self.assertEqual(self.page.locator('#team-grid .team-card').count(), 2)
+        self.page.reload()
+        self.page.locator('#tour-skip').click()
+        self.assertEqual(self.page.locator('#team-filter').input_value(), 'multiple-carries')
+        self.assertTrue(self.page.locator('#team-show-unowned').is_checked())
+        self.assertEqual(self.page.locator('#team-grid .team-card').count(), 2)
+        self.page.get_by_role('combobox', name='队伍主属性筛选', exact=True).click()
+        self.page.get_by_role('option', name='冷凝', exact=True).click()
+        self.assertEqual(self.page.locator('#team-grid .team-card').count(), 0)
+        self.page.get_by_role('combobox', name='队伍主属性筛选', exact=True).click()
+        self.page.get_by_role('option', name='全部主属性', exact=True).click()
+        self.page.evaluate('''()=>{state.characters.find(c=>c.name==='安可').roles=['主C','辅助'];teams()}''')
+        self.assertEqual(self.page.locator('#team-grid .team-card').get_attribute('data-id'), 'three')
+        self.assertTrue(self.page.evaluate('state.teams.find(t=>t.id==="two").enabled'))
+
+    def test_newer_dedicated_carry_comes_first_in_shared_cards_and_element_filter(self):
+        self.page.evaluate('''()=>{
+            Object.assign(state.teams[0],{members:['安可','白芷','珂莱塔']});delete state.teams[0].assigned_roles;
+            persistLocally();
+        }''')
+        self.page.locator('[data-tab="teams"]').click()
+        self.assertEqual(self.page.locator('#team-grid .member-name').all_text_contents(), ['珂莱塔', '安可', '白芷'])
+        self.assertEqual(self.page.evaluate('teamElement(state.teams[0])'), '冷凝')
+        self.calculate()
+        self.assertEqual(self.page.locator('#result-body .member-name').all_text_contents(), ['珂莱塔', '安可', '白芷'])
+        cases = self.page.evaluate('''()=>{
+            const a=state.characters.find(c=>c.name==='安可'),b=state.characters.find(c=>c.name==='珂莱塔');
+            const order=()=>orderedMembers(state.teams[0]);
+            Object.assign(a,{release_version:'V3.9',release_date:''});Object.assign(b,{release_version:'V3.10',release_date:''});
+            const numericVersion=order();
+            Object.assign(a,{release_version:'V3.10',release_date:'2026-10-20'});b.release_date='2026-10-01';
+            const sameVersionDates=order();
+            a.release_date='';b.release_date='';const tie=order();
+            b.roles=['主C','辅助'];b.release_version='V4.0';const flexible=order();
+            return {numericVersion,sameVersionDates,tie,flexible};
+        }''')
+        self.assertEqual(cases['numericVersion'], ['珂莱塔', '安可', '白芷'])
+        self.assertEqual(cases['sameVersionDates'], ['安可', '珂莱塔', '白芷'])
+        self.assertEqual(cases['tie'], ['安可', '珂莱塔', '白芷'])
+        self.assertEqual(cases['flexible'], ['安可', '珂莱塔', '白芷'])
+
+    def test_jingran_iuno_team_roles_resolve_flexible_tags_without_changing_config(self):
+        self.page.evaluate('''()=>{
+            Object.assign(state.characters.find(c=>c.name==='尤诺'),{roles:['主C','辅助']});
+            Object.assign(state.teams[0],{
+                members:['尤诺','守岸人','景燃'],
+                assigned_roles:undefined
+            });persistLocally();teams();
+        }''')
+        snapshot = 'JSON.stringify({characters:state.characters,members:state.teams[0].members,assigned_roles:state.teams[0].assigned_roles})'
+        before = self.page.evaluate(snapshot)
+        self.assertEqual(self.page.evaluate('orderedMembers(state.teams[0])'), ['景燃', '尤诺', '守岸人'])
+        self.assertEqual(self.page.evaluate('teamElement(state.teams[0])'), '热熔')
+        self.page.locator('[data-tab="teams"]').click()
+        self.assertEqual(self.page.locator('#team-grid .member-name').all_text_contents(), ['景燃', '尤诺', '守岸人'])
+        self.page.get_by_role('combobox', name='队伍主属性筛选', exact=True).click()
+        self.page.get_by_role('option', name='热熔', exact=True).click()
+        self.assertEqual(self.page.locator('#team-grid .team-card').count(), 1)
+        self.calculate()
+        self.assertEqual(self.page.locator('#result-body .member-name').all_text_contents(), ['景燃', '尤诺', '守岸人'])
+        self.assertEqual(self.page.evaluate('orderedMembers({members:["守岸人","琳奈","尤诺"]})'), ['尤诺', '琳奈', '守岸人'])
+        # Sorting does not rewrite saved members, slot roles or character settings.
+        self.assertEqual(self.page.evaluate(snapshot), before)
+
+    def test_team_role_sorting_is_generic_and_respects_explicit_assignments(self):
+        actual = self.page.evaluate('''()=>{
+            const carry=state.characters.find(c=>c.name==='安可');
+            const flex=state.characters.find(c=>c.name==='散华');
+            const heal=state.characters.find(c=>c.name==='白芷');
+            Object.assign(carry,{roles:['主C'],healer:false});
+            Object.assign(flex,{roles:['主C','辅助'],healer:false});
+            Object.assign(heal,{roles:['奶妈'],healer:true});
+            const cases=[
+                [heal.name,flex.name,carry.name], [flex.name,carry.name,heal.name],
+                [carry.name,heal.name,flex.name], [heal.name,carry.name,flex.name],
+                [flex.name,heal.name,carry.name], [carry.name,flex.name,heal.name]
+            ];
+            const permutations=cases.map(members=>orderedMembers({members}));
+            const explicit=orderedMembers({members:[flex.name,carry.name,heal.name],assigned_roles:['主C','辅助','奶妈']});
+            carry.roles=['辅助'];
+            const flexibleMain=orderedMembers({members:[carry.name,heal.name,flex.name]});
+            carry.roles=['主C','辅助'];
+            const tied=orderedMembers({members:[heal.name,carry.name,flex.name]});
+            return {permutations,explicit,flexibleMain,tied};
+        }''')
+        self.assertEqual(actual['permutations'], [['安可', '散华', '白芷']]*6)
+        self.assertEqual(actual['explicit'], ['散华', '安可', '白芷'])
+        self.assertEqual(actual['flexibleMain'], ['散华', '安可', '白芷'])
+        self.assertEqual(actual['tied'], ['安可', '散华', '白芷'])
+
+    def test_flexible_roles_use_tags_and_rover_form_does_not_force_carry(self):
+        for name in ['漂泊者', '尤诺', '菲比']:
+            with self.subTest(name=name):
+                self.assertEqual(self.page.evaluate('(name)=>state.characters.find(c=>c.name===name).roles', name), ['主C', '辅助'])
+        actual = self.page.evaluate('''()=>{
+            const modes=state.characters.find(c=>c.name==='漂泊者').attributes;
+            const pairs=modes.map(rover_attribute=>orderedMembers({members:['漂泊者','白芷','丹瑾'],rover_attribute}));
+            const elements=modes.map(rover_attribute=>teamElement({members:['漂泊者','安可','白芷'],rover_attribute}));
+            // A live tag edit must change the decision even for the same names and mode.
+            state.characters.find(c=>c.name==='丹瑾').roles=['辅助'];
+            const changed=orderedMembers({members:['白芷','丹瑾','漂泊者'],rover_attribute:'湮灭'});
+            state.characters.find(c=>c.name==='漂泊者').roles=['辅助'];
+            state.characters.find(c=>c.name==='丹瑾').roles=['主C','辅助'];
+            const changedAgain=orderedMembers({members:['漂泊者','白芷','丹瑾'],rover_attribute:'湮灭'});
+            return {pairs,elements,changed,changedAgain};
+        }''')
+        self.assertEqual(actual['pairs'], [['丹瑾', '漂泊者', '白芷']]*4)
+        self.assertEqual(actual['elements'], ['热熔']*4)
+        self.assertEqual(actual['changed'], ['漂泊者', '丹瑾', '白芷'])
+        self.assertEqual(actual['changedAgain'], ['丹瑾', '漂泊者', '白芷'])
 
     def test_team_element_filter_uses_main_dps_not_support_and_rover_form(self):
         self.page.evaluate('''()=>{

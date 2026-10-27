@@ -41,9 +41,12 @@ MatrixPlanner/
 
 只有用户明确要求打包时才生成发布产物。普通修改先累计到根目录 `CHANGELOG.md` 的“未发布”，不自动递增版本、不因单个小修复单独打包。
 `CHANGELOG.md` 是发布说明的唯一来源：每个版本只记录相对上版的真实增量，不重复罗列已有功能。发布时将本批改动归入对应 `## vVERSION`，保留“未发布”区供后续累计。发布脚本从该章节生成包内和归档中的 `RELEASE_NOTES.md`；未填写版本记录时应停止打包。
+
+更新日志、GitHub Release 标题与正文统一简洁：只挑用户可见的重要新增、调整和修复，每条一句话；合并同类改动，不写长段说明、实现过程或重复功能介绍。标题用版本号加简短主题，正文直接复用本版 `RELEASE_NOTES.md`，不另加宣传语或大段展示文字。历史版本日志不因格式偏好重写。
+
 每个发布包必须附带完整的 `web/CHANGELOG.md`，包含历史版本记录；不能只附当前版本的 `RELEASE_NOTES.md`。版本归档目录也保存同一份 `CHANGELOG.md`，使用说明注明两份日志的位置。
 
-1. 查看 `dist/` 已有版本。用户指定版本优先；否则功能发布递增次版本，修复递增补丁版本。
+1. 查看 `dist/` 已有版本。用户指定版本优先；用户要求“小版本”时顺延补丁号，否则功能发布递增次版本，修复递增补丁版本。
 2. 检查当前发布脚本的使用说明、发布说明、固定分特例和候选数量是否符合实际，不沿用过时数字。
 3. 执行 `python -m tools.release_static VERSION`。脚本同步三页静态入口，复制网页资源，使用 Windows .NET Framework 的 `csc.exe` 编译带图标启动器，并生成 ZIP 和 SHA-256 清单。
 4. 产物保存在 `dist/vVERSION/`：`Windows/MatrixPlanner/`、`macOS/MatrixPlanner/`、两个 ZIP、`SHA256SUMS.txt`、`CHANGELOG.md`、`RELEASE_NOTES.md`、`manifest.json`。dist根目录不散放应用目录或ZIP。

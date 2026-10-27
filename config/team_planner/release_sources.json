@@ -1,0 +1,147 @@
+{
+  "source": "Wuthering Waves Wiki · Resonator Infobox.releaseDate",
+  "checked_on": "2026-10-27",
+  "scope": "V2.7 及之后已实装角色；未实装角色不填推测日期。",
+  "characters": {
+    "嘉贝莉娜": {
+      "release_date": "2025-10-09",
+      "release_version": "V2.7",
+      "url": "https://wutheringwaves.fandom.com/wiki/Galbrena",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Galbrena",
+      "quote": "|releaseDate      = 2025-10-09"
+    },
+    "仇远": {
+      "release_date": "2025-10-30",
+      "release_version": "V2.7",
+      "url": "https://wutheringwaves.fandom.com/wiki/Qiuyuan",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Qiuyuan",
+      "quote": "|releaseDate      = 2025-10-30"
+    },
+    "千咲": {
+      "release_date": "2025-11-20",
+      "release_version": "V2.8",
+      "url": "https://wutheringwaves.fandom.com/wiki/Chisa",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Chisa",
+      "quote": "|releaseDate      = 2025-11-20"
+    },
+    "卜灵": {
+      "release_date": "2025-12-11",
+      "release_version": "V2.8",
+      "url": "https://wutheringwaves.fandom.com/wiki/Buling",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Buling",
+      "quote": "|releaseDate      = 2025-12-11"
+    },
+    "琳奈": {
+      "release_date": "2025-12-25",
+      "release_version": "V3.0",
+      "url": "https://wutheringwaves.fandom.com/wiki/Lynae",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Lynae",
+      "quote": "|releaseDate      = 2025-12-25"
+    },
+    "莫宁": {
+      "release_date": "2026-01-15",
+      "release_version": "V3.0",
+      "url": "https://wutheringwaves.fandom.com/wiki/Mornye",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Mornye",
+      "quote": "|releaseDate      = 2026-01-15"
+    },
+    "爱弥斯": {
+      "release_date": "2026-02-05",
+      "release_version": "V3.1",
+      "url": "https://wutheringwaves.fandom.com/wiki/Aemeath",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Aemeath",
+      "quote": "|releaseDate      = 2026-02-05"
+    },
+    "陆·赫斯": {
+      "release_date": "2026-02-26",
+      "release_version": "V3.1",
+      "url": "https://wutheringwaves.fandom.com/wiki/Luuk_Herssen",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Luuk%20Herssen",
+      "quote": "|releaseDate      = 2026-02-26"
+    },
+    "西格莉卡": {
+      "release_date": "2026-03-19",
+      "release_version": "V3.2",
+      "url": "https://wutheringwaves.fandom.com/wiki/Sigrika",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Sigrika",
+      "quote": "|releaseDate      = 2026-03-19"
+    },
+    "达妮娅": {
+      "release_date": "2026-05-21",
+      "release_version": "V3.3",
+      "url": "https://wutheringwaves.fandom.com/wiki/Denia",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Denia",
+      "quote": "|releaseDate      = 2026-05-21"
+    },
+    "绯雪": {
+      "release_date": "2026-04-30",
+      "release_version": "V3.3",
+      "url": "https://wutheringwaves.fandom.com/wiki/Hiyuki",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Hiyuki",
+      "quote": "|releaseDate      = 2026-04-30"
+    },
+    "丽贝卡": {
+      "release_date": "2026-06-08",
+      "release_version": "V3.4",
+      "url": "https://wutheringwaves.fandom.com/wiki/Rebecca",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Rebecca",
+      "quote": "|releaseDate      = 2026-06-08"
+    },
+    "洛瑟菈": {
+      "release_date": "2026-06-13",
+      "release_version": "V3.4",
+      "url": "https://wutheringwaves.fandom.com/wiki/Lucilla",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Lucilla",
+      "quote": "|releaseDate      = 2026-06-13"
+    },
+    "露西": {
+      "release_date": "2026-06-08",
+      "release_version": "V3.4",
+      "url": "https://wutheringwaves.fandom.com/wiki/Lucy",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Lucy",
+      "quote": "|releaseDate      = 2026-06-08"
+    },
+    "秧秧·玄翎": {
+      "release_date": "2026-07-10",
+      "release_version": "V3.5",
+      "url": "https://wutheringwaves.fandom.com/wiki/Yangyang%3A_Xuanling",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Yangyang%3A%20Xuanling",
+      "quote": "|releaseDate      = 2026-07-10"
+    },
+    "穗穗": {
+      "release_date": "2026-07-30",
+      "release_version": "V3.5",
+      "url": "https://wutheringwaves.fandom.com/wiki/Suisui",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Suisui",
+      "quote": "|releaseDate      = 2026-07-30"
+    },
+    "清宵": {
+      "release_date": "2026-08-20",
+      "release_version": "V3.6",
+      "url": "https://wutheringwaves.fandom.com/wiki/Qingxiao",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Qingxiao",
+      "quote": "|releaseDate      = 2026-08-20"
+    },
+    "景燃": {
+      "release_date": "2026-09-10",
+      "release_version": "V3.6",
+      "url": "https://wutheringwaves.fandom.com/wiki/Jingran",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Jingran",
+      "quote": "|releaseDate      = 2026-09-10"
+    },
+    "心": {
+      "release_date": "2026-09-30",
+      "release_version": "V3.7",
+      "url": "https://wutheringwaves.fandom.com/wiki/Hsin",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Hsin",
+      "quote": "|releaseDate      = 2026-09-30"
+    },
+    "锁暝": {
+      "release_date": "2026-10-22",
+      "release_version": "V3.7",
+      "url": "https://wutheringwaves.fandom.com/wiki/Suoming",
+      "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Suoming",
+      "quote": "|releaseDate      = 2026-10-22"
+    }
+  }
+}

@@ -47,6 +47,9 @@ dialog{border:0;border-radius:16px;padding:28px;width:min(780px,calc(100vw - 32p
 [data-evidence="all"][aria-pressed="true"]{border-color:var(--accent);color:var(--accent);background:var(--soft)}
 
 .member-image{position:relative}.member-image img{display:block}.member .member-name{white-space:normal;overflow-wrap:anywhere;line-height:1.5;min-height:21px}
+.member-unowned .member-image img{filter:grayscale(1);opacity:.6}
+.member-unowned .member-name{color:var(--muted)}
+.member .member-ownership{position:absolute;right:5px;bottom:5px;margin:0;padding:2px 6px;border-radius:4px;background:var(--soft);color:var(--muted);font-size:12px;line-height:1.5}
 .element-tags{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
 .element-tag,.element-tags .element-tag{display:inline-flex;align-items:center;margin:0;padding:2px 7px;border-radius:4px;font-size:13px;font-weight:600;line-height:1.6;white-space:nowrap;overflow:visible;background:var(--element-bg);color:var(--element-ink)}
 .element-冷凝{--element-bg:#e4f4fc;--element-ink:#205d7a}
@@ -59,6 +62,15 @@ dialog{border:0;border-radius:16px;padding:28px;width:min(780px,calc(100vw - 32p
 .member>.element-tags{justify-content:center;margin-top:6px}
 .member-slot .element-tags{margin-top:8px}
 .team-main-element{display:flex;align-items:center;gap:6px;margin-bottom:5px;font-size:13px;color:var(--muted)}
+.filter-toggles{display:flex;align-items:center;flex-wrap:wrap;gap:8px 18px;min-width:0}
+.filter-toggles .check{white-space:nowrap;min-height:40px;color:var(--muted);cursor:pointer}
+.filter-toggles .check input{width:18px;height:18px}
+.filter-toggle{display:inline-flex;align-items:center;gap:8px;min-height:40px;font-size:14px;color:var(--muted);cursor:pointer;white-space:nowrap}
+.filter-toggle input[role=switch]{appearance:none;position:relative;width:32px;height:20px;padding:0;border:1px solid var(--muted);border-radius:12px;background:var(--field);flex:none}
+.filter-toggle input[role=switch]::before{content:'';position:absolute;top:3px;left:3px;width:12px;height:12px;border-radius:50%;background:var(--muted)}
+.filter-toggle input[role=switch]:checked{background:var(--accent);border-color:var(--accent)}
+.filter-toggle input[role=switch]:checked::before{left:15px;background:var(--paper)}
+.filter-toggle:hover input[role=switch]{outline:2px solid var(--line);outline-offset:2px}
 #team-search{width:340px}
 @media(max-width:480px){#team-search{width:100%}}
 

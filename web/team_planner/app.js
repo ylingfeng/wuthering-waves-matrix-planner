@@ -12,6 +12,7 @@ function elementTags(character,team=null){
  const values=selected.filter(e=>elements.includes(e));
  return values.length?`<div class="element-tags" role="group" aria-label="伤害属性">${values.map(e=>`<span class="element-tag element-${e}">${e}</span>`).join('')}</div>`:'';
 }
+const weeklyAdjusted=c=>(c.weekly??c.base)!==c.base;
 const effective=c=>(c.released&&(c.available||$('#planning-scope').value==='all'))?(c.weekly??c.base):0;
 const releaseVersions=[...Array.from({length:5},(_,i)=>'V1.'+i),...Array.from({length:9},(_,i)=>'V2.'+i),...Array.from({length:8},(_,i)=>'V3.'+i)];
 const recency=c=>c?.released&&!c.healer&&c.roles.length===1&&c.roles[0]==='主C'&&releaseVersions.includes(c.release_version)?1+releaseVersions.indexOf(c.release_version)*0.002:1;
@@ -29,16 +30,26 @@ function invalidateResult(){
 }
 function markDirty(){dirty=true;$('#save-status').textContent='有未保存的修改';$('#save-status').style.color='#b28944';summary();invalidateResult();persistLocally();syncTeamCards();}
 function summary(){let owned=state.characters.filter(c=>c.released&&(c.available||$('#planning-scope').value==='all')),total=owned.reduce((s,c)=>s+effective(c),0);$('#summary').innerHTML=`<div><strong>${owned.length}<small>${$('#planning-scope').value==='all'?'参与模拟':'可用角色'} / ${state.characters.length}</small></strong></div><div><strong>${total}<small>本周总计体力</small></strong></div><div><strong>${Math.floor(total/3)}<small>理论队数上限</small></strong></div>`;$('#character-count').textContent=state.characters.length;$('#team-count').textContent=state.teams.length}
-function roster(){let query=$('#character-search').value.trim(),filter=$('#character-filter').value,element=$('#character-element').value;let chars=state.characters.filter(c=>c.name.includes(query)&&(element==='all'||(c.name==='漂泊者'?c.attributes.includes(element):c.element===element))&&(filter==='all'||filter==='owned'&&c.available||filter==='unowned'&&!c.available||filter==='healer'&&c.healer||filter==='weekly'&&c.weekly!==null));$('#character-grid').innerHTML=chars.map(c=>`<article class="character-card ${c.available?'':'unowned'}" data-name="${esc(c.name)}"><div class="portrait"><img src="${image(c.name)}" alt="${esc(c.name)}" loading="lazy">${c.weekly!==null?'<span class="weekly-badge">本周已调整</span>':''}<label class="availability"><input type="checkbox" data-field="available" ${c.released?'':'disabled'} ${c.available?'checked':''}>可用</label></div><div class="character-info"><div class="character-name">${esc(c.name)} <small class="rarity rarity-${c.rarity}">${c.rarity?c.rarity+'★':''}</small></div>${elementTags(c)}<div class="role-tags role-select"><button type="button" class="role-select-trigger" data-edit-roles="${esc(c.name)}" aria-label="${esc(c.name)}定位" aria-expanded="${editingRole===c.name}">${c.roles.filter(r=>r!=='待确认').map(r=>`<span class="role-tag role-${["主C","辅助","奶妈"].indexOf(r)}">${r}</span>`).join("")||'<span class="hint">选择定位</span>'}<span class="role-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>${editingRole===c.name?`<div class="role-options" role="group" aria-label="多选定位">${["主C","辅助","奶妈"].map((r,i)=>`<button type="button" class="role-option" data-role="${r}" role="checkbox" aria-checked="${c.roles.includes(r)}"><span class="role-check">${c.roles.includes(r)?'✓':''}</span><span class="role-tag role-${i}">${r}</span></button>`).join("")}</div>`:''}</div><div class="stamina-inputs"><label>基础体力<input type="number" data-field="base" min="0" max="99" step="1" value="${c.base}" aria-label="${esc(c.name)}基础体力"></label><label>本周体力<input type="number" data-field="weekly" min="0" max="99" step="1" value="${c.weekly??c.base}" aria-label="${esc(c.name)}本周体力"></label></div><label class="character-weight">链度<select data-field="chain" aria-label="${esc(c.name)}链度">${Array.from({length:7},(_,i)=>`<option value="${i}" ${(c.chain??0)===i?"selected":""}>${i} 链</option>`).join("")}</select></label><div class="character-foot">基础分 ${recency(c).toFixed(3)} · 链度系数 ${(c.chain??0)+1}</div><label class="character-weight">用户练度<input type="number" data-field="weight" min="1" max="100" step="0.1" value="${c.weight}" aria-label="${esc(c.name)}加权"></label><div class="character-foot">${!c.released?'未实装 · 全角色模式也排除':c.available?'本周可用 '+effective(c)+' 次':'未拥有 · 不参与我的配队'}${c.name==='漂泊者'?' · 多属性共用体力':''}${recency(c)>1?' · 主C通用加成 +'+((recency(c)-1)*100).toFixed(1)+'%':''}</div><button data-view-teams="${esc(c.name)}">查看配队</button></div></article>`).join('')||'<div class="empty">没有符合筛选的角色。</div>'}
+const characterDisplayOrder=new Map(PLANNER_SEED.characters.map((c,i)=>[c.name,i]));
+function roster(){let query=$('#character-search').value.trim(),filter=$('#character-filter').value,element=$('#character-element').value;let chars=[...state.characters].sort((a,b)=>characterDisplayOrder.get(a.name)-characterDisplayOrder.get(b.name)).filter(c=>c.name.includes(query)&&(element==='all'||(c.name==='漂泊者'?c.attributes.includes(element):c.element===element))&&($('#character-show-unowned').checked||c.available)&&(!$('#character-weekly').checked||weeklyAdjusted(c))&&(filter==='all'||c.roles.includes({main:'主C',support:'辅助',healer:'奶妈'}[filter])));$('#character-grid').innerHTML=chars.map(c=>`<article class="character-card ${c.available?'':'unowned'}" data-name="${esc(c.name)}"><div class="portrait"><img src="${image(c.name)}" alt="${esc(c.name)}" loading="lazy">${weeklyAdjusted(c)?'<span class="weekly-badge">本周已调整</span>':''}<label class="availability"><input type="checkbox" data-field="available" ${c.released?'':'disabled'} ${c.available?'checked':''}>可用</label></div><div class="character-info"><div class="character-name">${esc(c.name)} <small class="rarity rarity-${c.rarity}">${c.rarity?c.rarity+'★':''}</small></div>${elementTags(c)}<div class="role-tags role-select"><button type="button" class="role-select-trigger" data-edit-roles="${esc(c.name)}" aria-label="${esc(c.name)}定位" aria-expanded="${editingRole===c.name}">${c.roles.filter(r=>r!=='待确认').map(r=>`<span class="role-tag role-${["主C","辅助","奶妈"].indexOf(r)}">${r}</span>`).join("")||'<span class="hint">选择定位</span>'}<span class="role-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>${editingRole===c.name?`<div class="role-options" role="group" aria-label="多选定位">${["主C","辅助","奶妈"].map((r,i)=>`<button type="button" class="role-option" data-role="${r}" role="checkbox" aria-checked="${c.roles.includes(r)}"><span class="role-check">${c.roles.includes(r)?'✓':''}</span><span class="role-tag role-${i}">${r}</span></button>`).join("")}</div>`:''}</div><div class="stamina-inputs"><label>基础体力<input type="number" data-field="base" min="0" max="99" step="1" value="${c.base}" aria-label="${esc(c.name)}基础体力"></label><label>本周体力<input type="number" data-field="weekly" min="0" max="99" step="1" value="${c.weekly??c.base}" aria-label="${esc(c.name)}本周体力"></label></div><label class="character-weight">链度<select data-field="chain" aria-label="${esc(c.name)}链度">${Array.from({length:7},(_,i)=>`<option value="${i}" ${(c.chain??0)===i?"selected":""}>${i} 链</option>`).join("")}</select></label><div class="character-foot">基础分 ${recency(c).toFixed(3)} · 链度系数 ${(c.chain??0)+1}</div><label class="character-weight">用户练度<input type="number" data-field="weight" min="1" max="100" step="0.1" value="${c.weight}" aria-label="${esc(c.name)}加权"></label><div class="character-foot">${!c.released?'未实装 · 全角色模式也排除':c.available?'本周可用 '+effective(c)+' 次':'未拥有 · 不参与我的配队'}${c.name==='漂泊者'?' · 多属性共用体力':''}${recency(c)>1?' · 主C通用加成 +'+((recency(c)-1)*100).toFixed(1)+'%':''}</div><button data-view-teams="${esc(c.name)}">查看配队</button></div></article>`).join('')||'<div class="empty">没有符合筛选的角色。</div>'}
+function compareCharacterRelease(a,b){
+ const av=a?.release_version?.match(/^V?(\d+)\.(\d+)$/i),bv=b?.release_version?.match(/^V?(\d+)\.(\d+)$/i);
+ if(av&&bv){const version=Number(bv[1])-Number(av[1])||Number(bv[2])-Number(av[2]);if(version)return version}
+ const ad=Date.parse(a?.release_date),bd=Date.parse(b?.release_date);
+ return Number.isFinite(ad)&&Number.isFinite(bd)?bd-ad:0;
+}
+const onlyCarry=c=>c?.roles?.length===1&&c.roles[0]==='主C';
+const onlyCarryCount=team=>team.members.filter(n=>onlyCarry(state.characters.find(c=>c.name===n))).length;
 function orderedMembers(team){
- const rank=(name,index)=>{
+ const members=team.members.map((name,index)=>{
   const c=state.characters.find(c=>c.name===name);
-  if(c?.healer)return 2;
-  if(team.assigned_roles?.[index])return {'主C':0,'辅助':1,'奶妈':2}[team.assigned_roles[index]]??1;
-  if(name==='漂泊者'&&team.rover_attribute)return team.rover_attribute==='湮灭'?0:1;
-  return c?.roles.includes('主C')?0:1;
- };
- return team.members.map((name,index)=>({name,index,rank:rank(name,index)})).sort((a,b)=>a.rank-b.rank||a.index-b.index).map(x=>x.name);
+  const roles=c?.roles?.includes('奶妈')?['奶妈']:team.assigned_roles?.[index]?[team.assigned_roles[index]]:c?.roles||['辅助'];
+  return {name,index,roles,character:c};
+ });
+ // Prefer a dedicated carry; flexible carries support them in this team.
+ const main=members.find(m=>m.roles.includes('主C')&&!m.roles.includes('辅助'))||members.find(m=>m.roles.includes('主C'));
+ const rank=m=>m.roles.includes('奶妈')?2:m.roles.includes('主C')&&(m===main||!m.roles.includes('辅助'))?0:1;
+ return members.sort((a,b)=>rank(a)-rank(b)||(onlyCarry(a.character)&&onlyCarry(b.character)?compareCharacterRelease(a.character,b.character):0)||a.index-b.index).map(m=>m.name);
 }
 const memberName=(name,team)=>name==='漂泊者'&&team.rover_attribute?name+'·'+team.rover_attribute:name;
 const memberImage=(name,team)=>image(memberName(name,team));
@@ -51,7 +62,7 @@ function matchesTeamSearch(team,query){
  const names=team.members.map(n=>memberName(n,team));
  return words.every(word=>names.some(n=>n.includes(word))||(words.length===1&&team.note.includes(word)));
 }
-function portraits(team){return `<div class="team-portraits">${orderedMembers(team).map(n=>{const name=memberName(n,team);return `<div class="member"><div class="member-image"><img src="${memberImage(n,team)}" alt="${esc(name)}" loading="lazy"></div><span class="member-name" title="${esc(name)}">${esc(name)}</span>${elementTags(state.characters.find(c=>c.name===n),team)}</div>`}).join('')}</div>`}
+function portraits(team){return `<div class="team-portraits">${orderedMembers(team).map(n=>{const name=memberName(n,team),character=state.characters.find(c=>c.name===n),unowned=!character?.available;return `<div class="member${unowned?' member-unowned':''}"><div class="member-image"><img src="${memberImage(n,team)}" alt="${esc(name)}" loading="lazy">${unowned?'<span class="member-ownership">未拥有</span>':''}</div><span class="member-name" title="${esc(name)}">${esc(name)}</span>${elementTags(character,team)}</div>`}).join('')}</div>`}
 
 function missing(t){return t.members.filter(n=>!state.characters.find(c=>c.name===n&&c.available))}
 function proofLabel(p){
@@ -135,7 +146,7 @@ function syncTeamCards(){
 function teams(){
  evidenceFilters();
  const q=$('#team-search').value.trim(),filter=$('#team-filter').value,element=$('#team-element').value;
- const list=state.teams.filter(t=>(element==='all'||teamElement(t)===element)&&(!selectedEvidence.size||evidenceKinds(t).some(x=>selectedEvidence.has(x.key)))&&matchesTeamSearch(t,q)&&(filter==='all'||filter==='available'&&!missing(t).length||filter==='unowned'&&missing(t).length>0||filter==='locked'&&t.locked||filter==='disabled'&&!t.enabled)).sort((a,b)=>Number(b.enabled)-Number(a.enabled));
+ const list=state.teams.filter(t=>($('#team-show-unowned').checked||!missing(t).length)&&(element==='all'||teamElement(t)===element)&&(!selectedEvidence.size||evidenceKinds(t).some(x=>selectedEvidence.has(x.key)))&&matchesTeamSearch(t,q)&&(filter==='all'||filter==='enabled'&&t.enabled||filter==='locked'&&t.locked||filter==='disabled'&&!t.enabled||filter==='multiple-carries'&&onlyCarryCount(t)>=2)).sort((a,b)=>Number(b.enabled)-Number(a.enabled));
  $('#team-grid').innerHTML=list.map(t=>teamCard(t)).join('')||'<div class="empty">暂无符合条件的队伍，可以新建三人组合。</div>';
 }
 
@@ -159,6 +170,7 @@ if(!draft.members.includes('漂泊者'))draft.rover_attribute='';$('#rover-attri
 function edit(id,initial=null){$('#rover-parking').append($('#rover-row'));let existing=initial||state.teams.find(t=>t.id===id)||result?.selected.find(t=>t.id===id);draft=existing?structuredClone(existing):{id:crypto.randomUUID(),members:state.characters.filter(c=>c.available).slice(0,3).map(c=>c.name),rover_attribute:'',enabled:true,locked:false,priority:1,user_weight:1,note:'',evidence:'自定义',origin:'manual',sources:[],axes:[],selected_axis:''};while(draft.members.length<3)draft.members.push(state.characters[draft.members.length].name);$('#editor-title').textContent=existing?'编辑队伍 · '+draft.members.map(n=>memberName(n,draft)).join(' / '):'新建三人队伍';$('#delete-team').hidden=!state.teams.some(t=>t.id===id);$('#editor-error').textContent='';let sorted=[...state.characters].sort((a,b)=>Number(b.available)-Number(a.available));$('#member-inputs').innerHTML=draft.members.map((n,i)=>`<div class="member-slot" data-slot="${i}"><label>角色 ${i+1}<img src="${image(n)}" alt="${esc(n)}"><select data-member="${i}" aria-label="角色${i+1}">${sorted.map(c=>`<option value="${esc(c.name)}" ${c.name===n?'selected':''}>${esc(c.name)}${c.available?'':'（未拥有）'}</option>`).join('')}</select></label><div class="member-element"></div></div>`).join('');$('#team-note').value=draft.note;$('#team-sources').innerHTML=(draft.sources||[]).map((url,i)=>`<a href="${esc(safeUrl(url))}" target="_blank" rel="noopener">${esc(sourceLinkLabel(draft,url,i))} ↗</a>`).join('');refreshMembers();axisFields();$('#source-audit-status').textContent=draft.source_audit?('固定证据分：'+draft.default_priority+'；'+draft.source_audit.video_status+'。'+(draft.source_audit.issue||draft.source_audit.default_status_reason||'')):'尚无来源核查记录';$('#editor').showModal()}
 document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>tab(b.dataset.tab));
 $('#character-search').oninput=roster;$('#character-filter').onchange=roster;$('#character-element').onchange=roster;$('#team-search').oninput=teams;$('#team-filter').onchange=teams;$('#team-element').onchange=teams;
+$('#character-show-unowned').onchange=roster;$('#character-weekly').onchange=roster;$('#team-show-unowned').onchange=teams;
 $('#character-grid').onchange=e=>{let field=e.target.dataset.field;if(!field)return;let card=e.target.closest('[data-name]'),c=state.characters.find(c=>c.name===card.dataset.name);let value=e.target.type==='checkbox'?e.target.checked:e.target.value===''&&field==='weekly'?null:Number(e.target.value);if(e.target.type==='number'&&(field==='base'&&e.target.value===''||value!==null&&((field==='weight'?!Number.isFinite(value):!Number.isInteger(value))||value<(field==='weight'?1:0)||value>(field==='weight'?100:field==='chain'?6:99)))){toast('链度须为0到6的整数；体力须为0到99的整数；用户练度须为1到100，可用小数');roster();return}if(field==='roles'){c.roles=e.target.value.split('|');c.healer=c.roles.includes('奶妈')}else{c[field]=value;if(field==='healer')c.roles=value?['奶妈']:['辅助']}markDirty();roster()};
 function changeTeamCard(e){
  const input=e.target,card=input.closest('[data-id]');if(!card)return;
@@ -176,7 +188,7 @@ function changeTeamCard(e){
 }
 $('#team-grid').onchange=changeTeamCard;
 $('#result-body').onchange=changeTeamCard;
-document.body.addEventListener('click',e=>{if(editingRole&&!e.target.closest('.role-select')){editingRole=null;roster()}let editRoles=e.target.closest('[data-edit-roles]');if(editRoles){editingRole=editingRole===editRoles.dataset.editRoles?null:editRoles.dataset.editRoles;roster();return}let role=e.target.closest('[data-role]');if(role){let c=state.characters.find(c=>c.name===role.closest('[data-name]').dataset.name);let selected=new Set(c.roles.filter(r=>r!=='待确认'));if(selected.has(role.dataset.role))selected.delete(role.dataset.role);else selected.add(role.dataset.role);c.roles=['主C','辅助','奶妈'].filter(r=>selected.has(r));if(!c.roles.length)c.roles=['待确认'];c.healer=c.roles.includes('奶妈');markDirty();roster();return}let view=e.target.closest('[data-view-teams]');if(view){$('#team-search').value=view.dataset.viewTeams;$('#team-filter').value='all';tab('teams');return}let b=e.target.closest('[data-edit]');if(b)edit(b.dataset.edit)});
+document.body.addEventListener('click',e=>{if(editingRole&&!e.target.closest('.role-select')){editingRole=null;roster()}let editRoles=e.target.closest('[data-edit-roles]');if(editRoles){editingRole=editingRole===editRoles.dataset.editRoles?null:editRoles.dataset.editRoles;roster();return}let role=e.target.closest('[data-role]');if(role){let c=state.characters.find(c=>c.name===role.closest('[data-name]').dataset.name);let selected=new Set(c.roles.filter(r=>r!=='待确认'));if(selected.has(role.dataset.role))selected.delete(role.dataset.role);else selected.add(role.dataset.role);c.roles=['主C','辅助','奶妈'].filter(r=>selected.has(r));if(!c.roles.length)c.roles=['待确认'];c.healer=c.roles.includes('奶妈');markDirty();roster();return}let view=e.target.closest('[data-view-teams]');if(view){$('#team-search').value=view.dataset.viewTeams;$('#team-filter').value='all';$('#team-element').value='all';selectedEvidence.clear();$('#team-show-unowned').checked=!state.characters.find(c=>c.name===view.dataset.viewTeams)?.available;tab('teams');savePreferences();return}let b=e.target.closest('[data-edit]');if(b)edit(b.dataset.edit)});
 $('#save').onclick=async()=>{try{await save();toast(storageMode==='server'?'已同步本地配置；导出仅用于备份':'已保存到浏览器；导出仅用于备份')}catch(e){toast(e.message)}};
 $('#calculate').onclick=async()=>{
  const button=$('#calculate');button.disabled=true;button.textContent='正在计算…';
@@ -202,7 +214,7 @@ api('/api/state').then(s=>{state=s;restorePreferences();summary();roster();tab(r
 
 
 
-$('#planning-scope').onchange=()=>{$('#team-filter').value=$('#planning-scope').value==='all'?'all':'available';if(activeTab==='teams')teams();summary();invalidateResult();syncTeamCards();toast($('#planning-scope').value==='all'?'全角色模拟：不会改变拥有状态，未拥有角色按0链、用户练度1模拟；未实装角色排除':'已切回我的角色，点击计算更新方案')};
+$('#planning-scope').onchange=()=>{if(activeTab==='teams')teams();summary();invalidateResult();syncTeamCards();toast($('#planning-scope').value==='all'?'全角色模拟：不会改变拥有状态，未拥有角色按0链、用户练度1模拟；未实装角色排除':'已切回我的角色，点击计算更新方案')};
 $('#fill-roles').onchange=invalidateResult;
 
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&editingRole){editingRole=null;roster()}});
@@ -372,9 +384,15 @@ async function syncConfiguration(){
 }
 window.addEventListener('beforeunload',e=>{if(storageMode==='server'&&(syncPending||syncFlight)){e.preventDefault();e.returnValue=''}});
 
-const preferenceIds=['planning-scope','include-inferred','fill-roles','fill-solo','character-filter','character-element','team-filter','team-element','character-search','team-search'];
+const preferenceIds=['planning-scope','include-inferred','fill-roles','fill-solo','character-filter','character-element','character-show-unowned','character-weekly','team-filter','team-element','team-show-unowned','character-search','team-search'];
 function restorePreferences(){
- const prefs=state.preferences||{};
+ const prefs={...state.preferences};
+ // Separate legacy visibility choices from role/status filters without changing account data.
+ prefs['character-show-unowned']??=['all','unowned','healer','weekly'].includes(prefs['character-filter']);
+ prefs['character-weekly']??=prefs['character-filter']==='weekly';
+ if(!['all','main','support','healer'].includes(prefs['character-filter']))prefs['character-filter']='all';
+ prefs['team-show-unowned']??=['all','unowned','locked','disabled'].includes(prefs['team-filter']);
+ if(!['all','enabled','locked','disabled','multiple-carries'].includes(prefs['team-filter']))prefs['team-filter']='all';
  for(const id of preferenceIds){const el=$('#'+id);if(prefs[id]!==undefined){if(el.type==='checkbox')el.checked=!!prefs[id];else if(el.tagName!=='SELECT'||[...el.options].some(o=>o.value===prefs[id]))el.value=prefs[id]}}
  selectedEvidence.clear();for(const k of prefs.evidence||[])if(evidenceTypes.some(x=>x.key===k))selectedEvidence.add(k);
 }
