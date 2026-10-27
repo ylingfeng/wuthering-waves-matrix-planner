@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/branding/denia-icon.png" width="128" height="128" alt="鸣潮矩阵配队图标，与 Windows 启动器一致">
+  <img src="assets/branding/denia-icon.png" width="128" height="128" alt="鸣潮矩阵配队产品图标">
 </p>
 
 # 鸣潮矩阵配队
@@ -27,7 +27,7 @@ MatrixPlanner/
 └─ web/
 ```
 
-请完整解压后再启动，并保持文件夹结构完整。Release 中的 `Source code (zip)` / `Source code (tar.gz)` 是开发源码；日常使用请选择上表中的发布包。
+请完整解压后再启动，并保持文件夹结构完整。Release 中的 `Source code (zip)` / `Source code (tar.gz)` 是开发源码；日常使用请选择名称以 `MatrixPlanner-` 开头的发布包。
 
 配队功能运行在浏览器里，启动入口自动打开网页，无需后台服务。
 
