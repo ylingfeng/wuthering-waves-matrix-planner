@@ -9,4 +9,4 @@
 - 测试使用临时目录或独立浏览器存储，不修改真实账号配置。
 - 发布工具从本仓库读取网页、启动器源码和更新日志，只写入本仓库的 `dist/`。
 
-旁边打轴工作区保留了指向本仓库发布 skill 的发现链接，该链接不属于本平台运行依赖。本仓库自己的 skill 位于 `.claude/skills/package-release/`。
+发布 skill 仅位于本仓库的 `.claude/skills/package-release/`，本仓库 `.agents/skills` 只指向自身 `.claude/skills`。打轴工作区不保留指向本仓库的 skill 链接。
