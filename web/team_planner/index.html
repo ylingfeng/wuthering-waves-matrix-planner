@@ -8,11 +8,11 @@
 <div class="workspace-actions"><label class="planning-scope-label">计算范围 <select id="planning-scope" aria-label="配队范围"><option value="owned">仅已拥有角色</option><option value="all">全角色计算（含未拥有）</option></select></label><button class="primary" id="calculate">计算配队</button></div>
 <nav aria-label="页面"><button data-tab="characters" class="active">角色库 <span id="character-count"></span></button><button data-tab="teams">候选队伍 <span id="team-count"></span></button><button data-tab="results">配队结果 <span id="result-count">—</span></button></nav>
 <section id="characters" class="page">
-<div class="toolbar"><div class="filters"><input id="character-search" type="search" placeholder="搜索角色名称…" aria-label="搜索角色"><select id="character-filter" aria-label="角色筛选"><option value="all">全部角色</option><option value="owned" selected>我的角色</option><option value="unowned">未拥有</option><option value="healer">奶妈</option><option value="weekly">本周已调整</option></select></div><span class="hint">本周体力为实际可用次数，可直接调整；填写 0 则本周不参与。</span></div>
+<div class="toolbar"><div class="filters"><input id="character-search" type="search" placeholder="搜索角色名称…" aria-label="搜索角色"><select id="character-filter" aria-label="角色筛选"><option value="all">全部角色</option><option value="owned" selected>我的角色</option><option value="unowned">未拥有</option><option value="healer">奶妈</option><option value="weekly">本周已调整</option></select><select id="character-element" aria-label="属性筛选"><option value="all">全部属性</option><option data-element="冷凝">冷凝</option><option data-element="热熔">热熔</option><option data-element="导电">导电</option><option data-element="气动">气动</option><option data-element="衍射">衍射</option><option data-element="湮灭">湮灭</option></select></div><span class="hint">本周体力为实际可用次数，可直接调整；填写 0 则本周不参与。</span></div>
 <div id="character-grid" class="character-grid"></div>
 </section>
 <section id="teams" class="page" hidden>
-<div class="toolbar"><div class="filters"><input id="team-search" type="search" placeholder="搜索成员，空格匹配多人，如：赞 夏" aria-label="搜索队伍"><select id="team-filter" aria-label="队伍筛选"><option value="available">现有角色可组成</option><option value="all">全部候选</option><option value="unowned">包含未拥有角色</option><option value="locked">必选队伍</option><option value="disabled">已停用</option></select></div><button id="new-team">新建队伍</button></div>
+<div class="toolbar"><div class="filters"><input id="team-search" type="search" placeholder="搜索成员，空格匹配多人，如：赞 夏" aria-label="搜索队伍"><select id="team-filter" aria-label="队伍筛选"><option value="available">现有角色可组成</option><option value="all">全部候选</option><option value="unowned">包含未拥有角色</option><option value="locked">必选队伍</option><option value="disabled">已停用</option></select><select id="team-element" aria-label="队伍主属性筛选"><option value="all">全部主属性</option><option data-element="冷凝">冷凝</option><option data-element="热熔">热熔</option><option data-element="导电">导电</option><option data-element="气动">气动</option><option data-element="衍射">衍射</option><option data-element="湮灭">湮灭</option></select></div><button id="new-team">新建队伍</button></div>
 <p class="hint">同一队伍可以有多套输出轴。配队顺序可编辑，实际起手和槽位请参考轴说明。工坊与 Wiki 资料不代表你的账号已实测。</p>
 <div id="evidence-filter" class="evidence-filter" aria-label="按证据来源筛选"></div>
 <div id="team-grid" class="team-grid"></div>
@@ -25,7 +25,7 @@
 </main>
 <dialog id="editor"><form id="team-form"><div class="dialog-heading"><div><h2 id="editor-title">编辑队伍</h2><button id="editor-guide" type="button" class="editor-guide">填写说明</button></div><button type="button" id="close-editor" aria-label="关闭">×</button></div>
 <div id="member-inputs" class="member-inputs"></div><div id="rover-parking" hidden></div>
-<label id="rover-row" hidden>漂泊者属性<select id="rover-attribute"><option value="">请选择属性</option><option>衍射</option><option>湮灭</option><option>气动</option><option>导电</option></select></label>
+<label id="rover-row" hidden>漂泊者属性<select id="rover-attribute"><option value="">请选择属性</option><option data-element="衍射">衍射</option><option data-element="湮灭">湮灭</option><option data-element="气动">气动</option><option data-element="导电">导电</option></select></label>
 <p class="hint" id="team-weight"></p><p class="hint" id="source-audit-status"></p>
 <label class="block">配队备注<textarea id="team-note" rows="2"></textarea></label>
 <div class="axis-heading"><h3>输出轴</h3><button id="add-axis" type="button">＋ 添加一套轴</button></div>

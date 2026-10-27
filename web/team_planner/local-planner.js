@@ -15,7 +15,7 @@ function createLocalPlanner(){
    if(typeof c.available!=='boolean'||typeof c.healer!=='boolean')throw Error('角色开关无效');
    c.healer=c.roles.includes('奶妈');
    const original=PLANNER_SEED.characters.find(x=>x.name===c.name);
-   for(const f of ['released','attributes','rarity','release_version','release_date'])c[f]=clone(original[f]);
+   for(const f of ['released','element','attributes','rarity','release_version','release_date'])c[f]=clone(original[f]);
   }
   // Correct the old built-in recommendation, including previously saved browser data.
   s.teams=s.teams.filter(t=>!retiredDanjin(t));

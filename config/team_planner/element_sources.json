@@ -1,0 +1,261 @@
+{
+  "source": "库街区官方 Wiki 共鸣者目录",
+  "skill_attr": {
+    "2": "气动",
+    "3": "导电",
+    "4": "冷凝",
+    "5": "热熔",
+    "6": "衍射",
+    "7": "湮灭"
+  },
+  "characters": {
+    "散华": {
+      "element": "冷凝",
+      "url": "https://wiki.kurobbs.com/mc/item/1233492733107564544"
+    },
+    "漂泊者": {
+      "elements": [
+        {
+          "element": "衍射",
+          "url": "https://wiki.kurobbs.com/mc/item/1239724074505539584"
+        },
+        {
+          "element": "湮灭",
+          "url": "https://wiki.kurobbs.com/mc/item/1242115703531454464"
+        },
+        {
+          "element": "气动",
+          "url": "https://wiki.kurobbs.com/mc/item/1353293318050545664"
+        },
+        {
+          "element": "导电",
+          "url": "https://wiki.kurobbs.com/mc/item/1524702668029300736"
+        }
+      ]
+    },
+    "维里奈": {
+      "element": "衍射",
+      "url": "https://wiki.kurobbs.com/mc/item/1242295554161025024"
+    },
+    "丹瑾": {
+      "element": "湮灭",
+      "url": "https://wiki.kurobbs.com/mc/item/1233430505140629504"
+    },
+    "秧秧": {
+      "element": "气动",
+      "url": "https://wiki.kurobbs.com/mc/item/1233436648562032640"
+    },
+    "鉴心": {
+      "element": "气动",
+      "url": "https://wiki.kurobbs.com/mc/item/1242295527595823104"
+    },
+    "安可": {
+      "element": "热熔",
+      "url": "https://wiki.kurobbs.com/mc/item/1242296163679776768"
+    },
+    "凌阳": {
+      "element": "冷凝",
+      "url": "https://wiki.kurobbs.com/mc/item/1242296125975633920"
+    },
+    "渊武": {
+      "element": "导电",
+      "url": "https://wiki.kurobbs.com/mc/item/1239990507047161856"
+    },
+    "白芷": {
+      "element": "冷凝",
+      "url": "https://wiki.kurobbs.com/mc/item/1233429754977792000"
+    },
+    "炽霞": {
+      "element": "热熔",
+      "url": "https://wiki.kurobbs.com/mc/item/1240039812638883840"
+    },
+    "卡卡罗": {
+      "element": "导电",
+      "url": "https://wiki.kurobbs.com/mc/item/1242295483584421888"
+    },
+    "莫特斐": {
+      "element": "热熔",
+      "url": "https://wiki.kurobbs.com/mc/item/1240157802556833792"
+    },
+    "桃祈": {
+      "element": "湮灭",
+      "url": "https://wiki.kurobbs.com/mc/item/1240051046261592064"
+    },
+    "秋水": {
+      "element": "气动",
+      "url": "https://wiki.kurobbs.com/mc/item/1233210783276019712"
+    },
+    "忌炎": {
+      "element": "气动",
+      "url": "https://wiki.kurobbs.com/mc/item/1240073643014045696"
+    },
+    "吟霖": {
+      "element": "导电",
+      "url": "https://wiki.kurobbs.com/mc/item/1239319812692709376"
+    },
+    "今汐": {
+      "element": "衍射",
+      "url": "https://wiki.kurobbs.com/mc/item/1249040336606580736"
+    },
+    "长离": {
+      "element": "热熔",
+      "url": "https://wiki.kurobbs.com/mc/item/1262882649069621248"
+    },
+    "折枝": {
+      "element": "冷凝",
+      "url": "https://wiki.kurobbs.com/mc/item/1269802618305703936"
+    },
+    "相里要": {
+      "element": "导电",
+      "url": "https://wiki.kurobbs.com/mc/item/1272626941409398784"
+    },
+    "守岸人": {
+      "element": "衍射",
+      "url": "https://wiki.kurobbs.com/mc/item/1286814658335739904"
+    },
+    "釉瑚": {
+      "element": "冷凝",
+      "url": "https://wiki.kurobbs.com/mc/item/1287721354505175040"
+    },
+    "椿": {
+      "element": "湮灭",
+      "url": "https://wiki.kurobbs.com/mc/item/1302065018502307840"
+    },
+    "灯灯": {
+      "element": "导电",
+      "url": "https://wiki.kurobbs.com/mc/item/1312376371368607744"
+    },
+    "珂莱塔": {
+      "element": "冷凝",
+      "url": "https://wiki.kurobbs.com/mc/item/1321977849344999424"
+    },
+    "洛可可": {
+      "element": "湮灭",
+      "url": "https://wiki.kurobbs.com/mc/item/1328404385305366528"
+    },
+    "菲比": {
+      "element": "衍射",
+      "url": "https://wiki.kurobbs.com/mc/item/1309523456688947200"
+    },
+    "布兰特": {
+      "element": "热熔",
+      "url": "https://wiki.kurobbs.com/mc/item/1309566040441675776"
+    },
+    "坎特蕾拉": {
+      "element": "湮灭",
+      "url": "https://wiki.kurobbs.com/mc/item/1342471419668557824"
+    },
+    "赞妮": {
+      "element": "衍射",
+      "url": "https://wiki.kurobbs.com/mc/item/1309607355563974656"
+    },
+    "夏空": {
+      "element": "气动",
+      "url": "https://wiki.kurobbs.com/mc/item/1357568005112766464"
+    },
+    "卡提希娅": {
+      "element": "气动",
+      "url": "https://wiki.kurobbs.com/mc/item/1370471621924728832"
+    },
+    "露帕": {
+      "element": "热熔",
+      "url": "https://wiki.kurobbs.com/mc/item/1370474602963382272"
+    },
+    "弗洛洛": {
+      "element": "湮灭",
+      "url": "https://wiki.kurobbs.com/mc/item/1386685588185022464"
+    },
+    "奥古斯塔": {
+      "element": "导电",
+      "url": "https://wiki.kurobbs.com/mc/item/1400451112145264640"
+    },
+    "尤诺": {
+      "element": "气动",
+      "url": "https://wiki.kurobbs.com/mc/item/1400453856120164352"
+    },
+    "嘉贝莉娜": {
+      "element": "热熔",
+      "url": "https://wiki.kurobbs.com/mc/item/1415137052791296000"
+    },
+    "仇远": {
+      "element": "气动",
+      "url": "https://wiki.kurobbs.com/mc/item/1415139197615755264"
+    },
+    "千咲": {
+      "element": "湮灭",
+      "url": "https://wiki.kurobbs.com/mc/item/1429457793942482944"
+    },
+    "卜灵": {
+      "element": "导电",
+      "url": "https://wiki.kurobbs.com/mc/item/1429461100965666816"
+    },
+    "琳奈": {
+      "element": "衍射",
+      "url": "https://wiki.kurobbs.com/mc/item/1445377391854534656"
+    },
+    "莫宁": {
+      "element": "热熔",
+      "url": "https://wiki.kurobbs.com/mc/item/1429461088674648064"
+    },
+    "爱弥斯": {
+      "element": "热熔",
+      "url": "https://wiki.kurobbs.com/mc/item/1457744312692867072"
+    },
+    "陆·赫斯": {
+      "element": "衍射",
+      "url": "https://wiki.kurobbs.com/mc/item/1457750329618771968"
+    },
+    "西格莉卡": {
+      "element": "气动",
+      "url": "https://wiki.kurobbs.com/mc/item/1478089902761410560"
+    },
+    "达妮娅": {
+      "element": "热熔",
+      "url": "https://wiki.kurobbs.com/mc/item/1488852222116831232"
+    },
+    "绯雪": {
+      "element": "冷凝",
+      "url": "https://wiki.kurobbs.com/mc/item/1488853937364017152"
+    },
+    "丽贝卡": {
+      "element": "导电",
+      "url": "https://wiki.kurobbs.com/mc/item/1502681773647212544"
+    },
+    "洛瑟菈": {
+      "element": "冷凝",
+      "url": "https://wiki.kurobbs.com/mc/item/1514097978770092032"
+    },
+    "露西": {
+      "element": "衍射",
+      "url": "https://wiki.kurobbs.com/mc/item/1502669582481317888"
+    },
+    "秧秧·玄翎": {
+      "element": "湮灭",
+      "url": "https://wiki.kurobbs.com/mc/item/1519669180526559232"
+    },
+    "穗穗": {
+      "element": "冷凝",
+      "url": "https://wiki.kurobbs.com/mc/item/1519669262123954176"
+    },
+    "清宵": {
+      "element": "气动",
+      "url": "https://wiki.kurobbs.com/mc/item/1536353668409655296"
+    },
+    "景燃": {
+      "element": "热熔",
+      "url": "https://wiki.kurobbs.com/mc/item/1536352499213860864"
+    },
+    "心": {
+      "element": "导电",
+      "url": "https://wiki.kurobbs.com/mc/item/1543050481616060416"
+    },
+    "锁暝": {
+      "element": "导电",
+      "url": "https://wiki.kurobbs.com/mc/item/1543075487722901504"
+    },
+    "莉莉": {
+      "element": "衍射",
+      "url": "https://wiki.kurobbs.com/mc/item/1559521973715369984"
+    }
+  }
+}

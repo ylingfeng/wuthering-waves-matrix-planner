@@ -2,6 +2,7 @@
 (() => {
  let opened=null,serial=0;
  const widgets=new WeakMap();
+ const chipClass=option=>['冷凝','热熔','导电','气动','衍射','湮灭'].includes(option?.dataset.element)?'element-'+option.dataset.element:'';
  function close(focus=false){
   if(!opened)return;
   const w=opened;opened=null;w.menu.remove();w.button.setAttribute('aria-expanded','false');
@@ -10,6 +11,8 @@
  function sync(w){
   const text=w.select.selectedOptions[0]?.textContent||'请选择';
   if(w.label.textContent!==text)w.label.textContent=text;
+  const chip=chipClass(w.select.selectedOptions[0]);
+  w.label.className='select-value'+(chip?' element-tag '+chip:'');
   w.button.disabled=w.select.disabled;
  }
  function open(w){
@@ -17,7 +20,9 @@
   w.menu=document.createElement('div');w.menu.className='select-menu';w.menu.id=w.id;w.menu.setAttribute('role','listbox');
   w.menu.setAttribute('aria-label',w.button.getAttribute('aria-label'));
   const buttons=[...w.select.options].map((option,index)=>{
-   const button=document.createElement('button');button.type='button';button.className='select-option';button.textContent=option.textContent;
+   const button=document.createElement('button');button.type='button';button.className='select-option';
+   const label=document.createElement('span');label.textContent=option.textContent;
+   const chip=chipClass(option);if(chip)label.className='element-tag '+chip;button.append(label);
    button.setAttribute('role','option');button.setAttribute('aria-selected',String(option.selected));button.disabled=option.disabled;
    button.onclick=e=>{e.preventDefault();e.stopPropagation();w.select.selectedIndex=index;sync(w);close(true);w.select.dispatchEvent(new Event('change',{bubbles:true}));
     // Some views replace the edited card after change.

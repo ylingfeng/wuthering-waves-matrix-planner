@@ -74,6 +74,7 @@ class Store:
                            "released": r.get("已实装", "是") == "是",
                            "release_date": r.get("登场时间", ""),
                            "release_version": r.get("实装版本", ""),
+                           "element": r.get("属性", ""),
                            "attributes": r["可选属性"].split("|") if r["可选属性"] else [],
                            "avatar": "/portraits/" + quote(r["角色名称"]) + ".png"} for r in rows]
             return {"characters": characters, "teams": json.loads(self.teams_path.read_text(encoding="utf-8")),
@@ -147,10 +148,11 @@ class Store:
                     raise ValueError("输出轴名称和说明无效")
             stream = io.StringIO(newline="")
             writer = csv.writer(stream)
-            writer.writerow(["角色名称", "奶妈标注", "基础体力", "本周变动体力", "可选属性", "可用", "加权", "星级", "定位", "已实装", "登场时间", "实装版本", "链度"])
+            writer.writerow(["角色名称", "奶妈标注", "基础体力", "本周变动体力", "属性", "可选属性", "可用", "加权", "星级", "定位", "已实装", "登场时间", "实装版本", "链度"])
             for c in characters:
                 writer.writerow([c["name"], "是" if c["healer"] else "", c["base"],
                                  "" if c["weekly"] is None else c["weekly"],
+                                 originals[c["name"]]["element"],
                                  "|".join(originals[c["name"]]["attributes"]), "是" if c["available"] else "", c["weight"], originals[c["name"]]["rarity"] or "", "|".join(c["roles"]), "是" if originals[c["name"]]["released"] else "",
                                  originals[c["name"]]["release_date"], originals[c["name"]]["release_version"], c["chain"]])
             previous_roster = self.roster_path.read_text(encoding="utf-8")

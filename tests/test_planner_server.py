@@ -62,6 +62,22 @@ class PlannerServerTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.store.save(state)
 
+    def test_fixed_element_survives_csv_save_and_cannot_be_overridden(self):
+        with (self.root / 'character.csv').open(encoding='utf-8-sig', newline='') as stream:
+            reader = csv.DictReader(stream)
+            fields, rows = list(reader.fieldnames), list(reader)
+        with (self.root / 'character.csv').open('w', encoding='utf-8-sig', newline='') as stream:
+            writer = csv.DictWriter(stream, fieldnames=fields + ['属性'])
+            writer.writeheader()
+            writer.writerows([{**row, '属性': '热熔' if row['角色名称'] == 'a' else ''} for row in rows])
+        state = self.store.state()
+        self.assertEqual(state['characters'][0]['element'], '热熔')
+        state['characters'][0].update(element='湮灭', weight=2.5)
+        self.store.save(state)
+        actual = self.store.state()['characters'][0]
+        self.assertEqual(actual['element'], '热熔')
+        self.assertEqual(actual['weight'], 2.5)
+
     def test_invalid_save_does_not_modify_files(self):
         state = self.store.state()
         revision = state['revision']

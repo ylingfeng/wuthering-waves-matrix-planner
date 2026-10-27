@@ -46,8 +46,19 @@ dialog{border:0;border-radius:16px;padding:28px;width:min(780px,calc(100vw - 32p
 
 [data-evidence="all"][aria-pressed="true"]{border-color:var(--accent);color:var(--accent);background:var(--soft)}
 
-.member-image{position:relative}.member-image img{display:block}.member .member-name{white-space:normal;overflow-wrap:anywhere;line-height:1.5;min-height:21px}.member-image .rover-attribute{position:absolute;bottom:5px;right:5px;display:block;margin:0;padding:2px 5px;border-radius:4px;font-size:12px;line-height:1.5;font-weight:600;background:var(--rover-bg);color:var(--rover-ink)}
-.rover-衍射{--rover-bg:#fff3ce;--rover-ink:#735019}.rover-湮灭{--rover-bg:#fbe4ef;--rover-ink:#893259}.rover-气动{--rover-bg:#dbf6e9;--rover-ink:#22644a}.rover-导电{--rover-bg:#ede6fc;--rover-ink:#62408c}
+.member-image{position:relative}.member-image img{display:block}.member .member-name{white-space:normal;overflow-wrap:anywhere;line-height:1.5;min-height:21px}
+.element-tags{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.element-tag,.element-tags .element-tag{display:inline-flex;align-items:center;margin:0;padding:2px 7px;border-radius:4px;font-size:13px;font-weight:600;line-height:1.6;white-space:nowrap;overflow:visible;background:var(--element-bg);color:var(--element-ink)}
+.element-冷凝{--element-bg:#e4f4fc;--element-ink:#205d7a}
+.element-热熔{--element-bg:#fcebe5;--element-ink:#963f24}
+.element-导电{--element-bg:#ede6fc;--element-ink:#62408c}
+.element-气动{--element-bg:#dbf6e9;--element-ink:#22644a}
+.element-衍射{--element-bg:#fff3ce;--element-ink:#735019}
+.element-湮灭{--element-bg:#fbe4ef;--element-ink:#893259}
+.character-info>.element-tags{margin:-2px 0 12px;min-height:25px}
+.member>.element-tags{justify-content:center;margin-top:6px}
+.member-slot .element-tags{margin-top:8px}
+.team-main-element{display:flex;align-items:center;gap:6px;margin-bottom:5px;font-size:13px;color:var(--muted)}
 #team-search{width:340px}
 @media(max-width:480px){#team-search{width:100%}}
 
