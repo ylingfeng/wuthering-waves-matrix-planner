@@ -1,0 +1,5322 @@
+[
+  {
+    "id": "d9b8c08015d1743b",
+    "members": [
+      "忌炎",
+      "秋水",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Jiyan Best Team / Jiyan Build Main DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/aalto-build/",
+      "https://wutheringlab.com/character/jiyan-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "秋水",
+        "heading": "Aalto Premium Best Team",
+        "quote": "Jiyan Build Main DPS Aalto Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/aalto-build/"
+      },
+      {
+        "character": "忌炎",
+        "heading": "Jiyan Best Team",
+        "quote": "Jiyan Build Main DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jiyan-build/"
+      }
+    ]
+  },
+  {
+    "id": "cb7bbfa2cec1352f",
+    "members": [
+      "忌炎",
+      "秋水",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Jiyan Best Team / Jiyan Build Main DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/aalto-build/",
+      "https://wutheringlab.com/character/baizhi-build/",
+      "https://wutheringlab.com/character/jiyan-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "秋水",
+        "heading": "Aalto Premium Best Team",
+        "quote": "Jiyan Build Main DPS Aalto Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/aalto-build/"
+      },
+      {
+        "character": "白芷",
+        "heading": "Baizhi Best Team",
+        "quote": "Jiyan Build MaIN DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/baizhi-build/"
+      },
+      {
+        "character": "忌炎",
+        "heading": "Jiyan Best Team",
+        "quote": "Jiyan Build Main DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jiyan-build/"
+      }
+    ]
+  },
+  {
+    "id": "956d3d24b261bded",
+    "members": [
+      "爱弥斯",
+      "琳奈",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Aemeath Best Teams / Aemeath Build Main DPS Lynae Build Sub DPS Mornye Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/aemeath-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "爱弥斯",
+        "heading": "Aemeath Best Teams",
+        "quote": "Aemeath Build Main DPS Lynae Build Sub DPS Mornye Build Healer",
+        "source": "https://wutheringlab.com/character/aemeath-build/"
+      }
+    ]
+  },
+  {
+    "id": "6b1d20d0fddef95a",
+    "members": [
+      "奥古斯塔",
+      "弗洛洛",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Augusta Best Teams / Augusta Build Main DPS Phrolova Build Yinlin Build Mortefi Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/augusta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "奥古斯塔",
+        "heading": "Augusta Best Teams",
+        "quote": "Augusta Build Main DPS Phrolova Build Yinlin Build Mortefi Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/augusta-build/"
+      }
+    ]
+  },
+  {
+    "id": "68330f5edd36cf37",
+    "members": [
+      "奥古斯塔",
+      "吟霖",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Augusta Best Teams / Augusta Build Main DPS Phrolova Build Yinlin Build Mortefi Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/augusta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "奥古斯塔",
+        "heading": "Augusta Best Teams",
+        "quote": "Augusta Build Main DPS Phrolova Build Yinlin Build Mortefi Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/augusta-build/"
+      }
+    ]
+  },
+  {
+    "id": "53d2407671026cd1",
+    "members": [
+      "奥古斯塔",
+      "莫特斐",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Augusta Best Teams / Augusta Build Main DPS Phrolova Build Yinlin Build Mortefi Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/augusta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "奥古斯塔",
+        "heading": "Augusta Best Teams",
+        "quote": "Augusta Build Main DPS Phrolova Build Yinlin Build Mortefi Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/augusta-build/"
+      }
+    ]
+  },
+  {
+    "id": "b19219949372937f",
+    "members": [
+      "奥古斯塔",
+      "今汐",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Augusta Double Core Team / Augusta Build DPS Jinhsi Build DPS Shorekeeper Build DPS/Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/augusta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "奥古斯塔",
+        "heading": "Augusta Double Core Team",
+        "quote": "Augusta Build DPS Jinhsi Build DPS Shorekeeper Build DPS/Healer",
+        "source": "https://wutheringlab.com/character/augusta-build/"
+      }
+    ]
+  },
+  {
+    "id": "663daefd574daae3",
+    "members": [
+      "忌炎",
+      "莫特斐",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Mortefi Premium Best Team / Jiyan Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/baizhi-build/",
+      "https://wutheringlab.com/character/jiyan-build/",
+      "https://wutheringlab.com/character/mortefi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "白芷",
+        "heading": "Baizhi Best Team",
+        "quote": "Jiyan Build MaIN DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/baizhi-build/"
+      },
+      {
+        "character": "忌炎",
+        "heading": "Jiyan Best Team",
+        "quote": "Jiyan Build Main DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jiyan-build/"
+      },
+      {
+        "character": "莫特斐",
+        "heading": "Mortefi Premium Best Team",
+        "quote": "Jiyan Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/mortefi-build/"
+      }
+    ]
+  },
+  {
+    "id": "b69653271c44d910",
+    "members": [
+      "忌炎",
+      "散华",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Jiyan Best Team / Jiyan Build Main DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/baizhi-build/",
+      "https://wutheringlab.com/character/jiyan-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "白芷",
+        "heading": "Baizhi Best Team",
+        "quote": "Jiyan Build MaIN DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/baizhi-build/"
+      },
+      {
+        "character": "忌炎",
+        "heading": "Jiyan Best Team",
+        "quote": "Jiyan Build Main DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jiyan-build/"
+      }
+    ]
+  },
+  {
+    "id": "42b6066d97e7163f",
+    "members": [
+      "长离",
+      "布兰特",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Brant Best Team I / Changli Build Main DPS Brant Build Sub DPS & Shield Shorekeeper Build Verina Build Sanhua Build Healer or Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/brant-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "布兰特",
+        "heading": "Brant Best Team I",
+        "quote": "Changli Build Main DPS Brant Build Sub DPS & Shield Shorekeeper Build Verina Build Sanhua Build Healer or Support",
+        "source": "https://wutheringlab.com/character/brant-build/"
+      }
+    ]
+  },
+  {
+    "id": "1023f92d837d6d96",
+    "members": [
+      "长离",
+      "布兰特",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Brant Best Team I / Changli Build Main DPS Brant Build Sub DPS & Shield Shorekeeper Build Verina Build Sanhua Build Healer or Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/brant-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "布兰特",
+        "heading": "Brant Best Team I",
+        "quote": "Changli Build Main DPS Brant Build Sub DPS & Shield Shorekeeper Build Verina Build Sanhua Build Healer or Support",
+        "source": "https://wutheringlab.com/character/brant-build/"
+      }
+    ]
+  },
+  {
+    "id": "1823e728148e91c8",
+    "members": [
+      "长离",
+      "布兰特",
+      "散华"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Brant Best Team I / Changli Build Main DPS Brant Build Sub DPS & Shield Shorekeeper Build Verina Build Sanhua Build Healer or Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/brant-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "布兰特",
+        "heading": "Brant Best Team I",
+        "quote": "Changli Build Main DPS Brant Build Sub DPS & Shield Shorekeeper Build Verina Build Sanhua Build Healer or Support",
+        "source": "https://wutheringlab.com/character/brant-build/"
+      }
+    ]
+  },
+  {
+    "id": "e9436066093b8c3a",
+    "members": [
+      "长离",
+      "布兰特",
+      "炽霞"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Brant Best Team II / Changli Build Main DPS Brant Build Sub DPS & Shield Chixia Build Sub DPS。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/brant-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "布兰特",
+        "heading": "Brant Best Team II",
+        "quote": "Changli Build Main DPS Brant Build Sub DPS & Shield Chixia Build Sub DPS",
+        "source": "https://wutheringlab.com/character/brant-build/"
+      }
+    ]
+  },
+  {
+    "id": "81bebc06fd5d6b6d",
+    "members": [
+      "布兰特",
+      "散华",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Brant Best Team III / Brant Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/brant-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "布兰特",
+        "heading": "Brant Best Team III",
+        "quote": "Brant Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/brant-build/"
+      }
+    ]
+  },
+  {
+    "id": "f6d1fdb8bbae2b2d",
+    "members": [
+      "布兰特",
+      "散华",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Brant Best Team III / Brant Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/brant-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "布兰特",
+        "heading": "Brant Best Team III",
+        "quote": "Brant Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/brant-build/"
+      }
+    ]
+  },
+  {
+    "id": "7ab2a5d5d39cbe14",
+    "members": [
+      "布兰特",
+      "散华",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Brant Best Team III / Brant Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/brant-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "布兰特",
+        "heading": "Brant Best Team III",
+        "quote": "Brant Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/brant-build/"
+      }
+    ]
+  },
+  {
+    "id": "342fcf94af0be8dd",
+    "members": [
+      "弗洛洛",
+      "坎特蕾拉",
+      "卜灵"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Buling Best Teams / Phrolova Build Main DPS Cantarella Build Qiuyuan Build Sub DPS Buling Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/buling-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卜灵",
+        "heading": "Buling Best Teams",
+        "quote": "Phrolova Build Main DPS Cantarella Build Qiuyuan Build Sub DPS Buling Build Healer",
+        "source": "https://wutheringlab.com/character/buling-build/"
+      }
+    ]
+  },
+  {
+    "id": "17eab1dc08dcaf82",
+    "members": [
+      "弗洛洛",
+      "仇远",
+      "卜灵"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Buling Best Teams / Phrolova Build Main DPS Cantarella Build Qiuyuan Build Sub DPS Buling Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/buling-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卜灵",
+        "heading": "Buling Best Teams",
+        "quote": "Phrolova Build Main DPS Cantarella Build Qiuyuan Build Sub DPS Buling Build Healer",
+        "source": "https://wutheringlab.com/character/buling-build/"
+      }
+    ]
+  },
+  {
+    "id": "f00a52bbe14290be",
+    "members": [
+      "珂莱塔",
+      "折枝",
+      "卜灵"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Buling Build / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Buling Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/buling-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卜灵",
+        "heading": "Buling Build",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Buling Build Healer",
+        "source": "https://wutheringlab.com/character/buling-build/"
+      }
+    ]
+  },
+  {
+    "id": "656b1b096ff8de57",
+    "members": [
+      "珂莱塔",
+      "桃祈",
+      "卜灵"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Buling Build / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Buling Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/buling-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卜灵",
+        "heading": "Buling Build",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Buling Build Healer",
+        "source": "https://wutheringlab.com/character/buling-build/"
+      }
+    ]
+  },
+  {
+    "id": "c58705d56ec47c65",
+    "members": [
+      "珂莱塔",
+      "灯灯",
+      "卜灵"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Buling Build / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Buling Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/buling-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卜灵",
+        "heading": "Buling Build",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Buling Build Healer",
+        "source": "https://wutheringlab.com/character/buling-build/"
+      }
+    ]
+  },
+  {
+    "id": "fe59cae2ca13893f",
+    "members": [
+      "今汐",
+      "长离",
+      "卜灵"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Buling Build / Jinhsi Build Main DPS Changli Build Sub DPS Buling Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/buling-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卜灵",
+        "heading": "Buling Build",
+        "quote": "Jinhsi Build Main DPS Changli Build Sub DPS Buling Build Healer",
+        "source": "https://wutheringlab.com/character/buling-build/"
+      }
+    ]
+  },
+  {
+    "id": "198bd7aab3751df3",
+    "members": [
+      "卡卡罗",
+      "吟霖",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Yinlin Best Team 1 / Calcharo Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/calcharo-build/",
+      "https://wutheringlab.com/character/verina-build/",
+      "https://wutheringlab.com/character/yinlin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      },
+      {
+        "character": "维里奈",
+        "heading": "Verina Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Healer",
+        "source": "https://wutheringlab.com/character/verina-build/"
+      },
+      {
+        "character": "吟霖",
+        "heading": "Yinlin Best Team 1",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/yinlin-build/"
+      }
+    ]
+  },
+  {
+    "id": "c71af2203bc13e34",
+    "members": [
+      "卡卡罗",
+      "吟霖",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Yinlin Best Team 1 / Calcharo Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/calcharo-build/",
+      "https://wutheringlab.com/character/yinlin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      },
+      {
+        "character": "吟霖",
+        "heading": "Yinlin Best Team 1",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/yinlin-build/"
+      }
+    ]
+  },
+  {
+    "id": "a608c2debc316d21",
+    "members": [
+      "卡卡罗",
+      "散华",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Verina Best Team / Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/calcharo-build/",
+      "https://wutheringlab.com/character/verina-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      },
+      {
+        "character": "维里奈",
+        "heading": "Verina Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Healer",
+        "source": "https://wutheringlab.com/character/verina-build/"
+      }
+    ]
+  },
+  {
+    "id": "69470dff6447557d",
+    "members": [
+      "卡卡罗",
+      "散华",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Calcharo Best Team / Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/calcharo-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      }
+    ]
+  },
+  {
+    "id": "eb0e2a99309a5a57",
+    "members": [
+      "卡卡罗",
+      "鉴心",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Verina Best Team / Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/calcharo-build/",
+      "https://wutheringlab.com/character/jianxin-build/",
+      "https://wutheringlab.com/character/verina-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      },
+      {
+        "character": "鉴心",
+        "heading": "Jianxin Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jianxin-build/"
+      },
+      {
+        "character": "维里奈",
+        "heading": "Verina Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Healer",
+        "source": "https://wutheringlab.com/character/verina-build/"
+      }
+    ]
+  },
+  {
+    "id": "f5facf2e1b30c20a",
+    "members": [
+      "卡卡罗",
+      "鉴心",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Jianxin Best Team / Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/calcharo-build/",
+      "https://wutheringlab.com/character/jianxin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      },
+      {
+        "character": "鉴心",
+        "heading": "Jianxin Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jianxin-build/"
+      }
+    ]
+  },
+  {
+    "id": "bb119beac37502a6",
+    "members": [
+      "椿",
+      "散华",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Camellya Best Team / Camellya Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/camellya-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "椿",
+        "heading": "Camellya Best Team",
+        "quote": "Camellya Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/camellya-build/"
+      }
+    ]
+  },
+  {
+    "id": "fa22632dc411e36e",
+    "members": [
+      "椿",
+      "散华",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Camellya Best Team / Camellya Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/camellya-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "椿",
+        "heading": "Camellya Best Team",
+        "quote": "Camellya Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/camellya-build/"
+      }
+    ]
+  },
+  {
+    "id": "75ea2508b7845acf",
+    "members": [
+      "椿",
+      "散华",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Camellya Best Team / Camellya Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/camellya-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "椿",
+        "heading": "Camellya Best Team",
+        "quote": "Camellya Build Main DPS Sanhua Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/camellya-build/"
+      }
+    ]
+  },
+  {
+    "id": "ea89bf7189f6f277",
+    "members": [
+      "漂泊者",
+      "坎特蕾拉",
+      "洛可可"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Cantarella Best Team / Rover Havoc Build Danjin Build Main DPS Cantarella Build Sub DPS 1 Roccia Build Sub DPS 2。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/cantarella-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "坎特蕾拉",
+        "heading": "Cantarella Best Team",
+        "quote": "Rover Havoc Build Danjin Build Main DPS Cantarella Build Sub DPS 1 Roccia Build Sub DPS 2",
+        "source": "https://wutheringlab.com/character/cantarella-build/"
+      }
+    ]
+  },
+  {
+    "id": "da52fabf3b2869ad",
+    "members": [
+      "丹瑾",
+      "坎特蕾拉",
+      "洛可可"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Cantarella Best Team / Rover Havoc Build Danjin Build Main DPS Cantarella Build Sub DPS 1 Roccia Build Sub DPS 2。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/cantarella-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "坎特蕾拉",
+        "heading": "Cantarella Best Team",
+        "quote": "Rover Havoc Build Danjin Build Main DPS Cantarella Build Sub DPS 1 Roccia Build Sub DPS 2",
+        "source": "https://wutheringlab.com/character/cantarella-build/"
+      }
+    ]
+  },
+  {
+    "id": "416c50260d18b8d9",
+    "members": [
+      "今汐",
+      "坎特蕾拉",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Build / Jinhsi Build Main DPS Cantarella Build Sub DPS Shorekeeper Build Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/cantarella-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "坎特蕾拉",
+        "heading": "Roccia Build",
+        "quote": "Jinhsi Build Main DPS Cantarella Build Sub DPS Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/cantarella-build/"
+      }
+    ]
+  },
+  {
+    "id": "fc972f575d00a49e",
+    "members": [
+      "今汐",
+      "坎特蕾拉",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Build / Jinhsi Build Main DPS Cantarella Build Sub DPS Shorekeeper Build Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/cantarella-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "坎特蕾拉",
+        "heading": "Roccia Build",
+        "quote": "Jinhsi Build Main DPS Cantarella Build Sub DPS Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/cantarella-build/"
+      }
+    ]
+  },
+  {
+    "id": "6100feeaab79b0f4",
+    "members": [
+      "珂莱塔",
+      "折枝",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Carlotta Best Team / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/carlotta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "珂莱塔",
+        "heading": "Carlotta Best Team",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/carlotta-build/"
+      }
+    ]
+  },
+  {
+    "id": "861217de8889ed56",
+    "members": [
+      "珂莱塔",
+      "折枝",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Carlotta Best Team / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/carlotta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "珂莱塔",
+        "heading": "Carlotta Best Team",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/carlotta-build/"
+      }
+    ]
+  },
+  {
+    "id": "12aa1eae1b067dab",
+    "members": [
+      "珂莱塔",
+      "折枝",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Carlotta Best Team / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/carlotta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "珂莱塔",
+        "heading": "Carlotta Best Team",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/carlotta-build/"
+      }
+    ]
+  },
+  {
+    "id": "59d15919247db3f1",
+    "members": [
+      "珂莱塔",
+      "桃祈",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Carlotta Best Team / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/carlotta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "珂莱塔",
+        "heading": "Carlotta Best Team",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/carlotta-build/"
+      }
+    ]
+  },
+  {
+    "id": "52022d22a2eb5038",
+    "members": [
+      "珂莱塔",
+      "桃祈",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Carlotta Best Team / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/carlotta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "珂莱塔",
+        "heading": "Carlotta Best Team",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/carlotta-build/"
+      }
+    ]
+  },
+  {
+    "id": "d60e3da059a7804f",
+    "members": [
+      "珂莱塔",
+      "桃祈",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Carlotta Best Team / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/carlotta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "珂莱塔",
+        "heading": "Carlotta Best Team",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/carlotta-build/"
+      }
+    ]
+  },
+  {
+    "id": "277ecda8aa034a11",
+    "members": [
+      "珂莱塔",
+      "灯灯",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Carlotta Best Team / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/carlotta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "珂莱塔",
+        "heading": "Carlotta Best Team",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/carlotta-build/"
+      }
+    ]
+  },
+  {
+    "id": "5e3376b317c3dd81",
+    "members": [
+      "珂莱塔",
+      "灯灯",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Carlotta Best Team / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/carlotta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "珂莱塔",
+        "heading": "Carlotta Best Team",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/carlotta-build/"
+      }
+    ]
+  },
+  {
+    "id": "700eaf850476d2c1",
+    "members": [
+      "珂莱塔",
+      "灯灯",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Carlotta Best Team / Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/carlotta-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "珂莱塔",
+        "heading": "Carlotta Best Team",
+        "quote": "Carlotta Build Main DPS Zhezhi Build Taoqi Build Lumi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/carlotta-build/"
+      }
+    ]
+  },
+  {
+    "id": "0ca3f29cb85afad6",
+    "members": [
+      "卡提希娅",
+      "夏空",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Cartethyia Best Team / Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/cartethyia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡提希娅",
+        "heading": "Cartethyia Best Team",
+        "quote": "Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer",
+        "source": "https://wutheringlab.com/character/cartethyia-build/"
+      }
+    ]
+  },
+  {
+    "id": "1b8bc6fad7ce33be",
+    "members": [
+      "卡提希娅",
+      "夏空",
+      "漂泊者"
+    ],
+    "rover_attribute": "气动",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Cartethyia Best Team / Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/cartethyia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡提希娅",
+        "heading": "Cartethyia Best Team",
+        "quote": "Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer",
+        "source": "https://wutheringlab.com/character/cartethyia-build/"
+      }
+    ]
+  },
+  {
+    "id": "e47a46eff36e8056",
+    "members": [
+      "卡提希娅",
+      "散华",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Cartethyia Best Team / Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/cartethyia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡提希娅",
+        "heading": "Cartethyia Best Team",
+        "quote": "Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer",
+        "source": "https://wutheringlab.com/character/cartethyia-build/"
+      }
+    ]
+  },
+  {
+    "id": "dcce321b5090c493",
+    "members": [
+      "卡提希娅",
+      "散华",
+      "漂泊者"
+    ],
+    "rover_attribute": "气动",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Cartethyia Best Team / Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/cartethyia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡提希娅",
+        "heading": "Cartethyia Best Team",
+        "quote": "Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer",
+        "source": "https://wutheringlab.com/character/cartethyia-build/"
+      }
+    ]
+  },
+  {
+    "id": "3956d360b79692ff",
+    "members": [
+      "卡提希娅",
+      "秋水",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Cartethyia Best Team / Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/cartethyia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡提希娅",
+        "heading": "Cartethyia Best Team",
+        "quote": "Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer",
+        "source": "https://wutheringlab.com/character/cartethyia-build/"
+      }
+    ]
+  },
+  {
+    "id": "db292604ee2264a8",
+    "members": [
+      "卡提希娅",
+      "秋水",
+      "漂泊者"
+    ],
+    "rover_attribute": "气动",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Cartethyia Best Team / Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/cartethyia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡提希娅",
+        "heading": "Cartethyia Best Team",
+        "quote": "Cartethyia Build Main DPS Ciaccona Build Sanhua Build Aalto Build Support/Sub DPS Shorekeeper Build Rover Aero Build Healer",
+        "source": "https://wutheringlab.com/character/cartethyia-build/"
+      }
+    ]
+  },
+  {
+    "id": "304dfda0840efd5c",
+    "members": [
+      "今汐",
+      "长离",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Changli Best Team / Jinhsi Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/changli-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "长离",
+        "heading": "Changli Best Team",
+        "quote": "Jinhsi Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/changli-build/"
+      }
+    ]
+  },
+  {
+    "id": "68d6cd667026defa",
+    "members": [
+      "今汐",
+      "长离",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Changli Best Team / Jinhsi Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/changli-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "长离",
+        "heading": "Changli Best Team",
+        "quote": "Jinhsi Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/changli-build/"
+      }
+    ]
+  },
+  {
+    "id": "575410902b0c0f63",
+    "members": [
+      "安可",
+      "长离",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Changli Best Team / Encore Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/changli-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "长离",
+        "heading": "Changli Best Team",
+        "quote": "Encore Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/changli-build/"
+      }
+    ]
+  },
+  {
+    "id": "c0f10b7b02147068",
+    "members": [
+      "安可",
+      "长离",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Changli Best Team / Encore Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/changli-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "长离",
+        "heading": "Changli Best Team",
+        "quote": "Encore Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/changli-build/"
+      }
+    ]
+  },
+  {
+    "id": "a7d9e9b0e04fe8b5",
+    "members": [
+      "炽霞",
+      "长离",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Changli Best Team / Chixia Build DPS 1 Changli Build DPS 2 Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/changli-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "长离",
+        "heading": "Changli Best Team",
+        "quote": "Chixia Build DPS 1 Changli Build DPS 2 Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/changli-build/"
+      }
+    ]
+  },
+  {
+    "id": "202c1dd761de5a51",
+    "members": [
+      "炽霞",
+      "长离",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Changli Best Team / Chixia Build DPS 1 Changli Build DPS 2 Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/changli-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "长离",
+        "heading": "Changli Best Team",
+        "quote": "Chixia Build DPS 1 Changli Build DPS 2 Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/changli-build/"
+      }
+    ]
+  },
+  {
+    "id": "f6f44f579ed8890d",
+    "members": [
+      "卡提希娅",
+      "夏空",
+      "千咲"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Chisa Best Team I / Cartethyia Build Main DPS Ciaccona Build Sub DPS Chisa Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/chisa-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "千咲",
+        "heading": "Chisa Best Team I",
+        "quote": "Cartethyia Build Main DPS Ciaccona Build Sub DPS Chisa Build Healer",
+        "source": "https://wutheringlab.com/character/chisa-build/"
+      }
+    ]
+  },
+  {
+    "id": "68007369e24ec87b",
+    "members": [
+      "炽霞",
+      "漂泊者",
+      "维里奈"
+    ],
+    "rover_attribute": "衍射",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Chixia Best Team / Chixia Build Main DPS Rover Build Taoqi Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/chixia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "炽霞",
+        "heading": "Chixia Best Team",
+        "quote": "Chixia Build Main DPS Rover Build Taoqi Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/chixia-build/"
+      }
+    ]
+  },
+  {
+    "id": "1de5116ab973d686",
+    "members": [
+      "炽霞",
+      "漂泊者",
+      "白芷"
+    ],
+    "rover_attribute": "衍射",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Chixia Best Team / Chixia Build Main DPS Rover Build Taoqi Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/chixia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "炽霞",
+        "heading": "Chixia Best Team",
+        "quote": "Chixia Build Main DPS Rover Build Taoqi Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/chixia-build/"
+      }
+    ]
+  },
+  {
+    "id": "8ad8a26cfaa927e8",
+    "members": [
+      "炽霞",
+      "桃祈",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Chixia Best Team / Chixia Build Main DPS Rover Build Taoqi Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/chixia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "炽霞",
+        "heading": "Chixia Best Team",
+        "quote": "Chixia Build Main DPS Rover Build Taoqi Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/chixia-build/"
+      }
+    ]
+  },
+  {
+    "id": "33420bca671cd785",
+    "members": [
+      "炽霞",
+      "桃祈",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Chixia Best Team / Chixia Build Main DPS Rover Build Taoqi Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/chixia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "炽霞",
+        "heading": "Chixia Best Team",
+        "quote": "Chixia Build Main DPS Rover Build Taoqi Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/chixia-build/"
+      }
+    ]
+  },
+  {
+    "id": "8f07b8b83eb6aa4a",
+    "members": [
+      "炽霞",
+      "秧秧",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Yangyang Premium Best Team / Chixia Build Main DPS Yangyang Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/chixia-build/",
+      "https://wutheringlab.com/character/yangyang-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "炽霞",
+        "heading": "Chixia Best Team",
+        "quote": "Chixia Build Main DPS Rover Build Taoqi Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/chixia-build/"
+      },
+      {
+        "character": "秧秧",
+        "heading": "Yangyang Premium Best Team",
+        "quote": "Chixia Build Main DPS Yangyang Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/yangyang-build/"
+      }
+    ]
+  },
+  {
+    "id": "935c8d51d67cfc5b",
+    "members": [
+      "炽霞",
+      "秧秧",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Yangyang Premium Best Team / Chixia Build Main DPS Yangyang Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/chixia-build/",
+      "https://wutheringlab.com/character/yangyang-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "炽霞",
+        "heading": "Chixia Best Team",
+        "quote": "Chixia Build Main DPS Rover Build Taoqi Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/chixia-build/"
+      },
+      {
+        "character": "秧秧",
+        "heading": "Yangyang Premium Best Team",
+        "quote": "Chixia Build Main DPS Yangyang Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/yangyang-build/"
+      }
+    ]
+  },
+  {
+    "id": "3d79cecc66331ce2",
+    "members": [
+      "菲比",
+      "夏空",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Ciaccona Best Team I / Phoebe Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/ciaccona-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "夏空",
+        "heading": "Ciaccona Best Team I",
+        "quote": "Phoebe Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer",
+        "source": "https://wutheringlab.com/character/ciaccona-build/"
+      }
+    ]
+  },
+  {
+    "id": "20bc2771a8de2177",
+    "members": [
+      "菲比",
+      "夏空",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Ciaccona Best Team I / Phoebe Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/ciaccona-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "夏空",
+        "heading": "Ciaccona Best Team I",
+        "quote": "Phoebe Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer",
+        "source": "https://wutheringlab.com/character/ciaccona-build/"
+      }
+    ]
+  },
+  {
+    "id": "1fdf29c0665c2cd1",
+    "members": [
+      "菲比",
+      "夏空",
+      "漂泊者"
+    ],
+    "rover_attribute": "衍射",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Ciaccona Best Team I / Phoebe Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/ciaccona-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "夏空",
+        "heading": "Ciaccona Best Team I",
+        "quote": "Phoebe Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer",
+        "source": "https://wutheringlab.com/character/ciaccona-build/"
+      }
+    ]
+  },
+  {
+    "id": "1616af2b379a53e6",
+    "members": [
+      "赞妮",
+      "夏空",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Ciaccona Best Team II / Zani Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/ciaccona-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "夏空",
+        "heading": "Ciaccona Best Team II",
+        "quote": "Zani Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer",
+        "source": "https://wutheringlab.com/character/ciaccona-build/"
+      }
+    ]
+  },
+  {
+    "id": "ba43d26d6663aae1",
+    "members": [
+      "赞妮",
+      "夏空",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Ciaccona Best Team II / Zani Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/ciaccona-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "夏空",
+        "heading": "Ciaccona Best Team II",
+        "quote": "Zani Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer",
+        "source": "https://wutheringlab.com/character/ciaccona-build/"
+      }
+    ]
+  },
+  {
+    "id": "8a262f590c3789af",
+    "members": [
+      "赞妮",
+      "夏空",
+      "漂泊者"
+    ],
+    "rover_attribute": "衍射",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Ciaccona Best Team II / Zani Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/ciaccona-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "夏空",
+        "heading": "Ciaccona Best Team II",
+        "quote": "Zani Build Main DPS Ciaccona Build Support Shorekeeper Build Verina Build Rover Build Healer",
+        "source": "https://wutheringlab.com/character/ciaccona-build/"
+      }
+    ]
+  },
+  {
+    "id": "d9b1db10a8a03fc2",
+    "members": [
+      "丹瑾",
+      "莫特斐",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Danjin Best Team / Danjin Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/danjin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "丹瑾",
+        "heading": "Danjin Best Team",
+        "quote": "Danjin Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/danjin-build/"
+      }
+    ]
+  },
+  {
+    "id": "2d7f9d05df1a32bb",
+    "members": [
+      "丹瑾",
+      "莫特斐",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Danjin Best Team / Danjin Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/danjin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "丹瑾",
+        "heading": "Danjin Best Team",
+        "quote": "Danjin Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/danjin-build/"
+      }
+    ]
+  },
+  {
+    "id": "f28d7b168c555079",
+    "members": [
+      "丹瑾",
+      "桃祈",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Danjin Best Team 2 / Danjin Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/danjin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "丹瑾",
+        "heading": "Danjin Best Team 2",
+        "quote": "Danjin Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/danjin-build/"
+      }
+    ]
+  },
+  {
+    "id": "ec75a2b1a99cb5c3",
+    "members": [
+      "丹瑾",
+      "桃祈",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Danjin Best Team 2 / Danjin Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/danjin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "丹瑾",
+        "heading": "Danjin Best Team 2",
+        "quote": "Danjin Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/danjin-build/"
+      }
+    ]
+  },
+  {
+    "id": "503010136d2673f9",
+    "members": [
+      "陆·赫斯",
+      "达妮娅",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Denia Best Teams – Tune Strain Team / Luuk Herssen Build Main DPS Denia Build Sub DPS Mornye Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/denia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "达妮娅",
+        "heading": "Denia Best Teams – Tune Strain Team",
+        "quote": "Luuk Herssen Build Main DPS Denia Build Sub DPS Mornye Build Healer",
+        "source": "https://wutheringlab.com/character/denia-build/"
+      }
+    ]
+  },
+  {
+    "id": "2262d54d17d32e02",
+    "members": [
+      "爱弥斯",
+      "达妮娅",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Denia Best Teams – Fusion Burst Team / Aemeath Build Main DPS Denia Build Sub DPS Mornye Build Chisa Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/denia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "达妮娅",
+        "heading": "Denia Best Teams – Fusion Burst Team",
+        "quote": "Aemeath Build Main DPS Denia Build Sub DPS Mornye Build Chisa Build Healer",
+        "source": "https://wutheringlab.com/character/denia-build/"
+      }
+    ]
+  },
+  {
+    "id": "019b2577019c438d",
+    "members": [
+      "爱弥斯",
+      "达妮娅",
+      "千咲"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Denia Best Teams – Fusion Burst Team / Aemeath Build Main DPS Denia Build Sub DPS Mornye Build Chisa Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/denia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "达妮娅",
+        "heading": "Denia Best Teams – Fusion Burst Team",
+        "quote": "Aemeath Build Main DPS Denia Build Sub DPS Mornye Build Chisa Build Healer",
+        "source": "https://wutheringlab.com/character/denia-build/"
+      }
+    ]
+  },
+  {
+    "id": "d42a1c41d73b54f6",
+    "members": [
+      "安可",
+      "散华",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Encore Best Team / Encore Build Main DPS Sanhua Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/encore-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "安可",
+        "heading": "Encore Best Team",
+        "quote": "Encore Build Main DPS Sanhua Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/encore-build/"
+      }
+    ]
+  },
+  {
+    "id": "9a9692c511a2a731",
+    "members": [
+      "安可",
+      "散华",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Encore Best Team / Encore Build Main DPS Sanhua Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/encore-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "安可",
+        "heading": "Encore Best Team",
+        "quote": "Encore Build Main DPS Sanhua Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/encore-build/"
+      }
+    ]
+  },
+  {
+    "id": "9eb99789eba26307",
+    "members": [
+      "嘉贝莉娜",
+      "仇远",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Qiuyuan Best Team I / Galbrena Build Main DPS Qiuyuan Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/galbrena-build/",
+      "https://wutheringlab.com/character/qiuyuan-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "嘉贝莉娜",
+        "heading": "Galbrena Best Team I",
+        "quote": "Galbrena Build Main DPS Qiuyuan Build Lupa Build Phrolova Build Iuno Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/galbrena-build/"
+      },
+      {
+        "character": "仇远",
+        "heading": "Qiuyuan Best Team I",
+        "quote": "Galbrena Build Main DPS Qiuyuan Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/qiuyuan-build/"
+      }
+    ]
+  },
+  {
+    "id": "a98cba0c9668721a",
+    "members": [
+      "嘉贝莉娜",
+      "露帕",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Galbrena Best Team I / Galbrena Build Main DPS Qiuyuan Build Lupa Build Phrolova Build Iuno Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/galbrena-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "嘉贝莉娜",
+        "heading": "Galbrena Best Team I",
+        "quote": "Galbrena Build Main DPS Qiuyuan Build Lupa Build Phrolova Build Iuno Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/galbrena-build/"
+      }
+    ]
+  },
+  {
+    "id": "110a148be4907c07",
+    "members": [
+      "嘉贝莉娜",
+      "弗洛洛",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Galbrena Best Team I / Galbrena Build Main DPS Qiuyuan Build Lupa Build Phrolova Build Iuno Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/galbrena-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "嘉贝莉娜",
+        "heading": "Galbrena Best Team I",
+        "quote": "Galbrena Build Main DPS Qiuyuan Build Lupa Build Phrolova Build Iuno Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/galbrena-build/"
+      }
+    ]
+  },
+  {
+    "id": "4ccc1796b8c4d741",
+    "members": [
+      "嘉贝莉娜",
+      "尤诺",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Galbrena Best Team I / Galbrena Build Main DPS Qiuyuan Build Lupa Build Phrolova Build Iuno Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/galbrena-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "嘉贝莉娜",
+        "heading": "Galbrena Best Team I",
+        "quote": "Galbrena Build Main DPS Qiuyuan Build Lupa Build Phrolova Build Iuno Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/galbrena-build/"
+      }
+    ]
+  },
+  {
+    "id": "336d82c8f0b6e3c5",
+    "members": [
+      "嘉贝莉娜",
+      "弗洛洛",
+      "坎特蕾拉"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Galbrena Best Team II / Galbrena Build Main DPS Phrolova Build Sub DPS Cantarella Build Sub DPS。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/galbrena-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "嘉贝莉娜",
+        "heading": "Galbrena Best Team II",
+        "quote": "Galbrena Build Main DPS Phrolova Build Sub DPS Cantarella Build Sub DPS",
+        "source": "https://wutheringlab.com/character/galbrena-build/"
+      }
+    ]
+  },
+  {
+    "id": "511279c197313af1",
+    "members": [
+      "绯雪",
+      "琳奈",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Hiyuki Best Teams / Hiyuki Build Main DPS Lynae Build Sub DPS Mornye Build Chisa Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/hiyuki-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "绯雪",
+        "heading": "Hiyuki Best Teams",
+        "quote": "Hiyuki Build Main DPS Lynae Build Sub DPS Mornye Build Chisa Build Healer",
+        "source": "https://wutheringlab.com/character/hiyuki-build/"
+      }
+    ]
+  },
+  {
+    "id": "b0657846ead8229f",
+    "members": [
+      "绯雪",
+      "琳奈",
+      "千咲"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Hiyuki Best Teams / Hiyuki Build Main DPS Lynae Build Sub DPS Mornye Build Chisa Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/hiyuki-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "绯雪",
+        "heading": "Hiyuki Best Teams",
+        "quote": "Hiyuki Build Main DPS Lynae Build Sub DPS Mornye Build Chisa Build Healer",
+        "source": "https://wutheringlab.com/character/hiyuki-build/"
+      }
+    ]
+  },
+  {
+    "id": "c4ad49dfd67bea15",
+    "members": [
+      "心",
+      "漂泊者",
+      "穗穗"
+    ],
+    "rover_attribute": "导电",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Hsin Best Teams / Hsin Build Main DPS Rover Electro Build Chisa Build Sub DPS Suisui Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/hsin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "心",
+        "heading": "Hsin Best Teams",
+        "quote": "Hsin Build Main DPS Rover Electro Build Chisa Build Sub DPS Suisui Build Healer",
+        "source": "https://wutheringlab.com/character/hsin-build/"
+      }
+    ]
+  },
+  {
+    "id": "d5ac513adea5a511",
+    "members": [
+      "心",
+      "千咲",
+      "穗穗"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Hsin Best Teams / Hsin Build Main DPS Rover Electro Build Chisa Build Sub DPS Suisui Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/hsin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "心",
+        "heading": "Hsin Best Teams",
+        "quote": "Hsin Build Main DPS Rover Electro Build Chisa Build Sub DPS Suisui Build Healer",
+        "source": "https://wutheringlab.com/character/hsin-build/"
+      }
+    ]
+  },
+  {
+    "id": "3c84dc63397a4b06",
+    "members": [
+      "心",
+      "漂泊者",
+      "卜灵"
+    ],
+    "rover_attribute": "导电",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Suisui Build / Hsin Build Main DPS Rover Electro Build Sub DPS Buling Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/hsin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "心",
+        "heading": "Suisui Build",
+        "quote": "Hsin Build Main DPS Rover Electro Build Sub DPS Buling Build Healer",
+        "source": "https://wutheringlab.com/character/hsin-build/"
+      }
+    ]
+  },
+  {
+    "id": "ade796d1b246b98e",
+    "members": [
+      "奥古斯塔",
+      "尤诺",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Iuno Best Team I / Augusta Build Main DPS Iuno Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/iuno-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "尤诺",
+        "heading": "Iuno Best Team I",
+        "quote": "Augusta Build Main DPS Iuno Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/iuno-build/"
+      }
+    ]
+  },
+  {
+    "id": "8e31e57e18679256",
+    "members": [
+      "忌炎",
+      "尤诺",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Iuno Best Team II / Jiyan Build Main DPS Iuno Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/iuno-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "尤诺",
+        "heading": "Iuno Best Team II",
+        "quote": "Jiyan Build Main DPS Iuno Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/iuno-build/"
+      }
+    ]
+  },
+  {
+    "id": "d0bdd31598932baa",
+    "members": [
+      "尤诺",
+      "夏空",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Iuno Main DPS Team / Iuno Build Main DPS Ciaccona Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/iuno-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "尤诺",
+        "heading": "Iuno Main DPS Team",
+        "quote": "Iuno Build Main DPS Ciaccona Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/iuno-build/"
+      }
+    ]
+  },
+  {
+    "id": "0840e6495f221aeb",
+    "members": [
+      "景燃",
+      "尤诺",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Jingran Best Teams / Jingran Build Main DPS Iuno Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jingran-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "景燃",
+        "heading": "Jingran Best Teams",
+        "quote": "Jingran Build Main DPS Iuno Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/jingran-build/"
+      }
+    ]
+  },
+  {
+    "id": "ba55e04a2b9c1673",
+    "members": [
+      "景燃",
+      "露帕",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Shorekeeper Build / Jingran Build Main DPS Lupa Build Sub DPS Mornye Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jingran-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "景燃",
+        "heading": "Shorekeeper Build",
+        "quote": "Jingran Build Main DPS Lupa Build Sub DPS Mornye Build Healer",
+        "source": "https://wutheringlab.com/character/jingran-build/"
+      }
+    ]
+  },
+  {
+    "id": "533d3037b9cc5d2f",
+    "members": [
+      "景燃",
+      "露帕",
+      "布兰特"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Mornye Build / Jingran Build Main DPS Lupa Build Sub DPS Brant Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jingran-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "景燃",
+        "heading": "Mornye Build",
+        "quote": "Jingran Build Main DPS Lupa Build Sub DPS Brant Build Healer",
+        "source": "https://wutheringlab.com/character/jingran-build/"
+      }
+    ]
+  },
+  {
+    "id": "59503b7b7acf02a7",
+    "members": [
+      "景燃",
+      "莫特斐",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Brant Build / Jingran Build Main DPS Mortefi Build Sub DPS Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jingran-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "景燃",
+        "heading": "Brant Build",
+        "quote": "Jingran Build Main DPS Mortefi Build Sub DPS Verina Build Healer",
+        "source": "https://wutheringlab.com/character/jingran-build/"
+      }
+    ]
+  },
+  {
+    "id": "80adfd987d73c028",
+    "members": [
+      "今汐",
+      "吟霖",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Yinlin Best Team 3 / Jinhsi Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jinhsi-build/",
+      "https://wutheringlab.com/character/yinlin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "今汐",
+        "heading": "Jinhsi Best Team 1",
+        "quote": "Jinhsi Build Main DPS Yinlin Build Mortefi Build Yuanwu Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jinhsi-build/"
+      },
+      {
+        "character": "吟霖",
+        "heading": "Yinlin Best Team 3",
+        "quote": "Jinhsi Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/yinlin-build/"
+      }
+    ]
+  },
+  {
+    "id": "f24ebf9067a68a16",
+    "members": [
+      "今汐",
+      "吟霖",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Yinlin Best Team 3 / Jinhsi Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jinhsi-build/",
+      "https://wutheringlab.com/character/yinlin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "今汐",
+        "heading": "Jinhsi Best Team 1",
+        "quote": "Jinhsi Build Main DPS Yinlin Build Mortefi Build Yuanwu Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jinhsi-build/"
+      },
+      {
+        "character": "吟霖",
+        "heading": "Yinlin Best Team 3",
+        "quote": "Jinhsi Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/yinlin-build/"
+      }
+    ]
+  },
+  {
+    "id": "c86e5492c0cf8f11",
+    "members": [
+      "今汐",
+      "莫特斐",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Mortefi Premium Best Team 2 / Jinhsi Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jinhsi-build/",
+      "https://wutheringlab.com/character/mortefi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "今汐",
+        "heading": "Jinhsi Best Team 1",
+        "quote": "Jinhsi Build Main DPS Yinlin Build Mortefi Build Yuanwu Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jinhsi-build/"
+      },
+      {
+        "character": "莫特斐",
+        "heading": "Mortefi Premium Best Team 2",
+        "quote": "Jinhsi Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/mortefi-build/"
+      }
+    ]
+  },
+  {
+    "id": "ef116e68ac87508f",
+    "members": [
+      "今汐",
+      "莫特斐",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Mortefi Premium Best Team 2 / Jinhsi Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jinhsi-build/",
+      "https://wutheringlab.com/character/mortefi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "今汐",
+        "heading": "Jinhsi Best Team 1",
+        "quote": "Jinhsi Build Main DPS Yinlin Build Mortefi Build Yuanwu Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jinhsi-build/"
+      },
+      {
+        "character": "莫特斐",
+        "heading": "Mortefi Premium Best Team 2",
+        "quote": "Jinhsi Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/mortefi-build/"
+      }
+    ]
+  },
+  {
+    "id": "89280f0373952ffa",
+    "members": [
+      "今汐",
+      "渊武",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Yuanwu Best Team 1 / Jinhsi Build Main DPS Yuanwu Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jinhsi-build/",
+      "https://wutheringlab.com/character/yuanwu-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "今汐",
+        "heading": "Jinhsi Best Team 1",
+        "quote": "Jinhsi Build Main DPS Yinlin Build Mortefi Build Yuanwu Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jinhsi-build/"
+      },
+      {
+        "character": "渊武",
+        "heading": "Yuanwu Best Team 1",
+        "quote": "Jinhsi Build Main DPS Yuanwu Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/yuanwu-build/"
+      }
+    ]
+  },
+  {
+    "id": "69e43f780353f9e7",
+    "members": [
+      "今汐",
+      "渊武",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Yuanwu Best Team 1 / Jinhsi Build Main DPS Yuanwu Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jinhsi-build/",
+      "https://wutheringlab.com/character/yuanwu-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "今汐",
+        "heading": "Jinhsi Best Team 1",
+        "quote": "Jinhsi Build Main DPS Yinlin Build Mortefi Build Yuanwu Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jinhsi-build/"
+      },
+      {
+        "character": "渊武",
+        "heading": "Yuanwu Best Team 1",
+        "quote": "Jinhsi Build Main DPS Yuanwu Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/yuanwu-build/"
+      }
+    ]
+  },
+  {
+    "id": "2a6fdc1ad0d2f40e",
+    "members": [
+      "今汐",
+      "桃祈",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Jinhsi Best Team 2 / Jinhsi Build Main DPS Taoqi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jinhsi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "今汐",
+        "heading": "Jinhsi Best Team 2",
+        "quote": "Jinhsi Build Main DPS Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jinhsi-build/"
+      }
+    ]
+  },
+  {
+    "id": "37807c991dc12d26",
+    "members": [
+      "今汐",
+      "桃祈",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Jinhsi Best Team 2 / Jinhsi Build Main DPS Taoqi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jinhsi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "今汐",
+        "heading": "Jinhsi Best Team 2",
+        "quote": "Jinhsi Build Main DPS Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jinhsi-build/"
+      }
+    ]
+  },
+  {
+    "id": "a8d32bed7b6ff6cc",
+    "members": [
+      "今汐",
+      "忌炎",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Jinhsi Best Team 3 (Double Core) / Jinhsi Build DPS 1 Jiyan Build Calcharo Build Encore Build DPS 2 Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jinhsi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "今汐",
+        "heading": "Jinhsi Best Team 3 (Double Core)",
+        "quote": "Jinhsi Build DPS 1 Jiyan Build Calcharo Build Encore Build DPS 2 Verina Build Healer",
+        "source": "https://wutheringlab.com/character/jinhsi-build/"
+      }
+    ]
+  },
+  {
+    "id": "d47e2b1d930605bb",
+    "members": [
+      "今汐",
+      "卡卡罗",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Jinhsi Best Team 3 (Double Core) / Jinhsi Build DPS 1 Jiyan Build Calcharo Build Encore Build DPS 2 Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jinhsi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "今汐",
+        "heading": "Jinhsi Best Team 3 (Double Core)",
+        "quote": "Jinhsi Build DPS 1 Jiyan Build Calcharo Build Encore Build DPS 2 Verina Build Healer",
+        "source": "https://wutheringlab.com/character/jinhsi-build/"
+      }
+    ]
+  },
+  {
+    "id": "5b8f475ff2fb7ec7",
+    "members": [
+      "今汐",
+      "安可",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Jinhsi Best Team 3 (Double Core) / Jinhsi Build DPS 1 Jiyan Build Calcharo Build Encore Build DPS 2 Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jinhsi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "今汐",
+        "heading": "Jinhsi Best Team 3 (Double Core)",
+        "quote": "Jinhsi Build DPS 1 Jiyan Build Calcharo Build Encore Build DPS 2 Verina Build Healer",
+        "source": "https://wutheringlab.com/character/jinhsi-build/"
+      }
+    ]
+  },
+  {
+    "id": "59edb7755d3e9353",
+    "members": [
+      "忌炎",
+      "莫特斐",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Mortefi Premium Best Team / Jiyan Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jiyan-build/",
+      "https://wutheringlab.com/character/mortefi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "忌炎",
+        "heading": "Jiyan Best Team",
+        "quote": "Jiyan Build Main DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jiyan-build/"
+      },
+      {
+        "character": "莫特斐",
+        "heading": "Mortefi Premium Best Team",
+        "quote": "Jiyan Build Main DPS Mortefi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/mortefi-build/"
+      }
+    ]
+  },
+  {
+    "id": "c3854683dd652d81",
+    "members": [
+      "忌炎",
+      "散华",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Jiyan Best Team / Jiyan Build Main DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/jiyan-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "忌炎",
+        "heading": "Jiyan Best Team",
+        "quote": "Jiyan Build Main DPS Mortefi Build Sanhua Build Aalto Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jiyan-build/"
+      }
+    ]
+  },
+  {
+    "id": "1eb49482d76e743f",
+    "members": [
+      "凌阳",
+      "散华",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Lingyang Best Team 1 / Lingyang Build Main DPS Sanhua Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lingyang-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "凌阳",
+        "heading": "Lingyang Best Team 1",
+        "quote": "Lingyang Build Main DPS Sanhua Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/lingyang-build/"
+      }
+    ]
+  },
+  {
+    "id": "45661edcb96fa24d",
+    "members": [
+      "凌阳",
+      "散华",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Lingyang Best Team 1 / Lingyang Build Main DPS Sanhua Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lingyang-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "凌阳",
+        "heading": "Lingyang Best Team 1",
+        "quote": "Lingyang Build Main DPS Sanhua Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/lingyang-build/"
+      }
+    ]
+  },
+  {
+    "id": "eb0bf890e347c340",
+    "members": [
+      "凌阳",
+      "桃祈",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Lingyang Best Team 1 / Lingyang Build Main DPS Sanhua Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lingyang-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "凌阳",
+        "heading": "Lingyang Best Team 1",
+        "quote": "Lingyang Build Main DPS Sanhua Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/lingyang-build/"
+      }
+    ]
+  },
+  {
+    "id": "178b431199bc337f",
+    "members": [
+      "凌阳",
+      "桃祈",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Lingyang Best Team 1 / Lingyang Build Main DPS Sanhua Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lingyang-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "凌阳",
+        "heading": "Lingyang Best Team 1",
+        "quote": "Lingyang Build Main DPS Sanhua Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/lingyang-build/"
+      }
+    ]
+  },
+  {
+    "id": "711be75646c820f1",
+    "members": [
+      "绯雪",
+      "洛瑟菈",
+      "千咲"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Lucilla Best Teams / Hiyuki Build Main DPS Lucilla Build Sub DPS Chisa Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lucilla-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛瑟菈",
+        "heading": "Lucilla Best Teams",
+        "quote": "Hiyuki Build Main DPS Lucilla Build Sub DPS Chisa Build Healer",
+        "source": "https://wutheringlab.com/character/lucilla-build/"
+      }
+    ]
+  },
+  {
+    "id": "61e679d034a758e0",
+    "members": [
+      "西格莉卡",
+      "洛瑟菈",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Chisa Build / Sigrika Build Main DPS Lucilla Build Sub DPS Shorekeeper Build Mornye Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lucilla-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛瑟菈",
+        "heading": "Chisa Build",
+        "quote": "Sigrika Build Main DPS Lucilla Build Sub DPS Shorekeeper Build Mornye Build Healer",
+        "source": "https://wutheringlab.com/character/lucilla-build/"
+      }
+    ]
+  },
+  {
+    "id": "41b7be7fff88c163",
+    "members": [
+      "西格莉卡",
+      "洛瑟菈",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Chisa Build / Sigrika Build Main DPS Lucilla Build Sub DPS Shorekeeper Build Mornye Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lucilla-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛瑟菈",
+        "heading": "Chisa Build",
+        "quote": "Sigrika Build Main DPS Lucilla Build Sub DPS Shorekeeper Build Mornye Build Healer",
+        "source": "https://wutheringlab.com/character/lucilla-build/"
+      }
+    ]
+  },
+  {
+    "id": "82d4b72799aa7721",
+    "members": [
+      "露西",
+      "丽贝卡",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Rebecca Best Teams / Lucy Build Main DPS Rebecca Build Sub DPS Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lucy-build/",
+      "https://wutheringlab.com/character/rebecca-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "露西",
+        "heading": "Lucy Best Teams",
+        "quote": "Lucy Build Main DPS Rebecca Build Sub DPS Verina Build Healer",
+        "source": "https://wutheringlab.com/character/lucy-build/"
+      },
+      {
+        "character": "丽贝卡",
+        "heading": "Rebecca Best Teams",
+        "quote": "Lucy Build Main DPS Rebecca Build Sub DPS Verina Build Healer",
+        "source": "https://wutheringlab.com/character/rebecca-build/"
+      }
+    ]
+  },
+  {
+    "id": "6ec09d6b932a9146",
+    "members": [
+      "布兰特",
+      "露帕",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Lupa Double Fusion Team I / Brant Build Main DPS Lupa Build DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lupa-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "露帕",
+        "heading": "Lupa Double Fusion Team I",
+        "quote": "Brant Build Main DPS Lupa Build DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/lupa-build/"
+      }
+    ]
+  },
+  {
+    "id": "b760f9a5889a886c",
+    "members": [
+      "安可",
+      "露帕",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Lupa Double Fusion Team II / Encore Build Main DPS Lupa Build DPS Shorekeeper Build DPS。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lupa-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "露帕",
+        "heading": "Lupa Double Fusion Team II",
+        "quote": "Encore Build Main DPS Lupa Build DPS Shorekeeper Build DPS",
+        "source": "https://wutheringlab.com/character/lupa-build/"
+      }
+    ]
+  },
+  {
+    "id": "02dee2412f83c7ef",
+    "members": [
+      "陆·赫斯",
+      "琳奈",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Luuk Herssen Best Teams / Luuk Herssen Build Main DPS Lynae Build Sub DPS Mornye Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/luuk-herssen-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "陆·赫斯",
+        "heading": "Luuk Herssen Best Teams",
+        "quote": "Luuk Herssen Build Main DPS Lynae Build Sub DPS Mornye Build Healer",
+        "source": "https://wutheringlab.com/character/luuk-herssen-build/"
+      }
+    ]
+  },
+  {
+    "id": "04c53460516df9c9",
+    "members": [
+      "陆·赫斯",
+      "散华",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Mornye Build / Luuk Herssen Build Main DPS Sanhua Build Support Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/luuk-herssen-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "陆·赫斯",
+        "heading": "Mornye Build",
+        "quote": "Luuk Herssen Build Main DPS Sanhua Build Support Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/luuk-herssen-build/"
+      }
+    ]
+  },
+  {
+    "id": "1f5071d6d96e04e9",
+    "members": [
+      "尤诺",
+      "琳奈",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Lynae Best Teams / Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lynae-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "琳奈",
+        "heading": "Lynae Best Teams",
+        "quote": "Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/lynae-build/"
+      }
+    ]
+  },
+  {
+    "id": "fa68051f8ce62114",
+    "members": [
+      "相里要",
+      "琳奈",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Lynae Best Teams / Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lynae-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "琳奈",
+        "heading": "Lynae Best Teams",
+        "quote": "Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/lynae-build/"
+      }
+    ]
+  },
+  {
+    "id": "8661c28320d809cd",
+    "members": [
+      "卡卡罗",
+      "琳奈",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Lynae Best Teams / Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/lynae-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "琳奈",
+        "heading": "Lynae Best Teams",
+        "quote": "Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/lynae-build/"
+      }
+    ]
+  },
+  {
+    "id": "355a05530915e093",
+    "members": [
+      "尤诺",
+      "琳奈",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Mornye Best Teams / Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Mornye Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/mornye-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "莫宁",
+        "heading": "Mornye Best Teams",
+        "quote": "Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Mornye Build Healer",
+        "source": "https://wutheringlab.com/character/mornye-build/"
+      }
+    ]
+  },
+  {
+    "id": "967cc2f2ef80fb33",
+    "members": [
+      "相里要",
+      "琳奈",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Mornye Best Teams / Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Mornye Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/mornye-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "莫宁",
+        "heading": "Mornye Best Teams",
+        "quote": "Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Mornye Build Healer",
+        "source": "https://wutheringlab.com/character/mornye-build/"
+      }
+    ]
+  },
+  {
+    "id": "02058ce32539dcea",
+    "members": [
+      "卡卡罗",
+      "琳奈",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Mornye Best Teams / Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Mornye Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/mornye-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "莫宁",
+        "heading": "Mornye Best Teams",
+        "quote": "Iuno Build Xiangli Yao Build Calcharo Build Main DPS Lynae Build Sub DPS Mornye Build Healer",
+        "source": "https://wutheringlab.com/character/mornye-build/"
+      }
+    ]
+  },
+  {
+    "id": "46c8d65ae8bd30b6",
+    "members": [
+      "菲比",
+      "漂泊者",
+      "守岸人"
+    ],
+    "rover_attribute": "衍射",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Rover Best Team I / Phoebe Build Main DPS Rover Build Support Shorekeeper Build Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/phoebe-build/",
+      "https://wutheringlab.com/character/rover-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "菲比",
+        "heading": "Phoebe Best Team I",
+        "quote": "Phoebe Build Main DPS Rover Build Support Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/phoebe-build/"
+      },
+      {
+        "character": "漂泊者",
+        "heading": "Rover Best Team I",
+        "quote": "Phoebe Build Main DPS Rover Build Support Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/rover-build/"
+      }
+    ]
+  },
+  {
+    "id": "f3c652a717808a91",
+    "members": [
+      "菲比",
+      "漂泊者",
+      "维里奈"
+    ],
+    "rover_attribute": "衍射",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Rover Best Team I / Phoebe Build Main DPS Rover Build Support Shorekeeper Build Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/phoebe-build/",
+      "https://wutheringlab.com/character/rover-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "菲比",
+        "heading": "Phoebe Best Team I",
+        "quote": "Phoebe Build Main DPS Rover Build Support Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/phoebe-build/"
+      },
+      {
+        "character": "漂泊者",
+        "heading": "Rover Best Team I",
+        "quote": "Phoebe Build Main DPS Rover Build Support Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/rover-build/"
+      }
+    ]
+  },
+  {
+    "id": "86922f83531ef4fe",
+    "members": [
+      "赞妮",
+      "菲比",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Zani Best Team / Zani Build Main DPS Phoebe Build Rover Build Support Shorekeeper Build Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/phoebe-build/",
+      "https://wutheringlab.com/character/zani-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "菲比",
+        "heading": "Phoebe Best Team II (Phoebe Support)",
+        "quote": "Zani Build Main DPS Phoebe Build Support Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/phoebe-build/"
+      },
+      {
+        "character": "赞妮",
+        "heading": "Zani Best Team",
+        "quote": "Zani Build Main DPS Phoebe Build Rover Build Support Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/zani-build/"
+      }
+    ]
+  },
+  {
+    "id": "cceaf701c32dbc99",
+    "members": [
+      "赞妮",
+      "菲比",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Zani Best Team / Zani Build Main DPS Phoebe Build Rover Build Support Shorekeeper Build Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/phoebe-build/",
+      "https://wutheringlab.com/character/zani-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "菲比",
+        "heading": "Phoebe Best Team II (Phoebe Support)",
+        "quote": "Zani Build Main DPS Phoebe Build Support Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/phoebe-build/"
+      },
+      {
+        "character": "赞妮",
+        "heading": "Zani Best Team",
+        "quote": "Zani Build Main DPS Phoebe Build Rover Build Support Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/zani-build/"
+      }
+    ]
+  },
+  {
+    "id": "8764d625217ee300",
+    "members": [
+      "弗洛洛",
+      "坎特蕾拉",
+      "洛可可"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Phrolova Triple Havoc Team / Phrolova Build Main DPS Cantarella Build DPS Roccia Build Shorekeeper Build DPS/Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/phrolova-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "弗洛洛",
+        "heading": "Phrolova Triple Havoc Team",
+        "quote": "Phrolova Build Main DPS Cantarella Build DPS Roccia Build Shorekeeper Build DPS/Healer",
+        "source": "https://wutheringlab.com/character/phrolova-build/"
+      }
+    ]
+  },
+  {
+    "id": "da2422b2a1463d6f",
+    "members": [
+      "弗洛洛",
+      "坎特蕾拉",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Phrolova Triple Havoc Team / Phrolova Build Main DPS Cantarella Build DPS Roccia Build Shorekeeper Build DPS/Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/phrolova-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "弗洛洛",
+        "heading": "Phrolova Triple Havoc Team",
+        "quote": "Phrolova Build Main DPS Cantarella Build DPS Roccia Build Shorekeeper Build DPS/Healer",
+        "source": "https://wutheringlab.com/character/phrolova-build/"
+      }
+    ]
+  },
+  {
+    "id": "a2e6be3cfd94a906",
+    "members": [
+      "弗洛洛",
+      "桃祈",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Phrolova Other Teams / Phrolova Build Main DPS Taoqi Build Rover Havoc Build Danjin Build DPS Shorekeeper Build DPS/Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/phrolova-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "弗洛洛",
+        "heading": "Phrolova Other Teams",
+        "quote": "Phrolova Build Main DPS Taoqi Build Rover Havoc Build Danjin Build DPS Shorekeeper Build DPS/Healer",
+        "source": "https://wutheringlab.com/character/phrolova-build/"
+      }
+    ]
+  },
+  {
+    "id": "95580a784a3090bd",
+    "members": [
+      "弗洛洛",
+      "漂泊者",
+      "守岸人"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Phrolova Other Teams / Phrolova Build Main DPS Taoqi Build Rover Havoc Build Danjin Build DPS Shorekeeper Build DPS/Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/phrolova-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "弗洛洛",
+        "heading": "Phrolova Other Teams",
+        "quote": "Phrolova Build Main DPS Taoqi Build Rover Havoc Build Danjin Build DPS Shorekeeper Build DPS/Healer",
+        "source": "https://wutheringlab.com/character/phrolova-build/"
+      }
+    ]
+  },
+  {
+    "id": "68a10f30cd5f1bf2",
+    "members": [
+      "弗洛洛",
+      "丹瑾",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Phrolova Other Teams / Phrolova Build Main DPS Taoqi Build Rover Havoc Build Danjin Build DPS Shorekeeper Build DPS/Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/phrolova-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "弗洛洛",
+        "heading": "Phrolova Other Teams",
+        "quote": "Phrolova Build Main DPS Taoqi Build Rover Havoc Build Danjin Build DPS Shorekeeper Build DPS/Healer",
+        "source": "https://wutheringlab.com/character/phrolova-build/"
+      }
+    ]
+  },
+  {
+    "id": "8373d45ffebb0c60",
+    "members": [
+      "清宵",
+      "达妮娅",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Qingxiao Best Teams / Qingxiao Build Main DPS Denia Build Sub DPS Mornye Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/qingxiao-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "清宵",
+        "heading": "Qingxiao Best Teams",
+        "quote": "Qingxiao Build Main DPS Denia Build Sub DPS Mornye Build Healer",
+        "source": "https://wutheringlab.com/character/qingxiao-build/"
+      }
+    ]
+  },
+  {
+    "id": "ddd0f50d7bb1215c",
+    "members": [
+      "清宵",
+      "琳奈",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Mornye Build / Qingxiao Build Main DPS Lynae Build Sub DPS Mornye Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/qingxiao-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "清宵",
+        "heading": "Mornye Build",
+        "quote": "Qingxiao Build Main DPS Lynae Build Sub DPS Mornye Build Healer",
+        "source": "https://wutheringlab.com/character/qingxiao-build/"
+      }
+    ]
+  },
+  {
+    "id": "056a516ce3076dec",
+    "members": [
+      "弗洛洛",
+      "仇远",
+      "坎特蕾拉"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Shorekeeper Build / Phrolova Build Main DPS Qiuyuan Build Sub DPS Cantarella Build Sub DPS。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/qiuyuan-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "仇远",
+        "heading": "Shorekeeper Build",
+        "quote": "Phrolova Build Main DPS Qiuyuan Build Sub DPS Cantarella Build Sub DPS",
+        "source": "https://wutheringlab.com/character/qiuyuan-build/"
+      }
+    ]
+  },
+  {
+    "id": "39b6284cc511ede1",
+    "members": [
+      "椿",
+      "洛可可",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team I / Camellya Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team I",
+        "quote": "Camellya Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "b26121d0b6986200",
+    "members": [
+      "椿",
+      "洛可可",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team I / Camellya Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team I",
+        "quote": "Camellya Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "c5523cd34db52f0c",
+    "members": [
+      "椿",
+      "洛可可",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team I / Camellya Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team I",
+        "quote": "Camellya Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "e250687551711733",
+    "members": [
+      "漂泊者",
+      "洛可可",
+      "守岸人"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team II / Rover Havoc Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team II",
+        "quote": "Rover Havoc Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "cd3da7d13c5dfaf2",
+    "members": [
+      "漂泊者",
+      "洛可可",
+      "维里奈"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team II / Rover Havoc Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team II",
+        "quote": "Rover Havoc Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "59cb9a62fb714926",
+    "members": [
+      "漂泊者",
+      "洛可可",
+      "白芷"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team II / Rover Havoc Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team II",
+        "quote": "Rover Havoc Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "89f684f367b039d7",
+    "members": [
+      "安可",
+      "洛可可",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team III / Encore Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team III",
+        "quote": "Encore Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "c19386b88a7a7d4d",
+    "members": [
+      "安可",
+      "洛可可",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team III / Encore Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team III",
+        "quote": "Encore Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "e61804e06a31ed18",
+    "members": [
+      "安可",
+      "洛可可",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team III / Encore Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team III",
+        "quote": "Encore Build Main DPS Roccia Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "33b43a1386077d9c",
+    "members": [
+      "洛可可",
+      "莫特斐",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team IV / Roccia Build Main DPS Mortefi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team IV",
+        "quote": "Roccia Build Main DPS Mortefi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "d9558f82526be728",
+    "members": [
+      "洛可可",
+      "莫特斐",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team IV / Roccia Build Main DPS Mortefi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team IV",
+        "quote": "Roccia Build Main DPS Mortefi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "7bced3968027b9d1",
+    "members": [
+      "洛可可",
+      "莫特斐",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Roccia Best Team IV / Roccia Build Main DPS Mortefi Build Support Shorekeeper Build Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/roccia-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "洛可可",
+        "heading": "Roccia Best Team IV",
+        "quote": "Roccia Build Main DPS Mortefi Build Support Shorekeeper Build Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/roccia-build/"
+      }
+    ]
+  },
+  {
+    "id": "17ce1a4bdb3af4cd",
+    "members": [
+      "忌炎",
+      "莫特斐",
+      "漂泊者"
+    ],
+    "rover_attribute": "气动",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Rover Aero Team 1 / Jiyan Build Main DPS Mortefi Build Sub DPS Rover Aero Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/rover-aero-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "漂泊者",
+        "heading": "Rover Aero Team 1",
+        "quote": "Jiyan Build Main DPS Mortefi Build Sub DPS Rover Aero Build Healer",
+        "source": "https://wutheringlab.com/character/rover-aero-build/"
+      }
+    ]
+  },
+  {
+    "id": "b6c6c32fd46e3217",
+    "members": [
+      "秋水",
+      "散华",
+      "漂泊者"
+    ],
+    "rover_attribute": "气动",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Rover Aero Team 2 / Aalto Build Main DPS Sanhua Build Sub DPS Rover Aero Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/rover-aero-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "漂泊者",
+        "heading": "Rover Aero Team 2",
+        "quote": "Aalto Build Main DPS Sanhua Build Sub DPS Rover Aero Build Healer",
+        "source": "https://wutheringlab.com/character/rover-aero-build/"
+      }
+    ]
+  },
+  {
+    "id": "8c9b90b3a6b6778b",
+    "members": [
+      "秧秧·玄翎",
+      "漂泊者",
+      "千咲"
+    ],
+    "rover_attribute": "导电",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Chisa Build / Yangyang: Xuanling Build Main DPS Rover Electro Build Sub DPS Chisa Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/rover-electro-build/",
+      "https://wutheringlab.com/character/yangyang-xuanling-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "漂泊者",
+        "heading": "Rover Electro Best Teams",
+        "quote": "Yangyang: Xuanling Build Main DPS Rover Electro Build Sub DPS Chisa Build Healer",
+        "source": "https://wutheringlab.com/character/rover-electro-build/"
+      },
+      {
+        "character": "秧秧·玄翎",
+        "heading": "Chisa Build",
+        "quote": "Yangyang: Xuanling Build Main DPS Rover Electro Build Sub DPS Chisa Build Healer",
+        "source": "https://wutheringlab.com/character/yangyang-xuanling-build/"
+      }
+    ]
+  },
+  {
+    "id": "2d0891ea82da46b3",
+    "members": [
+      "漂泊者",
+      "散华",
+      "维里奈"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Rover Havoc Best Team / Rover Havoc Build Main DPS Sanhua Build Danjin Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/rover-havoc-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "漂泊者",
+        "heading": "Rover Havoc Best Team",
+        "quote": "Rover Havoc Build Main DPS Sanhua Build Danjin Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/rover-havoc-build/"
+      }
+    ]
+  },
+  {
+    "id": "502d95c396e6613d",
+    "members": [
+      "漂泊者",
+      "散华",
+      "白芷"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Rover Havoc Best Team / Rover Havoc Build Main DPS Sanhua Build Danjin Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/rover-havoc-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "漂泊者",
+        "heading": "Rover Havoc Best Team",
+        "quote": "Rover Havoc Build Main DPS Sanhua Build Danjin Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/rover-havoc-build/"
+      }
+    ]
+  },
+  {
+    "id": "3dc2ba038b4225d7",
+    "members": [
+      "漂泊者",
+      "丹瑾",
+      "维里奈"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Rover Havoc Best Team / Rover Havoc Build Main DPS Sanhua Build Danjin Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/rover-havoc-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "漂泊者",
+        "heading": "Rover Havoc Best Team",
+        "quote": "Rover Havoc Build Main DPS Sanhua Build Danjin Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/rover-havoc-build/"
+      }
+    ]
+  },
+  {
+    "id": "bd2f0d049cb5064d",
+    "members": [
+      "漂泊者",
+      "丹瑾",
+      "白芷"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Rover Havoc Best Team / Rover Havoc Build Main DPS Sanhua Build Danjin Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/rover-havoc-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "漂泊者",
+        "heading": "Rover Havoc Best Team",
+        "quote": "Rover Havoc Build Main DPS Sanhua Build Danjin Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/rover-havoc-build/"
+      }
+    ]
+  },
+  {
+    "id": "3925116db645afaa",
+    "members": [
+      "漂泊者",
+      "桃祈",
+      "维里奈"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Taoqi Premium Best Team / Rover Havoc Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/rover-havoc-build/",
+      "https://wutheringlab.com/character/taoqi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "漂泊者",
+        "heading": "Rover Havoc Best Team",
+        "quote": "Rover Havoc Build Main DPS Sanhua Build Danjin Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/rover-havoc-build/"
+      },
+      {
+        "character": "桃祈",
+        "heading": "Taoqi Premium Best Team",
+        "quote": "Rover Havoc Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/taoqi-build/"
+      }
+    ]
+  },
+  {
+    "id": "52e8f4a536b43f49",
+    "members": [
+      "漂泊者",
+      "桃祈",
+      "白芷"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Taoqi Premium Best Team / Rover Havoc Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/rover-havoc-build/",
+      "https://wutheringlab.com/character/taoqi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "漂泊者",
+        "heading": "Rover Havoc Best Team",
+        "quote": "Rover Havoc Build Main DPS Sanhua Build Danjin Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/rover-havoc-build/"
+      },
+      {
+        "character": "桃祈",
+        "heading": "Taoqi Premium Best Team",
+        "quote": "Rover Havoc Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/taoqi-build/"
+      }
+    ]
+  },
+  {
+    "id": "0596b6d2afd1c386",
+    "members": [
+      "散华",
+      "鉴心",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Sanhua Best Team 1 / Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/sanhua-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "散华",
+        "heading": "Sanhua Best Team 1",
+        "quote": "Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/sanhua-build/"
+      }
+    ]
+  },
+  {
+    "id": "da60b7b2a915eb04",
+    "members": [
+      "散华",
+      "鉴心",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Sanhua Best Team 1 / Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/sanhua-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "散华",
+        "heading": "Sanhua Best Team 1",
+        "quote": "Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/sanhua-build/"
+      }
+    ]
+  },
+  {
+    "id": "a65d91b8c3188339",
+    "members": [
+      "散华",
+      "漂泊者",
+      "维里奈"
+    ],
+    "rover_attribute": "衍射",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Sanhua Best Team 1 / Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/sanhua-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "散华",
+        "heading": "Sanhua Best Team 1",
+        "quote": "Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/sanhua-build/"
+      }
+    ]
+  },
+  {
+    "id": "2e5fb042b6488e44",
+    "members": [
+      "散华",
+      "漂泊者",
+      "白芷"
+    ],
+    "rover_attribute": "衍射",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Sanhua Best Team 1 / Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/sanhua-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "散华",
+        "heading": "Sanhua Best Team 1",
+        "quote": "Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/sanhua-build/"
+      }
+    ]
+  },
+  {
+    "id": "cc6a0caf12a60470",
+    "members": [
+      "散华",
+      "秧秧",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Sanhua Best Team 1 / Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/sanhua-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "散华",
+        "heading": "Sanhua Best Team 1",
+        "quote": "Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/sanhua-build/"
+      }
+    ]
+  },
+  {
+    "id": "03e9b8caa0c9eb53",
+    "members": [
+      "散华",
+      "秧秧",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Sanhua Best Team 1 / Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/sanhua-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "散华",
+        "heading": "Sanhua Best Team 1",
+        "quote": "Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/sanhua-build/"
+      }
+    ]
+  },
+  {
+    "id": "553006d0667f131e",
+    "members": [
+      "今汐",
+      "折枝",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Shorekeeper Best Team 1 / Jinhsi Build Main DPS Zhezhi Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/shorekeeper-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "守岸人",
+        "heading": "Shorekeeper Best Team 1",
+        "quote": "Jinhsi Build Main DPS Zhezhi Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/shorekeeper-build/"
+      }
+    ]
+  },
+  {
+    "id": "83e354618ba5707a",
+    "members": [
+      "相里要",
+      "吟霖",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Shorekeeper Best Team 2 / Xiangli Yao Build Main DPS Yinlin Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/shorekeeper-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "守岸人",
+        "heading": "Shorekeeper Best Team 2",
+        "quote": "Xiangli Yao Build Main DPS Yinlin Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/shorekeeper-build/"
+      }
+    ]
+  },
+  {
+    "id": "b88d2d5d99efac22",
+    "members": [
+      "西格莉卡",
+      "仇远",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Sigrika Best Teams / Sigrika Build Main DPS Qiuyuan Build Sub DPS Mornye Build Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/sigrika-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "西格莉卡",
+        "heading": "Sigrika Best Teams",
+        "quote": "Sigrika Build Main DPS Qiuyuan Build Sub DPS Mornye Build Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/sigrika-build/"
+      }
+    ]
+  },
+  {
+    "id": "9f0584267fb1764d",
+    "members": [
+      "西格莉卡",
+      "仇远",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Sigrika Best Teams / Sigrika Build Main DPS Qiuyuan Build Sub DPS Mornye Build Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/sigrika-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "西格莉卡",
+        "heading": "Sigrika Best Teams",
+        "quote": "Sigrika Build Main DPS Qiuyuan Build Sub DPS Mornye Build Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/sigrika-build/"
+      }
+    ]
+  },
+  {
+    "id": "87df4275e5fc0608",
+    "members": [
+      "绯雪",
+      "洛瑟菈",
+      "穗穗"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Suisui Best Teams / Hiyuki Build Main DPS Lucilla Build Sub DPS Suisui Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/suisui-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "穗穗",
+        "heading": "Suisui Best Teams",
+        "quote": "Hiyuki Build Main DPS Lucilla Build Sub DPS Suisui Build Healer",
+        "source": "https://wutheringlab.com/character/suisui-build/"
+      }
+    ]
+  },
+  {
+    "id": "a668cd8bd5d4e026",
+    "members": [
+      "秧秧·玄翎",
+      "千咲",
+      "穗穗"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Suisui Build / Yangyang: Xuanling Build Main DPS Chisa Build Sub DPS Suisui Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/suisui-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "穗穗",
+        "heading": "Suisui Build",
+        "quote": "Yangyang: Xuanling Build Main DPS Chisa Build Sub DPS Suisui Build Healer",
+        "source": "https://wutheringlab.com/character/suisui-build/"
+      }
+    ]
+  },
+  {
+    "id": "45e249667499adf4",
+    "members": [
+      "心",
+      "锁暝",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Suoming Best Teams / Hsin Build Main DPS Suoming Build Sub DPS Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/suoming-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "锁暝",
+        "heading": "Suoming Best Teams",
+        "quote": "Hsin Build Main DPS Suoming Build Sub DPS Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/suoming-build/"
+      }
+    ]
+  },
+  {
+    "id": "cd22f8db07e678a9",
+    "members": [
+      "相里要",
+      "吟霖",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Xiangli Yao Best Team 1 / Xiangli Yao Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/xiangli-yao-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "相里要",
+        "heading": "Xiangli Yao Best Team 1",
+        "quote": "Xiangli Yao Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/xiangli-yao-build/"
+      }
+    ]
+  },
+  {
+    "id": "a15ab05cad451ea5",
+    "members": [
+      "相里要",
+      "吟霖",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Xiangli Yao Best Team 1 / Xiangli Yao Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/xiangli-yao-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "相里要",
+        "heading": "Xiangli Yao Best Team 1",
+        "quote": "Xiangli Yao Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/xiangli-yao-build/"
+      }
+    ]
+  },
+  {
+    "id": "1a9af57de5b90b65",
+    "members": [
+      "相里要",
+      "长离",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Xiangli Yao Best Team 1 / Xiangli Yao Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/xiangli-yao-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "相里要",
+        "heading": "Xiangli Yao Best Team 1",
+        "quote": "Xiangli Yao Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/xiangli-yao-build/"
+      }
+    ]
+  },
+  {
+    "id": "20e71d834e513e36",
+    "members": [
+      "相里要",
+      "长离",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Xiangli Yao Best Team 1 / Xiangli Yao Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/xiangli-yao-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "相里要",
+        "heading": "Xiangli Yao Best Team 1",
+        "quote": "Xiangli Yao Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/xiangli-yao-build/"
+      }
+    ]
+  },
+  {
+    "id": "7e4016fa8d87b321",
+    "members": [
+      "相里要",
+      "漂泊者",
+      "维里奈"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Baizhi Build / Xiangli Yao Build Main DPS Rover Havoc Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/xiangli-yao-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "相里要",
+        "heading": "Baizhi Build",
+        "quote": "Xiangli Yao Build Main DPS Rover Havoc Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/xiangli-yao-build/"
+      }
+    ]
+  },
+  {
+    "id": "2270f6eab3d0fd21",
+    "members": [
+      "相里要",
+      "漂泊者",
+      "白芷"
+    ],
+    "rover_attribute": "湮灭",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Baizhi Build / Xiangli Yao Build Main DPS Rover Havoc Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/xiangli-yao-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "相里要",
+        "heading": "Baizhi Build",
+        "quote": "Xiangli Yao Build Main DPS Rover Havoc Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/xiangli-yao-build/"
+      }
+    ]
+  },
+  {
+    "id": "c693cbc1f8d7826f",
+    "members": [
+      "秧秧·玄翎",
+      "丽贝卡",
+      "千咲"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Yangyang: Xuanling Best Teams / Yangyang: Xuanling Build Main DPS Rebecca Build Sub DPS Chisa Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/yangyang-xuanling-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "秧秧·玄翎",
+        "heading": "Yangyang: Xuanling Best Teams",
+        "quote": "Yangyang: Xuanling Build Main DPS Rebecca Build Sub DPS Chisa Build Healer",
+        "source": "https://wutheringlab.com/character/yangyang-xuanling-build/"
+      }
+    ]
+  },
+  {
+    "id": "94bcc2ed915bbb7d",
+    "members": [
+      "折枝",
+      "散华",
+      "釉瑚"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Youhu Best Team 1 / Zhezhi Build Main DPS Sanhua Build Sub DPS Youhu Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/youhu-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "釉瑚",
+        "heading": "Youhu Best Team 1",
+        "quote": "Zhezhi Build Main DPS Sanhua Build Sub DPS Youhu Build Healer",
+        "source": "https://wutheringlab.com/character/youhu-build/"
+      }
+    ]
+  },
+  {
+    "id": "abfd9b5a94351d84",
+    "members": [
+      "吟霖",
+      "釉瑚",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Youhu Best Team 2 / Yinlin Build Main DPS Youhu Build Support Shorekeeper Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/youhu-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "釉瑚",
+        "heading": "Youhu Best Team 2",
+        "quote": "Yinlin Build Main DPS Youhu Build Support Shorekeeper Build Healer",
+        "source": "https://wutheringlab.com/character/youhu-build/"
+      }
+    ]
+  },
+  {
+    "id": "b696cde3346e8fba",
+    "members": [
+      "赞妮",
+      "漂泊者",
+      "守岸人"
+    ],
+    "rover_attribute": "衍射",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Zani Best Team / Zani Build Main DPS Phoebe Build Rover Build Support Shorekeeper Build Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/zani-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "赞妮",
+        "heading": "Zani Best Team",
+        "quote": "Zani Build Main DPS Phoebe Build Rover Build Support Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/zani-build/"
+      }
+    ]
+  },
+  {
+    "id": "b8b1272d2c63e200",
+    "members": [
+      "赞妮",
+      "漂泊者",
+      "维里奈"
+    ],
+    "rover_attribute": "衍射",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Zani Best Team / Zani Build Main DPS Phoebe Build Rover Build Support Shorekeeper Build Verina Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/zani-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "赞妮",
+        "heading": "Zani Best Team",
+        "quote": "Zani Build Main DPS Phoebe Build Rover Build Support Shorekeeper Build Verina Build Healer",
+        "source": "https://wutheringlab.com/character/zani-build/"
+      }
+    ]
+  },
+  {
+    "id": "00ecbd26d18ffcf7",
+    "members": [
+      "今汐",
+      "折枝",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Zhezhi Best Team 1 / Jinhsi Build Main DPS Zhezhi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/zhezhi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "折枝",
+        "heading": "Zhezhi Best Team 1",
+        "quote": "Jinhsi Build Main DPS Zhezhi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/zhezhi-build/"
+      }
+    ]
+  },
+  {
+    "id": "50df41b0362aaeac",
+    "members": [
+      "今汐",
+      "折枝",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Zhezhi Best Team 1 / Jinhsi Build Main DPS Zhezhi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/zhezhi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "折枝",
+        "heading": "Zhezhi Best Team 1",
+        "quote": "Jinhsi Build Main DPS Zhezhi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/zhezhi-build/"
+      }
+    ]
+  },
+  {
+    "id": "9067775e36ecdfc7",
+    "members": [
+      "凌阳",
+      "折枝",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Zhezhi Best Team 2 / Lingyang Build Main DPS Zhezhi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/zhezhi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "折枝",
+        "heading": "Zhezhi Best Team 2",
+        "quote": "Lingyang Build Main DPS Zhezhi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/zhezhi-build/"
+      }
+    ]
+  },
+  {
+    "id": "a2d80dd92034d10c",
+    "members": [
+      "凌阳",
+      "折枝",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Zhezhi Best Team 2 / Lingyang Build Main DPS Zhezhi Build Sub DPS Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/zhezhi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "折枝",
+        "heading": "Zhezhi Best Team 2",
+        "quote": "Lingyang Build Main DPS Zhezhi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/zhezhi-build/"
+      }
+    ]
+  },
+  {
+    "id": "e14f5d3e260a9bd6",
+    "members": [
+      "折枝",
+      "散华",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Zhezhi Best Team 3 / Zhezhi Build DPS 1 Sanhua Build DPS 2 Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/zhezhi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "折枝",
+        "heading": "Zhezhi Best Team 3",
+        "quote": "Zhezhi Build DPS 1 Sanhua Build DPS 2 Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/zhezhi-build/"
+      }
+    ]
+  },
+  {
+    "id": "54c3cb9eefd45563",
+    "members": [
+      "折枝",
+      "散华",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1,
+    "note": "攻略原文：Zhezhi Best Team 3 / Zhezhi Build DPS 1 Sanhua Build DPS 2 Verina Build Baizhi Build Healer。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wutheringlab.com/character/zhezhi-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "all_character_research",
+    "recommendation_quotes": [
+      {
+        "character": "折枝",
+        "heading": "Zhezhi Best Team 3",
+        "quote": "Zhezhi Build DPS 1 Sanhua Build DPS 2 Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/zhezhi-build/"
+      }
+    ]
+  }
+]

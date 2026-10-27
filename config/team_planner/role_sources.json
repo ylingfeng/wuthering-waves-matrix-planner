@@ -1,0 +1,442 @@
+{
+  "珂莱塔": {
+    "url": "https://wiki.kurobbs.com/mc/item/1329032071722590208",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "折枝": {
+    "url": "https://wiki.kurobbs.com/mc/item/1329115985770602496",
+    "wiki_role": [
+      "定位：快速协奏",
+      "定位：协同攻击",
+      "定位：伤害加深"
+    ],
+    "planner_role": "辅助"
+  },
+  "今汐": {
+    "url": "https://wiki.kurobbs.com/mc/item/1331088925953253376",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "洛可可": {
+    "url": "https://wiki.kurobbs.com/mc/item/1331351166612799488",
+    "wiki_role": [
+      "定位：快速协奏",
+      "定位：伤害加深",
+      "定位：牵引聚怪"
+    ],
+    "planner_role": "辅助"
+  },
+  "菲比": {
+    "url": "https://wiki.kurobbs.com/mc/item/1339337894194933760",
+    "wiki_role": [
+      "定位：输出/辅助",
+      "定位：凝滞"
+    ],
+    "planner_role": "主C|辅助"
+  },
+  "相里要": {
+    "url": "https://wiki.kurobbs.com/mc/item/1339686820971888640",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "维里奈": {
+    "url": "https://wiki.kurobbs.com/mc/item/1340013214405324800",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "奶妈",
+    "override": "遵循用户指定奶妈名单"
+  },
+  "守岸人": {
+    "url": "https://wiki.kurobbs.com/mc/item/1340313641974501376",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "奶妈",
+    "override": "遵循用户指定奶妈名单"
+  },
+  "长离": {
+    "url": "https://wiki.kurobbs.com/mc/item/1340371300443308032",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "吟霖": {
+    "url": "https://wiki.kurobbs.com/mc/item/1340487339691307008",
+    "wiki_role": [
+      "定位：协同攻击"
+    ],
+    "planner_role": "辅助"
+  },
+  "忌炎": {
+    "url": "https://wiki.kurobbs.com/mc/item/1340855883641745408",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "椿": {
+    "url": "https://wiki.kurobbs.com/mc/item/1341065548540280832",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "丹瑾": {
+    "url": "https://wiki.kurobbs.com/mc/item/1341221690444615680",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "灯灯": {
+    "url": "https://wiki.kurobbs.com/mc/item/1341234682410434560",
+    "wiki_role": [
+      "定位：主力输出",
+      "定位：技能加深"
+    ],
+    "planner_role": "主C"
+  },
+  "安可": {
+    "url": "https://wiki.kurobbs.com/mc/item/1341478893859991552",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "卡卡罗": {
+    "url": "https://wiki.kurobbs.com/mc/item/1341521989520592896",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "炽霞": {
+    "url": "https://wiki.kurobbs.com/mc/item/1342892280365531136",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "凌阳": {
+    "url": "https://wiki.kurobbs.com/mc/item/1342914780830973952",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "鉴心": {
+    "url": "https://wiki.kurobbs.com/mc/item/1343035699837104128",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "辅助"
+  },
+  "漂泊者·衍射": {
+    "url": "https://wiki.kurobbs.com/mc/item/1343327639415111680",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "布兰特": {
+    "url": "https://wiki.kurobbs.com/mc/item/1345395094353739776",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "辅助"
+  },
+  "散华": {
+    "url": "https://wiki.kurobbs.com/mc/item/1346266334917115904",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "漂泊者·湮灭": {
+    "url": "https://wiki.kurobbs.com/mc/item/1346636115141988352",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "莫特斐": {
+    "url": "https://wiki.kurobbs.com/mc/item/1346989286369345536",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "渊武": {
+    "url": "https://wiki.kurobbs.com/mc/item/1347340265126719488",
+    "wiki_role": [
+      "定位：协同攻击"
+    ],
+    "planner_role": "辅助"
+  },
+  "白芷": {
+    "url": "https://wiki.kurobbs.com/mc/item/1347344108314509312",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "奶妈",
+    "override": "遵循用户指定奶妈名单"
+  },
+  "秧秧": {
+    "url": "https://wiki.kurobbs.com/mc/item/1348300375970676736",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "釉瑚": {
+    "url": "https://wiki.kurobbs.com/mc/item/1348310463333888000",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "辅助"
+  },
+  "秋水": {
+    "url": "https://wiki.kurobbs.com/mc/item/1348310747574304768",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "桃祈": {
+    "url": "https://wiki.kurobbs.com/mc/item/1349906897342210048",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "辅助"
+  },
+  "坎特蕾拉": {
+    "url": "https://wiki.kurobbs.com/mc/item/1352323980757827584",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "辅助"
+  },
+  "漂泊者·气动": {
+    "url": "https://wiki.kurobbs.com/mc/item/1353018756396130304",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "辅助"
+  },
+  "夏空": {
+    "url": "https://wiki.kurobbs.com/mc/item/1364364643376640000",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "赞妮": {
+    "url": "https://wiki.kurobbs.com/mc/item/1366138338346442752",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "卡提希娅": {
+    "url": "https://wiki.kurobbs.com/mc/item/1380402055999631360",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "露帕": {
+    "url": "https://wiki.kurobbs.com/mc/item/1382330599020347392",
+    "wiki_role": [
+      "定位：伤害加深"
+    ],
+    "planner_role": "辅助"
+  },
+  "弗洛洛": {
+    "url": "https://wiki.kurobbs.com/mc/item/1395196368880480256",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "奥古斯塔": {
+    "url": "https://wiki.kurobbs.com/mc/item/1408932703438090240",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "尤诺": {
+    "url": "https://wiki.kurobbs.com/mc/item/1416782136509804544",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "辅助"
+  },
+  "仇远": {
+    "url": "https://wiki.kurobbs.com/mc/item/1421534061751181312",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "嘉贝莉娜": {
+    "url": "https://wiki.kurobbs.com/mc/item/1421534166769135616",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "千咲": {
+    "url": "https://wiki.kurobbs.com/mc/item/1437636572639440896",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "辅助"
+  },
+  "卜灵": {
+    "url": "https://wiki.kurobbs.com/mc/item/1447664113615290368",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "奶妈",
+    "override": "遵循用户指定奶妈名单"
+  },
+  "莫宁": {
+    "url": "https://wiki.kurobbs.com/mc/item/1450552729264627712",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "奶妈",
+    "override": "遵循用户指定奶妈名单"
+  },
+  "琳奈": {
+    "url": "https://wiki.kurobbs.com/mc/item/1450552985269256192",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "爱弥斯": {
+    "url": "https://wiki.kurobbs.com/mc/item/1463260295867838464",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "陆·赫斯": {
+    "url": "https://wiki.kurobbs.com/mc/item/1463260869419896832",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "西格莉卡": {
+    "url": "https://wiki.kurobbs.com/mc/item/1481439409939832832",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "达妮娅": {
+    "url": "https://wiki.kurobbs.com/mc/item/1491817998847401984",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "绯雪": {
+    "url": "https://wiki.kurobbs.com/mc/item/1491818061868638208",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "洛瑟菈": {
+    "url": "https://wiki.kurobbs.com/mc/item/1505630022798249984",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "秧秧·玄翎": {
+    "url": "https://wiki.kurobbs.com/mc/item/1520510765616492544",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "穗穗": {
+    "url": "https://wiki.kurobbs.com/mc/item/1520510830431072256",
+    "wiki_role": [
+      "定位：生存治疗"
+    ],
+    "planner_role": "奶妈",
+    "override": "遵循用户指定奶妈名单"
+  },
+  "漂泊者·导电": {
+    "url": "https://wiki.kurobbs.com/mc/item/1520510922122752000",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "清宵": {
+    "url": "https://wiki.kurobbs.com/mc/item/1534547471934705664",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "景燃": {
+    "url": "https://wiki.kurobbs.com/mc/item/1534547655162875904",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "心": {
+    "url": "https://wiki.kurobbs.com/mc/item/1546618120826560512",
+    "wiki_role": [
+      "定位：主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "锁暝": {
+    "url": "https://wiki.kurobbs.com/mc/item/1546618204933619712",
+    "wiki_role": [
+      "定位：快速协奏"
+    ],
+    "planner_role": "辅助"
+  },
+  "丽贝卡": {
+    "url": "https://wiki.kurobbs.com/mc/item/1502681773647212544",
+    "wiki_role": [
+      "延奏全伤害加深15%，重击伤害逐层加深"
+    ],
+    "planner_role": "辅助"
+  },
+  "露西": {
+    "url": "https://wiki.kurobbs.com/mc/item/1502669582481317888",
+    "wiki_role": [
+      "战斗风格主力输出"
+    ],
+    "planner_role": "主C"
+  },
+  "莉莉": {
+    "planner_role": "奶妈",
+    "note": "用户确认：同奏奶妈；尚未实装，所有计算范围排除。心+锁暝+莉莉为用户推测，待实装验证。"
+  },
+  "漂泊者": {
+    "planner_role": "主C|辅助",
+    "note": "湮灭主C；导电辅助；合并属性共用体力，兜底按分配位置选属性"
+  }
+}

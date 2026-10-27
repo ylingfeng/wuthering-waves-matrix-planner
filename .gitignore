@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.agents/
+dist/
+logs/
+tmp/
+reference_analysis/
+config/team_planner/personal_config*.json
+config/team_planner/*.previous.*
+config/team_planner/character.previous.csv
+config/team_planner/last_plan.json
+config/team_planner/backups/

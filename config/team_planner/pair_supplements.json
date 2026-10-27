@@ -1,0 +1,2653 @@
+[
+  {
+    "id": "8b0c492eb553b83e",
+    "members": [
+      "卡卡罗",
+      "吟霖",
+      "鉴心"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：副C推荐：吟霖，莫特斐，散华，桃祈；生存位：鉴心，维里奈和白芷；前期(卡卡罗，鉴心，维里奈)。2024年早期通用配队，按原文副C/生存位选项展开；矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://shouyou.3dmgame.com/gl/509397.html"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "198bd7aab3751df3",
+    "members": [
+      "卡卡罗",
+      "吟霖",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 1.5,
+    "note": "原文：卡卡罗 + 吟霖 + 守岸人 / 维里奈。通用攻略推荐，矩阵实战待验证。",
+    "evidence": "Wiki·明确配队",
+    "sources": [
+      "https://wiki.kurobbs.com/mc/item/1341521989520592896",
+      "https://shouyou.3dmgame.com/gl/509397.html",
+      "https://wiki.kurobbs.com/mc/item/1340487339691307008",
+      "https://wutheringlab.com/character/calcharo-build/",
+      "https://wutheringlab.com/character/verina-build/",
+      "https://wutheringlab.com/character/yinlin-build/",
+      "https://www.bilibili.com/video/BV1A6oeBVEYt/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "catalogue",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      },
+      {
+        "character": "维里奈",
+        "heading": "Verina Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Healer",
+        "source": "https://wutheringlab.com/character/verina-build/"
+      },
+      {
+        "character": "吟霖",
+        "heading": "Yinlin Best Team 1",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/yinlin-build/"
+      }
+    ],
+    "default_priority": 1.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "wiki",
+          "url": "https://wiki.kurobbs.com/mc/item/1340487339691307008",
+          "quote": "卡卡罗 + 吟霖 + 守岸人 / 维里奈"
+        },
+        {
+          "kind": "wiki",
+          "url": "https://wiki.kurobbs.com/mc/item/1341521989520592896",
+          "quote": "卡卡罗 + 吟霖 + 守岸人 / 维里奈"
+        },
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/calcharo-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer"
+        },
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/verina-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Healer"
+        },
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/yinlin-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "c71af2203bc13e34",
+    "members": [
+      "卡卡罗",
+      "吟霖",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：副C推荐：吟霖，莫特斐，散华，桃祈；生存位：鉴心，维里奈和白芷；前期(卡卡罗，鉴心，维里奈)。2024年早期通用配队，按原文副C/生存位选项展开；矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://wiki.kurobbs.com/mc/item/1347344108314509312",
+      "https://wiki.kurobbs.com/mc/item/1341521989520592896",
+      "https://shouyou.3dmgame.com/gl/509397.html",
+      "https://wiki.kurobbs.com/mc/item/1340487339691307008",
+      "https://wutheringlab.com/character/calcharo-build/",
+      "https://wutheringlab.com/character/yinlin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "catalogue",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      },
+      {
+        "character": "吟霖",
+        "heading": "Yinlin Best Team 1",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/yinlin-build/"
+      }
+    ],
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/calcharo-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer"
+        },
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/yinlin-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sub DPS Verina Build Baizhi Build Healer"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "336d9e4b5f32b933",
+    "members": [
+      "卡卡罗",
+      "莫特斐",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：副C推荐：吟霖，莫特斐，散华，桃祈；生存位：鉴心，维里奈和白芷；前期(卡卡罗，鉴心，维里奈)。2024年早期通用配队，按原文副C/生存位选项展开；矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://shouyou.3dmgame.com/gl/509397.html"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "828e7ac8b0986796",
+    "members": [
+      "卡卡罗",
+      "莫特斐",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：副C推荐：吟霖，莫特斐，散华，桃祈；生存位：鉴心，维里奈和白芷；前期(卡卡罗，鉴心，维里奈)。2024年早期通用配队，按原文副C/生存位选项展开；矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://shouyou.3dmgame.com/gl/509397.html"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "e707f95e272dd211",
+    "members": [
+      "卡卡罗",
+      "散华",
+      "鉴心"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：副C推荐：吟霖，莫特斐，散华，桃祈；生存位：鉴心，维里奈和白芷；前期(卡卡罗，鉴心，维里奈)。2024年早期通用配队，按原文副C/生存位选项展开；矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://shouyou.3dmgame.com/gl/509397.html"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "a608c2debc316d21",
+    "members": [
+      "卡卡罗",
+      "散华",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：副C推荐：吟霖，莫特斐，散华，桃祈；生存位：鉴心，维里奈和白芷；前期(卡卡罗，鉴心，维里奈)。2024年早期通用配队，按原文副C/生存位选项展开；矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://shouyou.3dmgame.com/gl/509397.html",
+      "https://wutheringlab.com/character/calcharo-build/",
+      "https://wutheringlab.com/character/verina-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      },
+      {
+        "character": "维里奈",
+        "heading": "Verina Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Healer",
+        "source": "https://wutheringlab.com/character/verina-build/"
+      }
+    ],
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/calcharo-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer"
+        },
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/verina-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Healer"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "69470dff6447557d",
+    "members": [
+      "卡卡罗",
+      "散华",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：副C推荐：吟霖，莫特斐，散华，桃祈；生存位：鉴心，维里奈和白芷；前期(卡卡罗，鉴心，维里奈)。2024年早期通用配队，按原文副C/生存位选项展开；矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://shouyou.3dmgame.com/gl/509397.html",
+      "https://wutheringlab.com/character/calcharo-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      }
+    ],
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/calcharo-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "dcf710211bbcb66a",
+    "members": [
+      "卡卡罗",
+      "桃祈",
+      "鉴心"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：副C推荐：吟霖，莫特斐，散华，桃祈；生存位：鉴心，维里奈和白芷；前期(卡卡罗，鉴心，维里奈)。2024年早期通用配队，按原文副C/生存位选项展开；矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://shouyou.3dmgame.com/gl/509397.html"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "3f760d0fd41005cf",
+    "members": [
+      "卡卡罗",
+      "桃祈",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：副C推荐：吟霖，莫特斐，散华，桃祈；生存位：鉴心，维里奈和白芷；前期(卡卡罗，鉴心，维里奈)。2024年早期通用配队，按原文副C/生存位选项展开；矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://shouyou.3dmgame.com/gl/509397.html"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "fa1a65b3a5cfc46d",
+    "members": [
+      "卡卡罗",
+      "桃祈",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：副C推荐：吟霖，莫特斐，散华，桃祈；生存位：鉴心，维里奈和白芷；前期(卡卡罗，鉴心，维里奈)。2024年早期通用配队，按原文副C/生存位选项展开；矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://shouyou.3dmgame.com/gl/509397.html"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "eb0e2a99309a5a57",
+    "members": [
+      "卡卡罗",
+      "鉴心",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：副C推荐：吟霖，莫特斐，散华，桃祈；生存位：鉴心，维里奈和白芷；前期(卡卡罗，鉴心，维里奈)。2024年早期通用配队，矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://shouyou.3dmgame.com/gl/509397.html",
+      "https://wutheringlab.com/character/calcharo-build/",
+      "https://wutheringlab.com/character/jianxin-build/",
+      "https://wutheringlab.com/character/verina-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      },
+      {
+        "character": "鉴心",
+        "heading": "Jianxin Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jianxin-build/"
+      },
+      {
+        "character": "维里奈",
+        "heading": "Verina Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Healer",
+        "source": "https://wutheringlab.com/character/verina-build/"
+      }
+    ],
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/calcharo-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer"
+        },
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/jianxin-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer"
+        },
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/verina-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Healer"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "f5facf2e1b30c20a",
+    "members": [
+      "卡卡罗",
+      "鉴心",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：一、鉴心+卡卡罗+白芷。只采纳明确三人组合，正文个别技能解释不作为机制依据。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://m.wywyx.com/gonglue/534846.html",
+      "https://wutheringlab.com/character/calcharo-build/",
+      "https://wutheringlab.com/character/jianxin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "recommendation_quotes": [
+      {
+        "character": "卡卡罗",
+        "heading": "Calcharo Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/calcharo-build/"
+      },
+      {
+        "character": "鉴心",
+        "heading": "Jianxin Best Team",
+        "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/jianxin-build/"
+      }
+    ],
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/calcharo-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer"
+        },
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/jianxin-build/",
+          "quote": "Calcharo Build Main DPS Yinlin Build Sanhua Build Jianxin Build Sub DPS Verina Build Baizhi Build Healer"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "0596b6d2afd1c386",
+    "members": [
+      "鉴心",
+      "散华",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：二、鉴心+散华+维里奈。偏生存/聚怪的早期备选，矩阵输出待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://m.wywyx.com/gonglue/534846.html",
+      "https://wutheringlab.com/character/sanhua-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "recommendation_quotes": [
+      {
+        "character": "散华",
+        "heading": "Sanhua Best Team 1",
+        "quote": "Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/sanhua-build/"
+      }
+    ],
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/sanhua-build/",
+          "quote": "Sanhua Build Main DPS Jianxin Build Rover Build Yangyang Build Sub DPS Verina Build Baizhi Build Healer"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "45661edcb96fa24d",
+    "members": [
+      "凌阳",
+      "散华",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：由主c凌阳+副c散华+奶妈白芷组成；缺点：上限低。2024年平民配队，有明确手法说明；非矩阵专项测试。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://wiki.kurobbs.com/mc/item/1347344108314509312",
+      "https://wiki.kurobbs.com/mc/item/1342914780830973952",
+      "https://wiki.kurobbs.com/mc/item/1346266334917115904",
+      "https://www.gamersky.com/handbook/202406/1763027.shtml",
+      "https://wutheringlab.com/character/lingyang-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "catalogue",
+    "recommendation_quotes": [
+      {
+        "character": "凌阳",
+        "heading": "Lingyang Best Team 1",
+        "quote": "Lingyang Build Main DPS Sanhua Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/lingyang-build/"
+      }
+    ],
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/lingyang-build/",
+          "quote": "Lingyang Build Main DPS Sanhua Build Taoqi Build Sub DPS Verina Build Baizhi Build Healer"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "fe59cae2ca13893f",
+    "members": [
+      "今汐",
+      "长离",
+      "卜灵"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：推荐2：今汐、长离、卜灵。通用技能输出组合，矩阵待测。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。",
+    "evidence": "攻略·低优先备选",
+    "sources": [
+      "https://www.9game.cn/mingchao/11588000.html",
+      "https://wutheringlab.com/character/buling-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "recommendation_quotes": [
+      {
+        "character": "卜灵",
+        "heading": "Buling Build",
+        "quote": "Jinhsi Build Main DPS Changli Build Sub DPS Buling Build Healer",
+        "source": "https://wutheringlab.com/character/buling-build/"
+      }
+    ],
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/buling-build/",
+          "quote": "Jinhsi Build Main DPS Changli Build Sub DPS Buling Build Healer"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "342fcf94af0be8dd",
+    "members": [
+      "卜灵",
+      "坎特蕾拉",
+      "弗洛洛"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "具体槽位、起手位和装备要求见所选轴说明；尚未验证本账号配置。",
+    "evidence": "工坊·通用参考",
+    "sources": [
+      "https://okwwcharcode.ok-script.com/teams/Buling_Cantarella_Phrolova.json",
+      "https://www.9game.cn/mingchao/11588000.html",
+      "https://wutheringlab.com/character/buling-build/",
+      "https://www.bilibili.com/video/BV1WdJD6iEUS/",
+      "https://www.bilibili.com/video/BV19pnt6XEky/",
+      "https://www.bilibili.com/video/BV1QhDyBqEqd/",
+      "https://www.bilibili.com/video/BV1SDvWBuE4d/"
+    ],
+    "axes": [
+      {
+        "id": "Cantarella_Buling_Phrolova_楽山_1.1.0.zip",
+        "name": "Cantarella_Buling_Phrolova",
+        "author": "楽山",
+        "version": "1.1.0",
+        "description": "弗坎卜轮椅轴\n样本：21弗01坎60卜灵（核熔星盘/或其他带协奏的武器）\n共效：弗100坎150卜180\n位置：一号位弗洛洛 二号位坎 三号位卜灵\nv1.1.0 优化：\n· 坎特蕾拉放完 Q 协奏没满，先补满再变奏弗洛洛\n· 启动轴弗洛洛开重击改为白+黄都亮，不再被亮地面误判\n· 卜灵两段重击改为读卦象栏：卦象被吃掉就松手，缺阴/阳自动补卦象；读不到时退回外圈颜色判断\n· 卜灵 A4 的震一出现就停 A；补协奏差一点时只点 A，不再多按重击\n· 开关一次自动战斗即从启动轴重新开始\n· 16:9，2K / 1080p 已验，默认键位",
+        "url": "https://okwwcharcode.ok-script.com/codes/Cantarella_Buling_Phrolova_%E6%A5%BD%E5%B1%B1_1.1.0.zip"
+      }
+    ],
+    "selected_axis": "Cantarella_Buling_Phrolova_楽山_1.1.0.zip",
+    "origin": "catalogue",
+    "recommendation_quotes": [
+      {
+        "character": "卜灵",
+        "heading": "Buling Best Teams",
+        "quote": "Phrolova Build Main DPS Cantarella Build Qiuyuan Build Sub DPS Buling Build Healer",
+        "source": "https://wutheringlab.com/character/buling-build/"
+      }
+    ],
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/buling-build/",
+          "quote": "Phrolova Build Main DPS Cantarella Build Qiuyuan Build Sub DPS Buling Build Healer"
+        },
+        {
+          "kind": "workshop",
+          "url": "https://okwwcharcode.ok-script.com/teams/Buling_Cantarella_Phrolova.json",
+          "quote": "弗坎卜轮椅轴\n样本：21弗01坎60卜灵（核熔星盘/或其他带协奏的武器）\n共效：弗100坎150卜180\n位置：一号位弗洛洛 二号位坎 三号位卜灵\nv1.1.0 优化：\n· 坎特蕾拉放完 Q 协奏没满，先补满再变奏弗洛洛\n· 启动轴弗洛洛开重击改为白+黄都亮，不再被亮地面误判\n· 卜灵两段重击改为读卦象栏：卦象被吃掉就松手，缺阴/阳自动补卦象；读不到时退回外圈颜色判断\n· 卜灵 A4 的震一出现就停 A；补协奏差一点时只点 A，不再多按重击\n· 开关一次自动战斗即从启动轴重新开始\n· 16:9，2K / 1080p 已验，默认键位",
+          "matrix": false
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV19pnt6XEky/",
+          "quote": "00弗坎卜矩阵队伍一\n",
+          "matrix": true,
+          "level": "搜索页明确三人标题"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1SDvWBuE4d/",
+          "quote": "弗坎卜矩阵\n",
+          "matrix": true,
+          "level": "搜索页明确三人标题"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "f28d7b168c555079",
+    "members": [
+      "丹瑾",
+      "桃祈",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：桃祈提供护盾；作为低血线丹瑾的生存替补。机制推导，仅保留低优先生存搭配，不声称伤害增幅最优。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。\n补充直接攻略证据：攻略原文：Danjin Best Team 2 / Danjin Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wiki.kurobbs.com/mc/item/1349906897342210048",
+      "https://wutheringlab.com/character/danjin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "recommendation_quotes": [
+      {
+        "character": "丹瑾",
+        "heading": "Danjin Best Team 2",
+        "quote": "Danjin Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/danjin-build/"
+      }
+    ],
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/danjin-build/",
+          "quote": "Danjin Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "ec75a2b1a99cb5c3",
+    "members": [
+      "丹瑾",
+      "桃祈",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "原文依据：桃祈提供护盾；作为低血线丹瑾的生存替补。机制推导，仅保留低优先生存搭配，不声称伤害增幅最优。队伍权重为保守暂定值，可手动调整；非矩阵分数或实测伤害。\n补充直接攻略证据：攻略原文：Danjin Best Team 2 / Danjin Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support。按原文三列及替选展开；通用主流配队，不等于当前矩阵最强。初始队权2，可按实测调整。",
+    "evidence": "攻略·主流配队",
+    "sources": [
+      "https://wiki.kurobbs.com/mc/item/1349906897342210048",
+      "https://wutheringlab.com/character/danjin-build/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "pair_research",
+    "recommendation_quotes": [
+      {
+        "character": "丹瑾",
+        "heading": "Danjin Best Team 2",
+        "quote": "Danjin Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support",
+        "source": "https://wutheringlab.com/character/danjin-build/"
+      }
+    ],
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/danjin-build/",
+          "quote": "Danjin Build Main DPS Taoqi Build Sub DPS Verina Build OR Baizhi Build Support"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "525f6105a6d2e567",
+    "members": [
+      "心",
+      "锁暝",
+      "莉莉"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "用户提出的同奏队猜想；莉莉尚未实装，所有范围排除，待上线后确认技能协同和队伍权重。",
+    "evidence": "待实装·待验证",
+    "sources": [],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "user_pending",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "144750335252fee1",
+    "members": [
+      "珂莱塔",
+      "秧秧",
+      "卜灵"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "用户指定配队。",
+    "evidence": "用户确认·配队",
+    "sources": [
+      "https://www.bilibili.com/video/BV1Sdpp6kEZW/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "user_recommendation",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1Sdpp6kEZW/",
+          "quote": "【珂秧卜】简易5R轴 | 矩阵实战演示\n\n视频标签：鸣潮攻略、鸣潮创作激励计划、珂莱塔、终焉矩阵、秧秧、卜灵、Ref: rain",
+          "matrix": true,
+          "level": "标题三人简称＋视频标签或简介全名消歧"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "addd2ef908e33ec8",
+    "members": [
+      "弗洛洛",
+      "坎特蕾拉",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "用户指定配队。",
+    "evidence": "用户确认·配队",
+    "sources": [
+      "https://www.bilibili.com/video/BV1G9nJ6hEET/",
+      "https://www.bilibili.com/video/BV1Bv4o6fEDm/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "user_recommendation",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1G9nJ6hEET/",
+          "quote": "【鸣潮】3.7矩阵叠兵 01弗坎维 7364\n",
+          "matrix": true,
+          "level": "矩阵标题明确三人全名或无歧义简称"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1Bv4o6fEDm/",
+          "quote": "00弗坎维矩阵队伍一\n",
+          "matrix": true,
+          "level": "矩阵标题明确三人全名或无歧义简称"
+        }
+      ],
+      "recheck_confirmed": true,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "326bbf809c6f7258",
+    "members": [
+      "卡卡罗",
+      "秧秧",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "用户确认卡卡罗＋秧秧，可搭配任意已实装奶妈；不同奶妈可单独调整权重。",
+    "evidence": "用户确认·配队",
+    "sources": [
+      "https://www.bilibili.com/video/BV1EttB61E6V/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "user_recommendation",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1EttB61E6V/",
+          "quote": "卡秧维矩阵R2宝箱7000分\n\n视频标签：二次元、卡卡罗、维里奈、明日方舟终末地创作者应援计划、藕粉椰果、卡卡罗会成为世一雷c吗、动作游戏、秧秧、矩阵、鸣潮",
+          "matrix": true,
+          "level": "标题三人简称＋视频标签或简介全名消歧"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "5b4f84adcafb2a2f",
+    "members": [
+      "卡卡罗",
+      "秧秧",
+      "白芷"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "用户确认卡卡罗＋秧秧，可搭配任意已实装奶妈；不同奶妈可单独调整权重。",
+    "evidence": "用户确认·配队",
+    "sources": [],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "user_recommendation",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "30ee9bb9ba93777a",
+    "members": [
+      "卡卡罗",
+      "秧秧",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "用户确认卡卡罗＋秧秧，可搭配任意已实装奶妈；不同奶妈可单独调整权重。",
+    "evidence": "用户确认·配队",
+    "sources": [],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "user_recommendation",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "f053f2af74dada66",
+    "members": [
+      "卡卡罗",
+      "秧秧",
+      "卜灵"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "用户确认卡卡罗＋秧秧，可搭配任意已实装奶妈；不同奶妈可单独调整权重。",
+    "evidence": "用户确认·配队",
+    "sources": [],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "user_recommendation",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "7b827be1e8b1e176",
+    "members": [
+      "卡卡罗",
+      "秧秧",
+      "莫宁"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "用户确认卡卡罗＋秧秧，可搭配任意已实装奶妈；不同奶妈可单独调整权重。",
+    "evidence": "用户确认·配队",
+    "sources": [],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "user_recommendation",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "fd621bd2035e9978",
+    "members": [
+      "卡卡罗",
+      "秧秧",
+      "穗穗"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "用户确认卡卡罗＋秧秧，可搭配任意已实装奶妈；不同奶妈可单独调整权重。",
+    "evidence": "用户确认·配队",
+    "sources": [],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "user_recommendation",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "82038de48844ce8a",
+    "members": [
+      "尤诺",
+      "鉴心",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "用户提供B站视频及三人组合；尚未独立核对视频内容和装备要求。",
+    "evidence": "用户确认·视频配队",
+    "sources": [
+      "https://www.bilibili.com/video/BV1acXkBTE7s/",
+      "https://www.bilibili.com/video/BV18JHE6ZESq/",
+      "https://www.bilibili.com/video/BV18cPgzTEPK/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "user_video_recommendation",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1acXkBTE7s/",
+          "quote": "【01月鉴维】终焉矩阵 轮椅轮切轴 6159分手法教学（二链鉴心轴）\n简简单单轮切轴，希望对你有帮助",
+          "matrix": true,
+          "level": "标题及简介，不是逐帧核实"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV18JHE6ZESq/",
+          "quote": "【尤诺单走攻略】月琳 月鉴4月弓标准轴 手把手教学\n只打四套的话，月琳第一轮可以像循环轮次一样合轴琳奈让尤诺多打一套3a\n文字轴看评论区置顶\n\n月琳守：\n启动：守岸人自动启动【aaaeaaz 闪aaazqr】变奏琳 琳e  尤e闪e闪跳  \n 琳zqr 跳跳跳 a 变奏尤  尤e qr aaae aaa处决 aaae z 变奏守\n循环：守自闭启动  变奏琳 琳e  尤e闪e闪跳  \n 琳zqr 跳跳跳 尤aaa 琳a 变奏尤  尤e qr aaae aaa处决 aaae z 变奏守\n\n启动：尤诺e 鉴心ere 维里奈aaaer 尤诺e闪跳 维里奈aa 变奏 鉴心aaaq 变奏\n尤诺eaaaqr aaae  aaa闪  aaa处决 e z 变奏  \n循环：鉴心e  维里奈aaae  尤诺e闪e\n鉴心re  维里奈r跳aaq 变奏 尤诺跳 鉴心azq  变奏 尤诺eaaaqr aaae  aaa闪  aaa处决 e z",
+          "matrix": false,
+          "level": "标题及简介，不是逐帧核实"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "ecf9256f117a5ca8",
+    "members": [
+      "尤诺",
+      "琳奈",
+      "鉴心"
+    ],
+    "rover_attribute": "",
+    "enabled": false,
+    "priority": 1,
+    "note": "用户提供B站视频及三人组合；尚未独立核对视频内容和装备要求。",
+    "evidence": "用户确认·视频配队",
+    "sources": [
+      "https://www.bilibili.com/video/BV18JHE6ZESq/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "user_video_recommendation",
+    "default_priority": 1,
+    "default_enabled": false,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [],
+      "recheck_confirmed": false,
+      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "issue": "原提供视频实际介绍月琳守及月鉴维，不支持月琳鉴。",
+      "matrix_confirmed": false,
+      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
+    }
+  },
+  {
+    "id": "0cd4adf7f7873ff6",
+    "members": [
+      "西格莉卡",
+      "维里奈",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "B站作者合集视频标题“01西维守【二金队】终焉矩阵5617分”及“01西00守维【终焉矩阵】6045分”。依据标题中的西/维/守收录；未逐帧观看，链度装备条件见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1Xf5u69EQg/",
+      "https://www.bilibili.com/video/BV1WvVZ6rEdP/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1Xf5u69EQg/",
+          "quote": "01西维守【二金队】终焉矩阵5617分 （全程炉心）5R5日灵",
+          "matrix": true,
+          "level": "合集标题"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1WvVZ6rEdP/",
+          "quote": "01西00守维【终焉矩阵】6045分（5r5日灵）",
+          "matrix": true,
+          "level": "合集标题"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "e0490a41e50a54ac",
+    "members": [
+      "嘉贝莉娜",
+      "露帕",
+      "达妮娅"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "从B站标题/简介核对；未逐帧观看视频，链度及装备要求见原视频。",
+    "evidence": "B站·矩阵教学",
+    "sources": [
+      "https://www.bilibili.com/video/BV1Fu8h6YE8s/",
+      "https://www.bilibili.com/video/BV1Eb3G6wEvf/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1Fu8h6YE8s/",
+          "quote": "【嘉露达】5R批发手把手教学  2体达妮娅矩阵做准备  不带奶妈豪起来！\n文字轴：\n首轮：嘉zq 露ra 达eraa 露aaa 达aa 露a 嘉zzz 露e  达aaeeqr\n变奏嘉  露eeq 变奏嘉rz 处决eaaaa闪aaa闪a z  变奏露帕\n循环：露ra 嘉zz 达e  露aaa 达raa  露a  嘉zzz  露e  达aa跳aa eeqr\n变奏嘉q  露eeeq 变奏嘉rz 处决eaaaa闪aaa闪a z  变奏露帕\n拉表数据：https://wuwa-afyg-tool.200503.xyz#import_project=https%3A%2F%2Fwuwa-afyg-share.200503.xyz%2Fshare%2FGnY3boc5%2Fdownload",
+          "matrix": true,
+          "level": "标题及简介，不是逐帧核实"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "1d43466bbee73cbe",
+    "members": [
+      "心",
+      "今汐",
+      "卜灵"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "从B站标题/简介核对；未逐帧观看视频，链度及装备要求见原视频。",
+    "evidence": "B站·矩阵教学",
+    "sources": [
+      "https://www.bilibili.com/video/BV11WaZ69E5H/",
+      "https://www.bilibili.com/video/BV1c7HS6hE5U/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV11WaZ69E5H/",
+          "quote": "【心汐守/卜】双喷标准轴  今汐的进化！矩阵8.3wdps！\n模态选同奏\n视频制作不易多多三连支持喵\n\n心汐卜\n启动：汐aaae  卜aaaeez 汐aae  卜zqr 变奏心  切汐qe  变奏心\n心zqr  变奏汐 汐e闪aaae  卜下落a  今汐are 变奏心 心aaaazr\n循环：心变奏汐 汐e处决或闪 aaae  卜aaaeez zqr 变奏心 汐qe z\n变奏心 心zqr  变奏汐 汐e闪aaae  卜下落a  今汐are 变奏心 心aaaazr\n \n心汐守：\n启动：心a 汐aae   守aar 汐aaae 守aaeaa 汐aqe 变奏心  守zq 变奏心\n心zqr 变奏汐e闪aaae 守下落a aa  汐are  变奏心\n心aaaa z r  变奏守\n循环：第一轮守aaezr 后续er\n守er 变奏汐 汐e闪 aaae   守下落a aaq  汐aqe z  变奏心\n心aazqr 变奏汐 汐e闪汐e闪 aaae   守下落a aa  汐ae  变奏心",
+          "matrix": true,
+          "level": "标题及简介，不是逐帧核实"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1c7HS6hE5U/",
+          "quote": "心汐卜矩阵1w5\n",
+          "matrix": true,
+          "level": "搜索页明确三人标题"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "d137e5acd5c5026e",
+    "members": [
+      "琳奈",
+      "维里奈",
+      "陆·赫斯"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1QRAxzHEka/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1QRAxzHEka/",
+          "quote": "【鸣潮】陆琳维矩阵 5R（陆满层R）| 7秒启动 ，文字轴！\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "914d070c81577556",
+    "members": [
+      "散华",
+      "维里奈",
+      "锁暝"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1rknW6WETf/",
+      "https://www.bilibili.com/video/BV1Xqn16TE6R/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1rknW6WETf/",
+          "quote": "01锁散维【5r9伞轮椅轴参考】矩阵1.4w分\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1Xqn16TE6R/",
+          "quote": "最强2金降临？锁散维矩阵1.38w\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "1f2a55174868a2da",
+    "members": [
+      "卜灵",
+      "散华",
+      "陆·赫斯"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV12JAkznEPu/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV12JAkznEPu/",
+          "quote": "【陆散卜】低配01陆赫斯在(矩阵/深塔)的实战表现\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "b62ebad9a9bea093",
+    "members": [
+      "守岸人",
+      "散华",
+      "锁暝"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1FHHM62EsC/",
+      "https://www.bilibili.com/video/BV1gQnb6XES3/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1FHHM62EsC/",
+          "quote": "【终焉矩阵S2-3】锁散守R2开3.3w分，5R5伞25转，61锁61散01守\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1gQnb6XES3/",
+          "quote": "锁散守矩阵17366\n",
+          "matrix": true,
+          "level": "搜索页明确三人标题"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "6765e65a0197fb5f",
+    "members": [
+      "卜灵",
+      "心",
+      "锁暝"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1aonH6KEnD/",
+      "https://www.bilibili.com/video/BV1z9n86gEQ9/",
+      "https://www.bilibili.com/video/BV1Qdny6NESS/",
+      "https://www.bilibili.com/video/BV1v1nH6CEUo/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1Qdny6NESS/",
+          "quote": "【心锁守|卜】25秒轮切轴优化教学 真有手就行的轮椅强队\n",
+          "matrix": false,
+          "level": "标题及简介，不是逐帧核实"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1aonH6KEnD/",
+          "quote": "【鸣潮】心锁卜 矩阵R2木禺+宝箱 27000分（用卜灵是因为岸岸体力0）\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1v1nH6CEUo/",
+          "quote": "【鸣潮3.7】01心00锁6卜矩阵R2大哥开14959\n",
+          "matrix": true,
+          "level": "搜索页明确三人标题"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1z9n86gEQ9/",
+          "quote": "绝对超模！三金超低配心锁卜S2矩阵公式轮椅轴轻取1.5W分任务（R2开）\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "c3024ba203e0ed31",
+    "members": [
+      "坎特蕾拉",
+      "弗洛洛",
+      "琳奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1gYraBLErC/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1gYraBLErC/",
+          "quote": "新八万队表现如何？弗坎琳矩阵通用buff9738（配置012101）\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "a9929b4ff0308c43",
+    "members": [
+      "卜灵",
+      "吟霖",
+      "心"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1KLpE6sEnf/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1KLpE6sEnf/",
+          "quote": "依旧吟霖再就业等下一个天亮，01心吟卜1.3w矩阵\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "5419190e54e45c80",
+    "members": [
+      "今汐",
+      "心",
+      "锁暝"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1uZHN6sEXw/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1uZHN6sEXw/",
+          "quote": "心锁汐010011矩阵15387\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "ffc50477951eb25f",
+    "members": [
+      "丽贝卡",
+      "奥古斯塔",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1zbH96BEcM/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1zbH96BEcM/",
+          "quote": "奥丽维，这期矩阵雷队buff有点强啊\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "df801bde29607151",
+    "members": [
+      "卜灵",
+      "珂莱塔",
+      "琳奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1fipn6mEsT/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1fipn6mEsT/",
+          "quote": "3.7矩阵应对！珂琳卜4r轮椅轴教学\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "015526013ee2f229",
+    "members": [
+      "丽贝卡",
+      "珂莱塔",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1cRnn6UEEb/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1cRnn6UEEb/",
+          "quote": "矩阵01珂丽维手机轮椅轴8500分\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "37ca7c4479f2c526",
+    "members": [
+      "灯灯",
+      "珂莱塔",
+      "穗穗"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1tFnR6WEC6/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1tFnR6WEC6/",
+          "quote": "01珂灯穗矩阵7025\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "8bcff35596f4c3bd",
+    "members": [
+      "卜灵",
+      "散华",
+      "椿"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1Eba66tEG1/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1Eba66tEG1/",
+          "quote": "矩阵椿散卜五千，好想要战斗爽\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "ede42a76c760b575",
+    "members": [
+      "吟霖",
+      "穗穗",
+      "绯雪"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1TuHM6REGt/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1TuHM6REGt/",
+          "quote": "【绯吟穗】吟霖5R2豪取矩阵3W5！我吟伟大！\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "fcceff3dd2801c9c",
+    "members": [
+      "卜灵",
+      "吟霖",
+      "相里要"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1h8HV61EzE/",
+      "https://www.bilibili.com/video/BV1RbXLBAEH7/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1RbXLBAEH7/",
+          "quote": "0+1相里要吟霖卜灵矩阵5600\n",
+          "matrix": true,
+          "level": "搜索页明确三人标题"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1h8HV61EzE/",
+          "quote": "00相01吟卜矩阵队伍三\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "aacfc496abfe4873",
+    "members": [
+      "弗洛洛",
+      "桃祈",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV18pZQBrEco/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV18pZQBrEco/",
+          "quote": "【鸣潮】（2.12）01弗桃维矩阵叠兵5421分\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "137b9eb755be3c36",
+    "members": [
+      "卜灵",
+      "心",
+      "桃祈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1JbJa6GE7z/",
+      "https://www.bilibili.com/video/BV138ph6YE1M/",
+      "https://www.bilibili.com/video/BV1VipZ65EKB/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1JbJa6GE7z/",
+          "quote": "心桃卜r1矩阵一穿五\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1VipZ65EKB/",
+          "quote": "【矩阵S2-3】当前版本最强低金队，01心桃卜矩阵1.5W分！\n",
+          "matrix": true,
+          "level": "搜索页明确三人标题"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV138ph6YE1M/",
+          "quote": "【矩阵S2-3】01心桃卜 满buff 5R2 14457分，一脚踹死满血R2宝箱怪\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "b1e763907ffceab8",
+    "members": [
+      "丹瑾",
+      "卜灵",
+      "弗洛洛"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV114K66BEKj/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV114K66BEKj/",
+          "quote": "【弗洛游戏】01弗丹卜 五谱轴（只切一次） R2集群 3.5矩阵9071分（附带字幕解读）\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "5189a72189f566fe",
+    "members": [
+      "丽贝卡",
+      "卜灵",
+      "弗洛洛"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1DDjm6hEPj/",
+      "https://www.bilibili.com/video/BV1tr7p6sESe/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1DDjm6hEPj/",
+          "quote": "01弗丽卜矩阵流口水轮切7820分\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1tr7p6sESe/",
+          "quote": "【免费的五星通辅丽贝卡】01弗00丽卜矩阵R1辛格勒姆开，通用buff7421分\n",
+          "matrix": true,
+          "level": "搜索页明确三人标题"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "5226bb563aaa6269",
+    "members": [
+      "卜灵",
+      "琳奈",
+      "相里要"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1q5nz6ZEAM/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1q5nz6ZEAM/",
+          "quote": "矩阵00相琳卜R1开5308分\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "c1cd1576df40b0bc",
+    "members": [
+      "守岸人",
+      "珂莱塔",
+      "琳奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1aUBYBVEzp/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1aUBYBVEzp/",
+          "quote": "珂琳守轮椅轴矩阵8000分\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "f6ae20b3aa44c581",
+    "members": [
+      "夏空",
+      "尤诺",
+      "琳奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1tkJU6qEVk/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1tkJU6qEVk/",
+          "quote": "61月琳夏/月琳守矩阵对比，夏空2w8，守岸人2w9\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "d17d29ac1b911464",
+    "members": [
+      "千咲",
+      "卜灵",
+      "弗洛洛"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1vXKc67Eya/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1vXKc67Eya/",
+          "quote": "弗千卜矩阵\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "ef40bba5cff6ac98",
+    "members": [
+      "绯雪",
+      "维里奈",
+      "鉴心"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1TFJv6fE2W/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1TFJv6fE2W/",
+          "quote": "01绯鉴维矩阵5000+｜轮椅五居合4R打法（R1摩托开）\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "56954e424f9dd20b",
+    "members": [
+      "琳奈",
+      "相里要",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1GyiTBAEuV/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1GyiTBAEuV/",
+          "quote": "里奈奈组合！01相琳维矩阵8994分\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "fb245a04451ee464",
+    "members": [
+      "千咲",
+      "守岸人",
+      "琳奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1c3Hm6oErT/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1c3Hm6oErT/",
+          "quote": "珂莱塔xp厨矩阵队伍70900记录 暗琳维/千琳守/嘉露莫/清达莫/珂折守\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "307bb358a9e6b64e",
+    "members": [
+      "卜灵",
+      "弗洛洛",
+      "桃祈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1MTTb62Eh4/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1MTTb62Eh4/",
+          "quote": "【鸣潮】弗桃卜矩阵轻取18635分，贫民配队也能这么强吗\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "86cf6bd3bebe9ec3",
+    "members": [
+      "吟霖",
+      "尤诺",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1AqMi6AEQU/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1AqMi6AEQU/",
+          "quote": "女特务吟霖矩阵新就业，拐力不错的通用共解拐，月吟维6096\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "21033ecaa94244a6",
+    "members": [
+      "卜灵",
+      "奥古斯塔",
+      "尤诺"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV18gep6eEe6/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV18gep6eEe6/",
+          "quote": "【鸣潮】终焉矩阵S2（第二阶段) 00日月卜 5860\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "f9f9932cb7fe1d70",
+    "members": [
+      "守岸人",
+      "清宵",
+      "琳奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "搜索页标题明确列出三人及矩阵场景；具体操作和装备要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1HHtP6QEC3/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1HHtP6QEC3/",
+          "quote": "清琳守矩阵R2开（010021/15385）\n",
+          "matrix": true,
+          "level": "标题及简介全名复核"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "f2628f398681fa62",
+    "members": [
+      "爱弥斯",
+      "露帕",
+      "达妮娅"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "B站矩阵教程；具体装备及链度要求见原视频。",
+    "evidence": "B站·矩阵视频",
+    "sources": [
+      "https://www.bilibili.com/video/BV1JapE6CE2X/",
+      "https://www.bilibili.com/video/BV1z17D6xEZv/",
+      "https://www.bilibili.com/video/BV13eGq6ZEQw/"
+    ],
+    "axes": [],
+    "selected_axis": "",
+    "origin": "bilibili_research",
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-10-26-v5-disabled-recheck",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1JapE6CE2X/",
+          "quote": "【鸣潮3.7】全01爱达露 11.5W Dps+ | 5R14光翼! 终焉矩阵S2-3 | 椰汁糕 进阶循环指南\n3火国家队回归了！\n\n这次我把之前的老策略升级成 5R14E 30次融合爆发！相比旧版本，大约提升了 1500 DPS+！\n\n看起来我应该还能再提升大约 1000 DPS，但我发现这样会更难保持稳定！\n\n完整的脚本和计算过程放在评论区！如果有任何疑问，欢迎随时问我！\n\nPerformer：TrnXdc\n使用工具：wuwalab\n循环脚本：https://wuwalab.com/rotation/862\n\n#教程攻略 #轮椅轴 #二次元#必剪创作 #鸣潮 #露帕#爱弥斯 #达妮娅 #终焉矩阵 #库洛\n视频标签：二次元、达妮娅、露帕、轮椅轴、爱弥斯、终焉矩阵、库洛、教程攻略、鸣潮、必剪创作",
+          "matrix": true,
+          "level": "标题明确爱达露矩阵＋简介或标签露帕全名消歧"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1z17D6xEZv/",
+          "quote": "【鸣潮3.3】通用buff最高分！全01爱达露20169分矩阵R3伤痕开\n号主是微微的笑@微笑就好OvO 。大把失误，而且看的时候才发现露帕强化e没吃到专武！明天看看能不能凹个流程更完美的，极限大概20900,。现在要去肝活动了QAQ\n视频标签：达妮娅、露帕、鸣潮创作激励计划、爱弥斯、终焉矩阵、必剪创作",
+          "matrix": true,
+          "level": "标题明确爱达露矩阵＋简介或标签露帕全名消歧"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV13eGq6ZEQw/",
+          "quote": "[鸣潮·矩阵]爱达露简单双变奏 6W2分\n🦼🦼🦼库洛我的新轮椅呢？🦼🦼🦼\n视频标签：达妮娅、露帕、鸣潮创作激励计划、鸣潮3.3、爱弥斯、矩阵、战斗爽、鸣潮、必剪创作",
+          "matrix": true,
+          "level": "标题明确爱达露矩阵＋简介或标签露帕全名消歧"
+        }
+      ],
+      "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  }
+]

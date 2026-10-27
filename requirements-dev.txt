@@ -1,0 +1,3 @@
+-r requirements.txt
+-r tools/requirements-research.txt
+playwright>=1.45,<2

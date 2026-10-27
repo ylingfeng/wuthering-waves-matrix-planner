@@ -1,0 +1,3 @@
+# Optional legacy Python solver; the current web/dev server uses no pip packages.
+numpy>=1.26,<3
+scipy>=1.11,<2
