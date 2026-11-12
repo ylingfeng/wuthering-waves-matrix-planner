@@ -73,6 +73,39 @@ class PlannerCardUiTests(unittest.TestCase):
         self.page.mouse.click(button['x'] + button['width']/2, button['y'] + button['height']/2)
         self.assertTrue(self.page.locator('#editor').is_visible())
 
+    def test_jinhsi_changli_addition_preserves_settings_and_can_be_disabled(self):
+        actual = self.page.evaluate('''()=>{
+            const update='2026-11-06-jinhsi-changli-healers';
+            const legacy=structuredClone(PLANNER_SEED);
+            legacy.catalogue_updates=LocalPlanner.read().catalogue_updates.filter(x=>x!==update);
+            legacy.teams=legacy.teams.filter(t=>t.id!=='86db42f17cf1fddc');
+            const verina=legacy.teams.find(t=>t.id==='304dfda0840efd5c');
+            Object.assign(verina,{enabled:false,user_weight:3.5,locked:true,note:'我的备注'});
+            const unrelated=legacy.teams.find(t=>t.id!==verina.id);
+            Object.assign(unrelated,{user_weight:4,enabled:false,locked:false});
+            const characters=JSON.stringify(legacy.characters);
+            const first=LocalPlanner.validate(legacy);
+            const added=first.teams.find(t=>t.id==='86db42f17cf1fddc');
+            const enabled=verina.enabled&&added.enabled;
+            const counts=['304dfda0840efd5c','86db42f17cf1fddc'].map(id=>first.teams.filter(t=>t.id===id).length);
+            verina.enabled=false;added.enabled=false;
+            const again=LocalPlanner.validate(first);
+            return {enabled,counts,verina,added,unrelated,
+                charactersPreserved:characters===JSON.stringify(again.characters),
+                stillDisabled:!verina.enabled&&!added.enabled};
+        }''')
+        self.assertTrue(actual['enabled'])
+        self.assertEqual(actual['counts'], [1, 1])
+        self.assertEqual(actual['verina']['priority'], 2.5)
+        self.assertEqual(actual['verina']['user_weight'], 3.5)
+        self.assertTrue(actual['verina']['locked'])
+        self.assertEqual(actual['verina']['note'], '我的备注')
+        self.assertEqual(actual['unrelated']['user_weight'], 4)
+        self.assertFalse(actual['unrelated']['enabled'])
+        self.assertEqual(actual['added']['user_weight'], 1)
+        self.assertTrue(actual['charactersPreserved'])
+        self.assertTrue(actual['stillDisabled'])
+
     def test_rover_displays_first_with_legacy_saved_order(self):
         before = self.page.evaluate('''()=>{
             state.characters.reverse();

@@ -12,6 +12,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 VIDEO_TEAMS = {
+    'BV1MRSUByE6U': [(['今汐', '长离', '维里奈'], '')],
+    'BV1sUuN67Ejp': [(['今汐', '长离', '守岸人'], '')],
+    'BV1TpktB8EGP': [(['今汐', '长离', '守岸人'], '')],
     'BV1acXkBTE7s': [(['尤诺', '鉴心', '维里奈'], '')],
     'BV18JHE6ZESq': [(['尤诺', '琳奈', '守岸人'], ''), (['尤诺', '鉴心', '维里奈'], '')],
     'BV1V27y6hEfH': [(['嘉贝莉娜', '露帕', '莫宁'], '')],

@@ -117,6 +117,7 @@ function teamCard(t,title=''){
  </article>`;
 }
 function syncTeamCards(){
+ if(activeTab==='schedule')renderSchedule();
  document.querySelectorAll('.team-card[data-id]').forEach(card=>{
   const t=findTeam(card.dataset.id);if(!t){card.remove();return}
   const template=document.createElement('template');template.innerHTML=teamCard(t,card.dataset.title);
@@ -150,11 +151,11 @@ function teams(){
  $('#team-grid').innerHTML=list.map(t=>teamCard(t)).join('')||'<div class="empty">暂无符合条件的队伍，可以新建三人组合。</div>';
 }
 
-const routeNames=['characters','teams','results'];
-function routeTab(){return routeNames.find(n=>location.pathname.replace(/\/$/,'').endsWith('/'+n))||routeNames.find(n=>location.hash==='#'+n)||'characters'}
-function tab(name,navigate=true){if(!routeNames.includes(name))name='characters';activeTab=name;
+const routeNames=['characters','teams','results','schedule'];
+function routeTab(){return routeNames.find(n=>location.pathname.replace(/\/index\.html$/,'').replace(/\/$/,'').endsWith('/'+n))||routeNames.find(n=>location.hash==='#'+n)||'characters'}
+function tab(name,navigate=true){if(!routeNames.includes(name))name='characters';activeTab=name;document.body.classList.toggle('schedule-page',name==='schedule');
  if(navigate){const url=location.protocol==='file:'?location.href.split('#')[0]+'#'+name:new URL(name+'/',document.baseURI).pathname;if(location.href!==new URL(url,location.href).href)history.pushState({tab:name},'',url)}
-document.querySelectorAll('.page').forEach(el=>el.hidden=el.id!==name);document.querySelectorAll('nav button').forEach(el=>el.classList.toggle('active',el.dataset.tab===name));if(name==='teams')teams();if(name==='characters')roster();if(name==='results')renderResult()}
+document.querySelectorAll('.page').forEach(el=>el.hidden=el.id!==name);document.querySelectorAll('nav button').forEach(el=>el.classList.toggle('active',el.dataset.tab===name));if(name==='teams')teams();if(name==='characters')roster();if(name==='results')renderResult();if(name==='schedule')renderSchedule()}
 async function save(){persistLocally();await syncConfiguration();return state}
 function renderResult(){if(!result)return;const stale=!!result.stale;$('#result-count').textContent=stale?'待重算':result.count;let remainder=state.characters.filter(c=>(c.available||result.all_characters)&&result.remaining[c.name]>0);$('#result-body').className=stale?'stale':'';$('#result-body').innerHTML=`<div class="result-heading"><div><strong>${stale?'上次计算 ':''}${result.count} 队</strong><p>${result.all_characters?'全角色模拟':'我的角色'} · 候选队伍 ${result.recommended_count} 队＋主辅奶兜底 ${result.fallback_count} 队＋丹瑾单人补队 ${result.solo_count??0} 队；得分从低到高。</p></div><div class="hint">${result.eligible} 种可用候选 · 使用 ${result.count*3} / ${result.total_stamina} 点体力<br>队伍得分总和 ${result.total_score} · 体力不会实际扣除。</div></div><div class="result-grid">${result.selected.map(t=>findTeam(t.id)).filter(Boolean).map((t,i)=>teamCard(t,'配队'+(i+1))).join('')||'<div class="empty">没有满足条件的队伍。请检查角色可用状态、体力和候选开关。</div>'}</div><div class="remaining"><h3>剩余体力</h3><p class="hint">这些角色仍有体力；当前已收录候选未能覆盖，不代表没有可用配队。可继续补充低优先级搭档或调整必选队。</p><div class="remaining-list">${remainder.map(c=>`<span>${esc(c.name)} <b>×${result.remaining[c.name]}</b></span>`).join('')||'已全部用完'}</div></div>`}
 function axisFields(){let axis=draft.axes.find(a=>a.id===draft.selected_axis);$('#axis-select').innerHTML=draft.axes.length?draft.axes.map(a=>`<option value="${esc(a.id)}">${esc(a.name)}${a.author?' · '+esc(a.author):''}</option>`).join(''):'<option value="">尚无输出轴</option>';$('#axis-select').value=draft.selected_axis;$('#axis-fields').hidden=!axis;$('#axis-empty').hidden=!!axis;if(axis){$('#axis-name').value=axis.name;$('#axis-description').value=axis.description;$('#axis-source').href=safeUrl(axis.url);$('#axis-source').hidden=!axis.url}}
@@ -210,7 +211,7 @@ $('#add-axis').onclick=()=>{let a={id:crypto.randomUUID(),name:'新输出轴 '+(
 $('#delete-team').onclick=()=>{forgetResultTeam(draft.id);state.teams=state.teams.filter(t=>t.id!==draft.id);$('#editor').close();markDirty();teams();toast('已移除并自动保存')};
 $('#team-form').onsubmit=e=>{e.preventDefault();draft.note=$('#team-note').value;draft.rover_attribute=draft.members.includes('漂泊者')?$('#rover-attribute').value:'';let error='';if(new Set(draft.members).size!==3)error='请选择三名不同角色';else if(draft.members.includes('漂泊者')&&!draft.rover_attribute)error='请选择漂泊者属性';else if(draft.locked&&!draft.enabled)error='必选队伍需要开启参与计算';else if(state.teams.some(t=>t.id!==draft.id&&[...t.members].sort().join('|')===[...draft.members].sort().join('|')&&t.rover_attribute===draft.rover_attribute))error='已有该角色组合，请在原队伍中添加输出轴';if(error){$('#editor-error').textContent=error;return}let index=state.teams.findIndex(t=>t.id===draft.id);if(index<0)state.teams.push(draft);else state.teams[index]=draft;$('#editor').close();markDirty();teams();toast(storageMode==='server'?'已应用，正在自动同步本地':'已自动保存到浏览器')};
 window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue=''}});
-api('/api/state').then(s=>{state=s;restorePreferences();summary();roster();tab(routeTab(),false);$('#save-status').textContent=storageMode==='server'?'已自动同步本地':'已自动保存到浏览器';maybeShowGuide()}).catch(e=>{toast(e.message);$('#character-grid').innerHTML='<div class="empty">数据载入失败。可导入已导出的配置恢复。</div>'});
+window.addEventListener('DOMContentLoaded',()=>{api('/api/state').then(s=>{state=s;restorePreferences();summary();roster();tab(routeTab(),false);$('#save-status').textContent=storageMode==='server'?'已自动同步本地':'已自动保存到浏览器';maybeShowGuide()}).catch(e=>{toast(e.message);$('#character-grid').innerHTML='<div class="empty">数据载入失败。可导入已导出的配置恢复。</div>'});});
 
 
 
@@ -230,7 +231,11 @@ const tourSteps=[
  {page:'teams',modal:true,rover:true,target:'#rover-row',title:'选择漂泊者属性',text:'选中漂泊者后，属性框就在这个角色下方。请选择本队使用的属性。'},
  {page:'teams',modal:true,target:'.dialog-footer',title:'应用并自动保存',text:'确认填写后点“应用到候选列表”，队伍和输出轴会自动保存。这里仅演示，不会新增队伍。'},
  {page:'teams',target:'.team-card .team-adjustments',title:'在卡片上设置权重与必选',text:'候选与结果卡片同步，直接修改后自动保存。用户权重默认 1。“必须选入”会自动开启参与计算；参与开关在卡片右上方，关闭参与会同时取消必选。'},
- {page:'teams',target:'#calculate',title:'计算配队',text:'在页面上方选择计算范围，再点击“计算配队”。先尽量增加队数，再比较总得分。'}
+ {page:'teams',target:'#calculate',title:'计算配队',text:'在页面上方选择计算范围，再点击“计算配队”。先尽量增加队数，再比较总得分。'},
+ {page:'schedule',target:'#schedule-select',title:'切换手动排表',text:'可以新建或复制排表，各方案独立计算体力。修改自动保存，也会包含在导出的个人配置里。'},
+ {page:'schedule',target:'#schedule-share',title:'分享排表代码',text:'导出当前排表为一串代码，分享给其他人。粘贴代码后只会新建排表，保留已有表；体力按接收方自己的配置计算。'},
+ {page:'schedule',target:'.schedule-deck-heading',title:'选择角色模板',text:'左侧模板按定位和版本展示，可反复拖入右侧排表。次数用完置灰，超额按角色着色；拖动中间分隔线可调整宽度。'},
+ {page:'schedule',target:'#schedule-grid-shell',title:'设置固定位与行列',text:'行头可空或固定最多两人，与格内角色合计三人为一队。漂泊者属性可在自己的卡片内选择。拖角色 chip 仅移动角色；拖行列把手交换整行或整列。鼠标移到行头或列头，点击“＋”在相邻位置插入；表格边缘的“＋”在末尾添加。标题菜单可移动和删除，也支持右键打开。'}
 ];
 const editorTourStart=tourSteps.findIndex(s=>s.modal),editorTourEnd=tourSteps.findLastIndex(s=>s.modal);
 let tourIndex=0,tourPreviousTab='characters',tourPreviousFocus=null,tourTarget=null,tourFrame=0,tourSavedDraft=null,tourModalOpen=false,tourEditorOnly=false;
@@ -313,7 +318,7 @@ document.addEventListener('keydown',e=>{
 
 $('#export-config').onclick=()=>{try{LocalPlanner.validate(structuredClone(state));const blob=new Blob([JSON.stringify(LocalPlanner.exportConfig(state),null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='matrix-planner-config.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}catch(e){toast(e.message)}};
 $('#import-config').onclick=()=>$('#import-file').click();
-$('#import-file').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>8000000)throw Error('配置文件过大');const data=JSON.parse(await file.text());const imported=LocalPlanner.importConfig(data);imported.revision=LocalPlanner.read().revision;state=LocalPlanner.save(imported);restorePreferences();dirty=false;queueSync();result=null;summary();roster();teams();$('#result-body').textContent='配置已导入，请重新计算。';$('#result-count').textContent='—';toast('配置已导入并保存')}catch(err){toast(err.message)}finally{e.target.value=''}};
+$('#import-file').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>8000000)throw Error('配置文件过大');const data=JSON.parse(await file.text());const imported=LocalPlanner.importConfig(data);imported.revision=LocalPlanner.read().revision;state=LocalPlanner.save(imported);restorePreferences();dirty=false;queueSync();result=null;summary();roster();teams();if(activeTab==='schedule')renderSchedule();$('#result-body').textContent='配置已导入，请重新计算。';$('#result-count').textContent='—';toast('配置已导入并保存')}catch(err){toast(err.message)}finally{e.target.value=''}};
 
 function browserPlan(snapshot,options){
  return new Promise((resolve,reject)=>{
@@ -330,7 +335,7 @@ function browserPlan(snapshot,options){
 
 $('#fill-solo').onchange=invalidateResult;
 
-$('#restore-config').onclick=()=>{if(!confirm('恢复上次保存的配置？当前配置会先备份，可再次恢复切回。'))return;try{state=LocalPlanner.restorePrevious();restorePreferences();dirty=false;queueSync();result=null;summary();roster();teams();$('#result-count').textContent='—';$('#result-body').textContent='已恢复历史配置，请重新计算。';$('#save-status').textContent='已恢复到浏览器';toast('已恢复上次保存')}catch(e){toast(e.message)}};
+$('#restore-config').onclick=()=>{if(!confirm('恢复上次保存的配置？当前配置会先备份，可再次恢复切回。'))return;try{state=LocalPlanner.restorePrevious();restorePreferences();dirty=false;queueSync();result=null;summary();roster();teams();if(activeTab==='schedule')renderSchedule();$('#result-count').textContent='—';$('#result-body').textContent='已恢复历史配置，请重新计算。';$('#save-status').textContent='已恢复到浏览器';toast('已恢复上次保存')}catch(e){toast(e.message)}};
 
 
 
@@ -396,6 +401,6 @@ function restorePreferences(){
  for(const id of preferenceIds){const el=$('#'+id);if(prefs[id]!==undefined){if(el.type==='checkbox')el.checked=!!prefs[id];else if(el.tagName!=='SELECT'||[...el.options].some(o=>o.value===prefs[id]))el.value=prefs[id]}}
  selectedEvidence.clear();for(const k of prefs.evidence||[])if(evidenceTypes.some(x=>x.key===k))selectedEvidence.add(k);
 }
-function savePreferences(){if(!state)return;state.preferences=Object.fromEntries(preferenceIds.map(id=>{const el=$('#'+id);return [id,el.type==='checkbox'?el.checked:el.value]}));state.preferences.evidence=[...selectedEvidence];persistLocally()}
+function savePreferences(){if(!state)return;state.preferences={...state.preferences,...Object.fromEntries(preferenceIds.map(id=>{const el=$('#'+id);return [id,el.type==='checkbox'?el.checked:el.value]}))};state.preferences.evidence=[...selectedEvidence];persistLocally()}
 for(const id of preferenceIds)$('#'+id).addEventListener('change',savePreferences);
 $('#evidence-filter').addEventListener('click',e=>{if(e.target.closest('[data-evidence]'))savePreferences()});

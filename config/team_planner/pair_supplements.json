@@ -2649,5 +2649,121 @@
       "matrix_confirmed": true,
       "default_status_reason": ""
     }
+  },
+  {
+    "id": "304dfda0840efd5c",
+    "members": [
+      "今汐",
+      "长离",
+      "维里奈"
+    ],
+    "rover_attribute": "",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "今汐主 C、长离辅助；手法及装备要求见 B 站矩阵视频。",
+    "evidence": "B站·矩阵教学",
+    "sources": [
+      "https://okwwcharcode.ok-script.com/teams/Changli_Jinhsi_Verina.json",
+      "https://wutheringlab.com/character/changli-build/",
+      "https://www.bilibili.com/video/BV1MRSUByE6U/"
+    ],
+    "axes": [
+      {
+        "id": "Changli_Jinhsi_Verina_楽山_1.0.0.zip",
+        "name": "Changli_Jinhsi_Verina",
+        "author": "楽山",
+        "version": "1.0.0",
+        "description": "龙凤维轮椅轴\n样本：01今汐01长离60维（精5奇幻 仅供参考）\n共效：今汐120 长离120 维里奈 260\n位置：一号位长离 二号位今汐 三号位维里奈\n实机已跑通，增加了部分保底 流程并不十分稳定 有链度可以勉强混个5000 或者打打宝箱",
+        "url": "https://okwwcharcode.ok-script.com/codes/Changli_Jinhsi_Verina_%E6%A5%BD%E5%B1%B1_1.0.0.zip"
+      }
+    ],
+    "selected_axis": "Changli_Jinhsi_Verina_楽山_1.0.0.zip",
+    "origin": "catalogue",
+    "recommendation_quotes": [
+      {
+        "character": "长离",
+        "heading": "Changli Best Team",
+        "quote": "Jinhsi Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer",
+        "source": "https://wutheringlab.com/character/changli-build/"
+      }
+    ],
+    "default_priority": 2.5,
+    "default_enabled": true,
+    "source_audit": {
+      "version": "2026-11-06-jinhsi-changli-healers",
+      "matched": [
+        {
+          "kind": "guide",
+          "url": "https://wutheringlab.com/character/changli-build/",
+          "quote": "Jinhsi Build Main DPS Changli Build Sub DPS Verina Build Baizhi Build Healer"
+        },
+        {
+          "kind": "workshop",
+          "url": "https://okwwcharcode.ok-script.com/teams/Changli_Jinhsi_Verina.json",
+          "quote": "龙凤维轮椅轴\n样本：01今汐01长离60维（精5奇幻 仅供参考）\n共效：今汐120 长离120 维里奈 260\n位置：一号位长离 二号位今汐 三号位维里奈\n实机已跑通，增加了部分保底 流程并不十分稳定 有链度可以勉强混个5000 或者打打宝箱",
+          "matrix": false
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1MRSUByE6U/",
+          "quote": "简单又好学的鸣潮轮椅轴！！0+1龙凤维轮椅轴终焉矩阵6200分手法参考！！\n",
+          "matrix": true,
+          "level": "标题及简介复核；龙凤指今汐、长离，维／守指治疗位，未逐帧观看"
+        }
+      ],
+      "recheck_confirmed": true,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    },
+    "catalogue_update": "2026-11-06-jinhsi-changli-healers"
+  },
+  {
+    "id": "86db42f17cf1fddc",
+    "members": [
+      "今汐",
+      "长离",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "axes": [],
+    "selected_axis": "",
+    "sources": [
+      "https://www.bilibili.com/video/BV1sUuN67Ejp/",
+      "https://www.bilibili.com/video/BV1TpktB8EGP/"
+    ],
+    "origin": "bilibili_research",
+    "enabled": true,
+    "default_enabled": true,
+    "priority": 2.5,
+    "default_priority": 2.5,
+    "evidence": "B站·矩阵教学",
+    "catalogue_update": "2026-11-06-jinhsi-changli-healers",
+    "note": "今汐主 C、长离辅助；手法及装备要求见 B 站矩阵视频。",
+    "source_audit": {
+      "version": "2026-11-06-jinhsi-changli-healers",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1sUuN67Ejp/",
+          "quote": "【鸣潮】最后一舞，龙凤守3.5终焉矩阵11895分\n后续还有高手能打1.45w左右，我自己号练度一般，等了半年多的共技通用，终于等来了，很久没玩这个队伍了，手生了太多，要么就是出分了流程不好看，要么就是流程好看了但是分数不好看，这一遍算是折中稍微好一点的了，可惜这把在边发呆边打，最后打着没看时间继续去变守想着打循环了，导致没了第10喷，这是让我入坑的两个角色，是我最喜欢的两个角色，是引领我接触合轴的队伍，这应该也是我最后一次玩这个队伍了。",
+          "matrix": true,
+          "level": "标题及简介复核；龙凤指今汐、长离，维／守指治疗位，未逐帧观看"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1TpktB8EGP/",
+          "quote": "01龙凤守公式今守循环矩阵11264分\n",
+          "matrix": true,
+          "level": "标题及简介复核；龙凤指今汐、长离，维／守指治疗位，未逐帧观看"
+        }
+      ],
+      "recheck_confirmed": true,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
   }
 ]

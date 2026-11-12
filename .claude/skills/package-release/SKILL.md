@@ -20,7 +20,7 @@ MatrixPlanner/
    ├─ favicon.png / favicon.ico
    ├─ CHANGELOG.md / RELEASE_NOTES.md
    ├─ portraits/
-   ├─ characters/ / teams/ / results/
+   ├─ characters/ / teams/ / results/ / schedule/
    └─ 其他页面资源及说明
 ```
 
@@ -48,7 +48,7 @@ MatrixPlanner/
 
 1. 查看 `dist/` 已有版本。用户指定版本优先；用户要求“小版本”时顺延补丁号，否则功能发布递增次版本，修复递增补丁版本。
 2. 检查当前发布脚本的使用说明、发布说明、固定分特例和候选数量是否符合实际，不沿用过时数字。
-3. 执行 `python -m tools.release_static VERSION`。脚本同步三页静态入口，复制网页资源，使用 Windows .NET Framework 的 `csc.exe` 编译带图标启动器，并生成 ZIP 和 SHA-256 清单。
+3. 执行 `python -m tools.release_static VERSION`。脚本同步四页静态入口，复制网页资源，使用 Windows .NET Framework 的 `csc.exe` 编译带图标启动器，并生成 ZIP 和 SHA-256 清单。
 4. 产物保存在 `dist/vVERSION/`：`Windows/MatrixPlanner/`、`macOS/MatrixPlanner/`、两个 ZIP、`SHA256SUMS.txt`、`CHANGELOG.md`、`RELEASE_NOTES.md`、`manifest.json`。dist根目录不散放应用目录或ZIP。
 5. 默认不覆盖历史快照。用户明确要求改同一版本时，先将旧目录移到 `tmp/` 的唯一备份路径，再重新生成该版本；保持旧版内容可找回。Windows移动前检查解析后的源/目标路径位于本项目预期目录。
 

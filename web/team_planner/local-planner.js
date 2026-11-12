@@ -119,6 +119,15 @@ function createLocalPlanner(){
    if(added&&!s.teams.some(t=>identity(t)===identity(added)&&t.rover_attribute===added.rover_attribute))s.teams.push(clone(added));
    s.catalogue_updates=[...(s.catalogue_updates||[]),requestedAddition];
   }
+  const dragonPhoenixUpdate='2026-11-06-jinhsi-changli-healers';
+  if(!(s.catalogue_updates||[]).includes(dragonPhoenixUpdate)){
+   for(const standard of PLANNER_SEED.teams.filter(t=>t.catalogue_update===dragonPhoenixUpdate)){
+    const existing=s.teams.find(t=>identity(t)===identity(standard)&&t.rover_attribute===standard.rover_attribute);
+    if(existing)existing.enabled=true;
+    else s.teams.push({...clone(standard),user_weight:1,locked:false});
+   }
+   s.catalogue_updates=[...(s.catalogue_updates||[]),dragonPhoenixUpdate];
+  }
   const seen=new Set(),ids=new Set();
   for(const t of s.teams){
    if(typeof t.id!=='string'||ids.has(t.id)||t.members?.length!==3||new Set(t.members).size!==3||t.members.some(n=>!names.has(n)))throw Error('队伍成员或编号无效');
@@ -130,6 +139,35 @@ function createLocalPlanner(){
    if(t.axes.some(a=>typeof a.id!=='string'||typeof a.name!=='string'||typeof a.description!=='string')||new Set(t.axes.map(a=>a.id)).size!==t.axes.length)throw Error('输出轴无效');
    if(t.selected_axis&&!t.axes.some(a=>a.id===t.selected_axis))throw Error('输出轴选择无效');
   }
+  s.schedules??=clone(PLANNER_SEED.schedule_defaults||{version:1,active_id:'',plans:[]});
+  const schedules=s.schedules;
+  if(schedules.version!==1||!Array.isArray(schedules.plans)||!schedules.plans.length||schedules.plans.length>30)throw Error('排表配置无效');
+  const planIds=new Set();
+  for(const p of schedules.plans){
+   if(typeof p.id!=='string'||!p.id||planIds.has(p.id)||typeof p.name!=='string'||!p.name.trim()||p.name.length>60)throw Error('排表名称或编号无效');
+   planIds.add(p.id);
+   if(!Array.isArray(p.rows)||!p.rows.length||p.rows.length>100||new Set(p.rows).size!==p.rows.length||p.rows.some(n=>typeof n!=='string'||(!names.has(n)&&!/^row-[\w-]+$/.test(n))))throw Error('排表行无效');
+   p.row_heads??={};p.row_attributes??={};p.row_fixed??={};
+   for(const [row,members] of Object.entries(p.row_fixed))if(!p.rows.includes(row)||!Array.isArray(members)||members.length>2||new Set(members).size!==members.length||members.some(n=>!names.has(n)))throw Error('固定位角色无效');
+   for(const [row,name] of Object.entries(p.row_heads))if(!p.rows.includes(row)||(name!==null&&!names.has(name)))throw Error('行头角色无效');
+   for(const [row,attribute] of Object.entries(p.row_attributes))if(!p.rows.includes(row)||!['衍射','湮灭','气动','导电'].includes(attribute))throw Error('行头属性无效');
+   if(p.rows.some(row=>!names.has(row)&&!Object.hasOwn(p.row_heads,row)))throw Error('新增行缺少行头配置');
+   if(!Array.isArray(p.columns)||!p.columns.length||p.columns.length>50)throw Error('排表列数应为1至50');
+   const columnIds=new Set();
+   for(const col of p.columns){if(typeof col.id!=='string'||!col.id||columnIds.has(col.id)||typeof col.name!=='string'||!col.name.trim()||col.name.length>30)throw Error('排表列无效');columnIds.add(col.id)}
+   if(!Array.isArray(p.cells)||p.cells.length>p.rows.length*p.columns.length)throw Error('排表格子无效');
+   const positions=new Set();
+   for(const cell of p.cells){
+    const position=JSON.stringify([cell.row,cell.column]);
+    if(!p.rows.includes(cell.row)||!columnIds.has(cell.column)||positions.has(position))throw Error('排表格子位置无效');
+    positions.add(position);
+    const fixed=SchedulePlanner.fixed(p,cell.row);
+    if(typeof cell.label!=='string'||cell.label.length>24||!Array.isArray(cell.members)||cell.members.length>3-fixed.length||new Set(cell.members).size!==cell.members.length||cell.members.some(n=>fixed.includes(n)||!names.has(n)))throw Error('排表队伍成员无效');
+    if(cell.members.includes('漂泊者')&&!['衍射','湮灭','气动','导电'].includes(cell.rover_attribute))throw Error('请选择排表中漂泊者的属性');
+   }
+  }
+  for(const p of schedules.plans)SchedulePlanner.migrate(p);
+  if(!planIds.has(schedules.active_id))throw Error('当前排表不存在');
   return s;
  }
  function read(){
@@ -198,7 +236,7 @@ function createLocalPlanner(){
  }
  function exportConfig(s){
   const current=validate(clone(s));
-  return {format:'matrix-planner-v2',preferences:clone(current.preferences||{}),characters:current.characters.map(c=>({name:c.name,available:c.available,base:c.base,weekly:c.weekly,roles:c.roles,chain:c.chain,weight:c.weight})),
+  return {format:'matrix-planner-v2',preferences:clone(current.preferences||{}),schedules:clone(current.schedules),characters:current.characters.map(c=>({name:c.name,available:c.available,base:c.base,weekly:c.weekly,roles:c.roles,chain:c.chain,weight:c.weight})),
    teams:current.teams.map(t=>({id:t.id,members:t.members,rover_attribute:t.rover_attribute,user_weight:t.user_weight??1,enabled:t.enabled,locked:!!t.locked,note:t.note,axes:t.axes,selected_axis:t.selected_axis}))};
  }
  function importConfig(data){
@@ -207,6 +245,7 @@ function createLocalPlanner(){
   const current=validate(clone(PLANNER_SEED));
   current.characters=data.characters.map(c=>{const base=current.characters.find(x=>x.name===c.name);return {...base,...Object.fromEntries(['name','available','base','weekly','roles','chain','weight'].map(k=>[k,c[k]])),healer:c.roles?.includes('奶妈')}});
   current.preferences=clone(data.preferences||{});
+  if(data.schedules!==undefined)current.schedules=clone(data.schedules);
   current.teams=data.teams.map(t=>{
    const base=PLANNER_SEED.teams.find(x=>identity(x)===identity(t)&&x.rover_attribute===t.rover_attribute);
    const personal=Object.fromEntries(['id','members','rover_attribute','user_weight','enabled','locked','note','axes','selected_axis'].map(k=>[k,t[k]]));

@@ -1554,13 +1554,14 @@
       "维里奈"
     ],
     "rover_attribute": "",
-    "enabled": false,
-    "priority": 1,
-    "note": "具体槽位、起手位和装备要求见所选轴说明；尚未验证本账号配置。",
-    "evidence": "工坊·通用参考",
+    "enabled": true,
+    "priority": 2.5,
+    "note": "今汐主 C、长离辅助；手法及装备要求见 B 站矩阵视频。",
+    "evidence": "B站·矩阵教学",
     "sources": [
       "https://okwwcharcode.ok-script.com/teams/Changli_Jinhsi_Verina.json",
-      "https://wutheringlab.com/character/changli-build/"
+      "https://wutheringlab.com/character/changli-build/",
+      "https://www.bilibili.com/video/BV1MRSUByE6U/"
     ],
     "axes": [
       {
@@ -1582,10 +1583,10 @@
         "source": "https://wutheringlab.com/character/changli-build/"
       }
     ],
-    "default_priority": 1,
-    "default_enabled": false,
+    "default_priority": 2.5,
+    "default_enabled": true,
     "source_audit": {
-      "version": "2026-10-26-v5-disabled-recheck",
+      "version": "2026-11-06-jinhsi-changli-healers",
       "matched": [
         {
           "kind": "guide",
@@ -1597,14 +1598,22 @@
           "url": "https://okwwcharcode.ok-script.com/teams/Changli_Jinhsi_Verina.json",
           "quote": "龙凤维轮椅轴\n样本：01今汐01长离60维（精5奇幻 仅供参考）\n共效：今汐120 长离120 维里奈 260\n位置：一号位长离 二号位今汐 三号位维里奈\n实机已跑通，增加了部分保底 流程并不十分稳定 有链度可以勉强混个5000 或者打打宝箱",
           "matrix": false
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1MRSUByE6U/",
+          "quote": "简单又好学的鸣潮轮椅轴！！0+1龙凤维轮椅轴终焉矩阵6200分手法参考！！\n",
+          "matrix": true,
+          "level": "标题及简介复核；龙凤指今汐、长离，维／守指治疗位，未逐帧观看"
         }
       ],
-      "recheck_confirmed": false,
-      "video_status": "本轮搜索未匹配明确三人矩阵视频（不代表不存在）",
+      "recheck_confirmed": true,
+      "video_status": "已匹配矩阵视频标题/简介",
       "issue": "",
-      "matrix_confirmed": false,
-      "default_status_reason": "暂无B站矩阵视频、工坊矩阵或Wiki明确配队证据，默认不参与"
-    }
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    },
+    "catalogue_update": "2026-11-06-jinhsi-changli-healers"
   },
   {
     "id": "711be75646c820f1",
@@ -18722,6 +18731,53 @@
         }
       ],
       "recheck_confirmed": false,
+      "video_status": "已匹配矩阵视频标题/简介",
+      "issue": "",
+      "matrix_confirmed": true,
+      "default_status_reason": ""
+    }
+  },
+  {
+    "id": "86db42f17cf1fddc",
+    "members": [
+      "今汐",
+      "长离",
+      "守岸人"
+    ],
+    "rover_attribute": "",
+    "axes": [],
+    "selected_axis": "",
+    "sources": [
+      "https://www.bilibili.com/video/BV1sUuN67Ejp/",
+      "https://www.bilibili.com/video/BV1TpktB8EGP/"
+    ],
+    "origin": "bilibili_research",
+    "enabled": true,
+    "default_enabled": true,
+    "priority": 2.5,
+    "default_priority": 2.5,
+    "evidence": "B站·矩阵教学",
+    "catalogue_update": "2026-11-06-jinhsi-changli-healers",
+    "note": "今汐主 C、长离辅助；手法及装备要求见 B 站矩阵视频。",
+    "source_audit": {
+      "version": "2026-11-06-jinhsi-changli-healers",
+      "matched": [
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1sUuN67Ejp/",
+          "quote": "【鸣潮】最后一舞，龙凤守3.5终焉矩阵11895分\n后续还有高手能打1.45w左右，我自己号练度一般，等了半年多的共技通用，终于等来了，很久没玩这个队伍了，手生了太多，要么就是出分了流程不好看，要么就是流程好看了但是分数不好看，这一遍算是折中稍微好一点的了，可惜这把在边发呆边打，最后打着没看时间继续去变守想着打循环了，导致没了第10喷，这是让我入坑的两个角色，是我最喜欢的两个角色，是引领我接触合轴的队伍，这应该也是我最后一次玩这个队伍了。",
+          "matrix": true,
+          "level": "标题及简介复核；龙凤指今汐、长离，维／守指治疗位，未逐帧观看"
+        },
+        {
+          "kind": "video",
+          "url": "https://www.bilibili.com/video/BV1TpktB8EGP/",
+          "quote": "01龙凤守公式今守循环矩阵11264分\n",
+          "matrix": true,
+          "level": "标题及简介复核；龙凤指今汐、长离，维／守指治疗位，未逐帧观看"
+        }
+      ],
+      "recheck_confirmed": true,
       "video_status": "已匹配矩阵视频标题/简介",
       "issue": "",
       "matrix_confirmed": true,

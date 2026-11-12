@@ -1,7 +1,7 @@
 {
-  "source": "Wuthering Waves Wiki · Resonator Infobox.releaseDate",
+  "source": "鸣潮官方公告及 Wuthering Waves Wiki · 逐角色来源见记录",
   "checked_on": "2026-10-27",
-  "scope": "V2.7 及之后已实装角色；未实装角色不填推测日期。",
+  "scope": "已核实的角色实装日期；未实装角色不填推测日期。",
   "characters": {
     "嘉贝莉娜": {
       "release_date": "2025-10-09",
@@ -142,6 +142,14 @@
       "url": "https://wutheringwaves.fandom.com/wiki/Suoming",
       "api_url": "https://wutheringwaves.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Suoming",
       "quote": "|releaseDate      = 2026-10-22"
+    },
+    "莉莉": {
+      "release_date": "2026-11-12",
+      "release_version": "V3.8",
+      "url": "https://mc.kurogames.com/main/news/detail/5779",
+      "quote": "3.8版本内容说明：2026年11月12日更新；全新5星共鸣者「莉莉」（衍射 | 佩枪），可通过[盛放于昨日梦土的花朵]角色活动唤取获得。",
+      "checked_on": "2026-11-12",
+      "version_url": "https://wiki.kurobbs.com/mc/item/1559521973715369984"
     }
   }
 }
