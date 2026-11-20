@@ -60,6 +60,7 @@ MatrixPlanner/
 - 同一版本的 Tag 必须指向实际构建版本。工作区后续未发布改动不能混进既有版本的 ZIP 或说明。
 - Release 标题包含版本号；正文使用该快照的 `RELEASE_NOTES.md`，直接在页面展示真实增量，不能留空或仅让用户下载 ZIP 查看。用 `gh release create/edit --notes-file` 保留中文及换行。
 - 附件上传两个平台 ZIP、`SHA256SUMS.txt`、完整 `CHANGELOG.md` 及 `RELEASE_NOTES.md`。发布后读回正文、Tag 和附件列表，核对附件大小与本地 SHA-256。
+- 发布校验通过后，执行 `powershell -NoProfile -ExecutionPolicy Bypass -File tools/update_desktop_shortcut.ps1`，将当前用户桌面的“鸣潮矩阵配队.lnk”绑定到本地最新完整 Windows 发布包的头像 EXE。脚本按语义版本排序，保留 EXE 图标；以后每次发布都更新该快捷方式。不要绑定开发服务或旧版固定路径，也不要把开发机桌面快捷方式打入 ZIP。
 - SSH 只负责 Git 传输；GitHub API/CLI 未登录时用设备授权，不能把 Tag 当成 Release。先准备并校验所有产物，再说明需要授权的具体操作；不向用户索取密码或明文 Token。
 - 普通本地打包请求不等于授权创建公开 Release；用户明确要求创建或发布 Release 时继续完成整个发布流程。
 
