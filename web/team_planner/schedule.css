@@ -69,6 +69,9 @@
 .schedule-character-card.card-exhausted .schedule-card-info>span{color:#5b6860}
 .schedule-character-card.card-over{background:var(--schedule-error-bg);border-color:var(--schedule-error-line);color:var(--schedule-error-ink)}
 .schedule-character-card.card-over .schedule-card-info>span{color:var(--schedule-error-ink)}
+.schedule-character-card.card-unowned{border:2px dashed #a66013}
+.schedule-card-bank .schedule-character-card.card-unowned{padding:3px}
+.schedule-board .schedule-character-card.card-unowned{padding:2px}
 .schedule-character-card:hover,.schedule-character-card.card-selected{outline:2px solid var(--accent);outline-offset:1px}
 .schedule-character-card:active{cursor:grabbing}
 .schedule-character-card:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
@@ -79,16 +82,9 @@
 .schedule-warnings>div{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}
 .schedule-warnings b{font-variant-numeric:tabular-nums;margin-left:4px}
 .schedule-warnings p{margin:0;font-size:12px;line-height:1.5}
-.schedule-table-controls{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:0}
-.schedule-table-controls p{margin:0;font-size:12px}
-.schedule-table-controls>div{display:flex;gap:5px;flex-wrap:wrap}
-.schedule-table-controls button{min-height:20px;padding:0 6px;font-size:12px;border-color:transparent;background:transparent}
-.schedule-grid-shell{position:relative;padding-right:26px}
-.schedule-edge-add{display:flex;align-items:center;justify-content:center;gap:4px;min-height:24px;padding:2px;border:1px dashed #8eaaa0;border-radius:5px;background:transparent;color:var(--muted);font-size:12px}
-.schedule-edge-add svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}
-.schedule-edge-add:hover{background:var(--soft);color:var(--accent);border-color:var(--accent)}
-.schedule-edge-column{position:absolute;right:0;top:0;width:22px;height:44px}
-.schedule-edge-row{width:100%;min-height:22px;padding:1px 2px;margin-top:2px}
+.schedule-budget-toggle{font-size:12px;min-height:30px;gap:6px}
+.schedule-toolbar .schedule-budget-toggle input[role=switch]{width:32px;height:20px;min-height:20px;padding:0;margin:0}
+.schedule-grid-shell{position:relative}
 .schedule-table [data-row-header],.schedule-table [data-column-header]{position:relative}
 .schedule-insert-handle{position:absolute;z-index:4;display:grid;place-items:center;width:20px;height:20px;min-height:20px;padding:2px;border:1px solid #8eaaa0;border-radius:50%;background:var(--paper);color:var(--accent);opacity:0;pointer-events:none;transition:opacity 100ms ease-out}
 .schedule-insert-handle svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}
@@ -157,21 +153,22 @@
 .schedule-inline-form .select-trigger{min-height:28px;padding:3px 5px;font-size:12px}
 .schedule-inline-form .select-value{min-width:0}
 .schedule-legend{margin:8px 0 0;font-size:12px;line-height:1.5}
-@media(min-width:1100px){
+@media(min-width:1000px){
  .schedule-card-bank .schedule-character-card{gap:4px;padding:4px;min-height:52px}
  .schedule-card-bank img{width:40px;height:40px}
  .schedule-card-bank .schedule-card-info strong{font-size:13px}
  .schedule-card-bank .schedule-card-info>span{font-size:11px}
 }
-@media(min-width:1100px) and (max-height:920px){
+@media(min-width:1000px) and (max-height:920px){
  .schedule-card-bank .schedule-character-card{min-height:44px;padding:3px}
+ .schedule-card-bank .schedule-character-card.card-unowned{padding:2px}
  .schedule-card-bank img{width:36px;height:36px}
  .schedule-board .schedule-card-info>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
  .schedule-board .schedule-card-pick{min-height:60px}
  .schedule-board .schedule-character-card{min-height:68px}
  .schedule-fixed-cards>.schedule-fixed-target{min-height:68px}
 }
-@media(max-width:1099px){
+@media(max-width:999px){
  .schedule-workspace{grid-template-columns:1fr}
  .schedule-resizer{display:none}
  .schedule-template-grid{grid-template-columns:repeat(2,minmax(0,1fr))}

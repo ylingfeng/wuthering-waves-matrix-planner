@@ -15,10 +15,15 @@ const SchedulePlanner=(()=>{
   plan.row_heads??={};plan.row_attributes??={};plan.row_fixed??={};
   if(plan.layout_version!==2){compact(plan);plan.layout_version=2}
  }
- function analyse(plan,characters){
+ function analyse(plan,characters,{countUnowned=false}={}){
   const budget=Object.fromEntries(characters.map(c=>[c.name,c.released?(c.weekly??c.base):0]));
   const usage=Object.fromEntries(characters.map(c=>[c.name,0]));
-  for(const cell of plan.cells)for(const name of [...fixed(plan,cell.row),...cell.members])usage[name]=(usage[name]||0)+1;
+  const owned=new Set(characters.filter(c=>c.available).map(c=>c.name));
+  for(const cell of plan.cells){
+   const members=[...fixed(plan,cell.row),...cell.members];
+   if(!countUnowned&&members.some(name=>!owned.has(name)))continue;
+   for(const name of members)usage[name]=(usage[name]||0)+1;
+  }
   const exceeded=characters.filter(c=>usage[c.name]>budget[c.name]).map(c=>({name:c.name,used:usage[c.name],limit:budget[c.name]}));
   return {usage,budget,exceeded,incomplete:plan.cells.filter(c=>c.members.length+fixed(plan,c.row).length<3).length};
  }

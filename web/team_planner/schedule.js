@@ -1,5 +1,26 @@
 /* Manual schedules: reusable templates, fixed row members and direct card editing. */
 let scheduleDragging=null,scheduleUndo=null,scheduleCard=null,scheduleMoving=null;
+function scheduleFitWorkspace(){
+ const workspace=$('.schedule-workspace');
+ if(!workspace||$('#schedule').hidden)return;
+ if(innerWidth<1000){workspace.style.removeProperty('zoom');return}
+ if((Number(workspace.style.zoom)||1)===1&&document.documentElement.scrollHeight<=innerHeight)return;
+ for(let i=0;i<4;i++){
+  const box=workspace.getBoundingClientRect(),scale=Number(workspace.style.zoom)||1;
+  const available=Math.max(1,innerHeight-box.top-scrollY-8);
+  const next=Math.min(1,available/(box.height/scale));
+  if(next===1&&scale!==1){workspace.style.removeProperty('zoom');continue}
+  if(Math.abs(next-scale)<.001)break;
+  workspace.style.zoom=String(next);
+ }
+}
+let scheduleFitFrame=null;
+function scheduleQueueFit(){
+ cancelAnimationFrame(scheduleFitFrame);
+ scheduleFitFrame=requestAnimationFrame(scheduleFitWorkspace);
+}
+window.addEventListener('resize',scheduleQueueFit);
+new ResizeObserver(scheduleQueueFit).observe($('.schedule-workspace'));
 function scheduleSetSplit(value,save=false){
  const split=Number.isFinite(Number(value))?Math.max(30,Math.min(60,Number(value))):40;
  const workspace=$('.schedule-workspace'),separator=$('#schedule-resizer');
@@ -18,7 +39,8 @@ $('#schedule-resizer').addEventListener('pointerdown',e=>{
 $('#schedule-resizer').addEventListener('pointermove',e=>{
  if(scheduleResize?.id!==e.pointerId)return;
  const box=$('.schedule-workspace').getBoundingClientRect();
- scheduleSetSplit(Math.round((e.clientX-box.left-11)/(box.width-22)*100));
+ const scale=Number($('.schedule-workspace').style.zoom)||1;
+ scheduleSetSplit(Math.round((e.clientX-box.left-11*scale)/(box.width-22*scale)*100));
 });
 function scheduleEndResize(e){
  if(scheduleResize?.id!==e.pointerId)return;
@@ -42,6 +64,11 @@ const scheduleDots='<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h.1
 const scheduleGrip='<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M5 3h1m4 0h1M5 8h1m4 0h1M5 13h1m4 0h1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 const scheduleCross='<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="m4 4 8 8m0-8-8 8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>';
 const scheduleOrder=cell=>orderedMembers({members:[...cell.members,...scheduleFixed(cell.row)]}).filter(n=>!scheduleFixed(cell.row).includes(n));
+const scheduleUnowned=name=>!state.characters.find(c=>c.name===name)?.available;
+$('#schedule-count-unowned').addEventListener('change',e=>{
+ state.preferences={...state.preferences,'schedule-count-unowned':e.target.checked};
+ persistLocally();renderSchedule();
+});
 function scheduleSnapshot(){scheduleUndo=structuredClone(state.schedules)}
 let scheduleGridMenu=null;
 function scheduleCloseGridMenu(restoreFocus=false){
@@ -106,7 +133,7 @@ $('#schedule-grid-menu').addEventListener('click',e=>{
  }
  const selector=kind==='row'?'[data-grid-menu-row]':'[data-grid-menu-column]';
  const trigger=[...document.querySelectorAll(selector)].find(el=>(kind==='row'?el.dataset.gridMenuRow:el.dataset.gridMenuColumn)===id);
- (trigger||$('#schedule-add-'+kind)).focus();
+ (trigger||document.querySelector(`[data-grid-insert-${kind}="${CSS.escape(id)}"]`))?.focus();
 });
 $('#schedule-grid-menu').addEventListener('keydown',e=>{
  if(e.key==='Escape'){e.preventDefault();e.stopPropagation();scheduleCloseGridMenu(true);return}
@@ -139,7 +166,7 @@ function scheduleTone(name,report){
 }
 function scheduleCardContent(name,{cell={},status=''}={}){
  const c=state.characters.find(c=>c.name===name);
- return `<img src="${memberImage(name,cell)}" alt="" draggable="false" loading="lazy" width="36" height="46"><span class="schedule-card-info"><strong>${esc(memberName(name,cell))}</strong><small>${esc(c.roles.join(' / '))}</small><span>${esc(status)}</span></span>`;
+ return `<img src="${memberImage(name,cell)}" alt="" draggable="false" loading="lazy" width="36" height="46"><span class="schedule-card-info"><strong title="${esc(memberName(name,cell)+(scheduleUnowned(name)?' · 未拥有':''))}">${esc(memberName(name,cell))}</strong><small>${esc(c.roles.join(' / '))}</small><span>${esc(status)}</span></span>${scheduleUnowned(name)?'<span class="sr-only">未拥有</span>':''}`;
 }
 function scheduleForm(name,value,dataset,label){
  if(name!=='漂泊者')return '';
@@ -156,22 +183,22 @@ function renderScheduleCards(report){
   const members=characters.filter(c=>group(c)===role);
   return `<div class="schedule-role-heading">${role}<small>${members.length}</small></div>${versions.map(version=>`<section class="schedule-version-group" aria-label="${esc(role+' '+version+'.x 模板')}"><div class="schedule-template-grid">${members.filter(c=>versionOf(c)===version).map(c=>{
    const over=report.usage[c.name]>report.budget[c.name],exhausted=report.usage[c.name]===report.budget[c.name],selected=scheduleCard?.name===c.name&&!scheduleCard.from;
-   return `<button type="button" draggable="true" data-bank-name="${esc(c.name)}" class="schedule-character-card${over?' card-over':exhausted?' card-exhausted':''}${selected?' card-selected':''}"${scheduleTone(c.name,report)} aria-pressed="${selected}" aria-label="${esc(c.name+'模板'+(exhausted?'，次数用完':''))}" title="${esc(c.release_version+' · '+c.release_date+' · '+c.roles.join(' / ')+' · 已用 '+report.usage[c.name]+' / '+report.budget[c.name]+(exhausted?' · 次数用完，可继续安排':over?' · 超额':''))}">${scheduleCardContent(c.name,{status:report.usage[c.name]+'/'+report.budget[c.name]})}</button>`;
+   return `<button type="button" draggable="true" data-bank-name="${esc(c.name)}" class="schedule-character-card${scheduleUnowned(c.name)?' card-unowned':''}${over?' card-over':exhausted?' card-exhausted':''}${selected?' card-selected':''}"${scheduleTone(c.name,report)} aria-pressed="${selected}" aria-label="${esc(c.name+'模板'+(exhausted?'，次数用完':''))}" title="${esc(c.release_version+' · '+c.release_date+' · '+c.roles.join(' / ')+' · 已用 '+report.usage[c.name]+' / '+report.budget[c.name]+(exhausted?' · 次数用完，可继续安排':over?' · 超额':''))}">${scheduleCardContent(c.name,{status:report.usage[c.name]+'/'+report.budget[c.name]})}</button>`;
   }).join('')}</div></section>`).join('')}`;
  }).join('');
  $('#schedule-cancel-card').hidden=!scheduleCard&&!scheduleMoving;
- $('#schedule-card-status').textContent=scheduleCard?'已选 '+scheduleCard.name+' · 拖入或点击目标位置':scheduleMoving?'选择目标行、列或队伍进行交换':'模板可重复拖入 · 灰色表示次数用完';
+ $('#schedule-card-status').textContent=scheduleCard?'已选 '+scheduleCard.name+' · 拖入或点击目标位置':scheduleMoving?'选择目标行、列或队伍进行交换':'模板可重复拖入 · 虚线框为未拥有 · 灰色为次数用完';
 }
 function renderSchedule(){
  if(!state?.schedules)return;
  scheduleCloseGridMenu();
- const plan=schedulePlan(),report=SchedulePlanner.analyse(plan,state.characters);
+ const countUnowned=state.preferences?.['schedule-count-unowned']===true;
+ $('#schedule-count-unowned').checked=countUnowned;
+ const plan=schedulePlan(),report=SchedulePlanner.analyse(plan,state.characters,{countUnowned});
  scheduleSetSplit(state.preferences?.['schedule-deck-width']??40);
  $('#schedule-select').innerHTML=state.schedules.plans.map(p=>`<option value="${esc(p.id)}">${esc(p.name)}</option>`).join('');
  $('#schedule-select').value=plan.id;$('#schedule-name').value=plan.name;
  $('#schedule-delete').disabled=state.schedules.plans.length===1;$('#schedule-undo').disabled=!scheduleUndo;
- $('#schedule-add-column').disabled=plan.columns.length>=50;
- $('#schedule-add-row').disabled=plan.rows.length>=100;
  $('#schedule-help').textContent='行头可空或固定最多两人，每队自动加入；拖角色卡只移动角色，拖行列把手连同队伍调整顺序。';
  $('#schedule-status').innerHTML=`<strong>${plan.cells.length} 支队伍</strong><span>${report.incomplete?report.incomplete+' 支待补成员':'成员已补齐'}</span><span class="${report.exceeded.length?'schedule-error-text':''}">${report.exceeded.length?report.exceeded.length+' 名角色超额':'体力未超额'}</span>`;
  renderScheduleCards(report);
@@ -179,15 +206,16 @@ function renderSchedule(){
   const names=scheduleFixed(row),rowForm=SchedulePlanner.form(plan,row);
   return `<tr data-healer="${esc(row)}" class="${scheduleMoving?.kind==='row'&&scheduleMoving.row===row?'row-moving':''}"><th scope="row" data-row-header="${esc(row)}"><div class="schedule-row-controls"><button type="button" draggable="true" data-move-row="${esc(row)}" aria-label="拖动整行">${scheduleGrip}</button><button type="button" class="schedule-grid-menu-trigger" data-grid-menu-row="${esc(row)}" aria-label="${esc('第'+(rowIndex+1)+'行操作')}" aria-haspopup="menu" aria-expanded="false" title="行操作（也可右键行头）">${scheduleDots}</button></div><div class="schedule-fixed-cards">${names.map(name=>{
    const over=report.usage[name]>report.budget[name];
-   return `<article draggable="true" data-fixed-card="${esc(name)}" class="schedule-character-card schedule-member schedule-healer${over?' card-over schedule-healer-over':''}${scheduleCard?.fixedRow===row&&scheduleCard.name===name?' card-selected':''}"${scheduleTone(name,report)}><button type="button" class="schedule-card-pick" data-pick-fixed="${esc(name)}" aria-label="${esc('移动固定角色'+name)}">${scheduleCardContent(name,{cell:{rover_attribute:rowForm},status:report.usage[name]+' / '+report.budget[name]})}</button><button type="button" class="schedule-card-remove" data-remove-fixed="${esc(name)}" aria-label="${esc('移除固定角色'+name)}">${scheduleCross}</button>${scheduleForm(name,rowForm,'data-row-rover="'+esc(row)+'"','行头漂泊者属性 '+row)}</article>`;
+   return `<article draggable="true" data-fixed-card="${esc(name)}" class="schedule-character-card schedule-member schedule-healer${scheduleUnowned(name)?' card-unowned':''}${over?' card-over schedule-healer-over':''}${scheduleCard?.fixedRow===row&&scheduleCard.name===name?' card-selected':''}"${scheduleTone(name,report)}><button type="button" class="schedule-card-pick" data-pick-fixed="${esc(name)}" aria-label="${esc('移动固定角色'+name)}">${scheduleCardContent(name,{cell:{rover_attribute:rowForm},status:report.usage[name]+' / '+report.budget[name]})}</button><button type="button" class="schedule-card-remove" data-remove-fixed="${esc(name)}" aria-label="${esc('移除固定角色'+name)}">${scheduleCross}</button>${scheduleForm(name,rowForm,'data-row-rover="'+esc(row)+'"','行头漂泊者属性 '+row)}</article>`;
   }).join('')}${names.length<2?'<button type="button" class="schedule-cell-target schedule-fixed-target" data-fixed-place aria-label="添加固定角色" title="拖入添加固定角色，拖到已有卡片上可替换">添加角色</button>':''}</div><button type="button" class="schedule-insert-handle schedule-insert-row" data-grid-insert-row="${esc(row)}" aria-label="${esc('在第'+(rowIndex+1)+'行下方添加行')}" title="在下方添加行" ${plan.rows.length>=100?'disabled':''}>${schedulePlus}</button></th>${plan.columns.map(column=>{
    const cell=scheduleCell(row,column.id),members=cell?scheduleOrder(cell):[];
    return `<td><div class="schedule-slot${cell?' filled':''}" data-schedule-row="${esc(row)}" data-schedule-column="${esc(column.id)}" role="group" aria-label="${esc((names.join('、')||'空白行')+'，'+column.name)}">${cell?`<button type="button" class="schedule-team-handle" data-move-team draggable="true" aria-label="移动此队伍">${scheduleGrip}<span>${esc(cell.label||'移动队伍')}</span></button><div class="schedule-members">${members.map(n=>{
     const exceeded=report.usage[n]>report.budget[n],selected=scheduleCard?.from?.row===row&&scheduleCard.from.column===column.id&&scheduleCard.name===n;
-    return `<article draggable="true" data-member-card="${esc(n)}" class="schedule-character-card schedule-member${exceeded?' card-over':''}${selected?' card-selected':''}"${scheduleTone(n,report)}><button type="button" data-pick-member="${esc(n)}" class="schedule-card-pick" aria-label="${esc('移动'+n)}">${scheduleCardContent(n,{cell,status:report.usage[n]+' / '+report.budget[n]})}</button><button type="button" data-remove-member="${esc(n)}" class="schedule-card-remove" aria-label="${esc('移除'+n)}">${scheduleCross}</button>${scheduleForm(n,cell.rover_attribute,'data-cell-rover','格内漂泊者属性 '+row+' '+column.id)}</article>`;
+    return `<article draggable="true" data-member-card="${esc(n)}" class="schedule-character-card schedule-member${scheduleUnowned(n)?' card-unowned':''}${exceeded?' card-over':''}${selected?' card-selected':''}"${scheduleTone(n,report)}><button type="button" data-pick-member="${esc(n)}" class="schedule-card-pick" aria-label="${esc('移动'+n)}">${scheduleCardContent(n,{cell,status:report.usage[n]+' / '+report.budget[n]})}</button><button type="button" data-remove-member="${esc(n)}" class="schedule-card-remove" aria-label="${esc('移除'+n)}">${scheduleCross}</button>${scheduleForm(n,cell.rover_attribute,'data-cell-rover','格内漂泊者属性 '+row+' '+column.id)}</article>`;
    }).join('')}${members.length+names.length<3?'<button type="button" class="schedule-cell-target" data-cell-place>拖入角色卡 · 待补 '+(3-members.length-names.length)+' 人</button>':''}</div>`:'<button type="button" class="schedule-cell-target" data-cell-place>拖入角色卡</button>'}</div></td>`;
   }).join('')}</tr>`;
  }).join('')}</tbody>`;
+ scheduleFitWorkspace();
 }
 function schedulePlaceCard(card,position,replaceName=null){
  const plan=schedulePlan(),source=card.from&&scheduleCell(card.from.row,card.from.column),target=position&&scheduleCell(position.row,position.column);
@@ -294,9 +322,7 @@ function scheduleCreate(copy){
  scheduleAct(()=>{const name=(copy?'副本 ':'新排表 ')+(state.schedules.plans.length+1),plan=copy?{...structuredClone(schedulePlan()),id:crypto.randomUUID(),name}:SchedulePlanner.blank(state,name);state.schedules.plans.push(plan);state.schedules.active_id=plan.id});
 }
 $('#schedule-new').onclick=()=>scheduleCreate(false);$('#schedule-copy').onclick=()=>scheduleCreate(true);
+$('#schedule-compact').onclick=()=>scheduleAct(()=>SchedulePlanner.compact(schedulePlan()));
 $('#schedule-delete').onclick=()=>{if(state.schedules.plans.length<=1||!confirm('删除“'+schedulePlan().name+'”？可撤销恢复。'))return;scheduleAct(()=>{state.schedules.plans=state.schedules.plans.filter(p=>p.id!==state.schedules.active_id);state.schedules.active_id=state.schedules.plans[0].id})};
 $('#schedule-undo').onclick=()=>{if(!scheduleUndo)return;const previous=structuredClone(state.schedules);state.schedules=scheduleUndo;scheduleUndo=previous;scheduleMoving=null;scheduleCard=null;scheduleCommit()};
-$('#schedule-add-row').onclick=()=>scheduleInsertGridItem('row');
-$('#schedule-add-column').onclick=()=>scheduleInsertGridItem('column');
-$('#schedule-compact').onclick=()=>scheduleAct(()=>SchedulePlanner.compact(schedulePlan()));
 document.addEventListener('keydown',e=>{if(activeTab!=='schedule'||$('#schedule-share-dialog').open)return;if(e.key==='Escape'){scheduleCard=null;scheduleMoving=null;renderSchedule()}if(e.key==='Delete'&&(scheduleCard?.from||scheduleCard?.fixedRow)&&!e.target.closest('input,select,textarea,[contenteditable]')){e.preventDefault();if(scheduleCard.fixedRow)scheduleRemoveFixed(scheduleCard.fixedRow,scheduleCard.name);else schedulePlaceCard(scheduleCard,null)}});

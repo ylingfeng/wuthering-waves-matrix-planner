@@ -234,8 +234,9 @@ const tourSteps=[
  {page:'teams',target:'#calculate',title:'计算配队',text:'在页面上方选择计算范围，再点击“计算配队”。先尽量增加队数，再比较总得分。'},
  {page:'schedule',target:'#schedule-select',title:'切换手动排表',text:'可以新建或复制排表，各方案独立计算体力。修改自动保存，也会包含在导出的个人配置里。'},
  {page:'schedule',target:'#schedule-share',title:'分享排表代码',text:'导出当前排表为一串代码，分享给其他人。粘贴代码后只会新建排表，保留已有表；体力按接收方自己的配置计算。'},
- {page:'schedule',target:'.schedule-deck-heading',title:'选择角色模板',text:'左侧模板按定位和版本展示，可反复拖入右侧排表。次数用完置灰，超额按角色着色；拖动中间分隔线可调整宽度。'},
- {page:'schedule',target:'#schedule-grid-shell',title:'设置固定位与行列',text:'行头可空或固定最多两人，与格内角色合计三人为一队。漂泊者属性可在自己的卡片内选择。拖角色 chip 仅移动角色；拖行列把手交换整行或整列。鼠标移到行头或列头，点击“＋”在相邻位置插入；表格边缘的“＋”在末尾添加。标题菜单可移动和删除，也支持右键打开。'}
+ {page:'schedule',target:'.schedule-deck-heading',title:'选择角色模板',text:'左侧模板按定位和版本展示，可反复拖入右侧排表。未拥有角色用虚线框标记，仍可组队；次数用完置灰，超额按角色着色。拖动中间分隔线可调整宽度。'},
+ {page:'schedule',target:'#schedule-count-unowned',title:'选择体力统计方式',text:'默认关闭：只要队内有未拥有角色，整队都不计体力。打开后所有队伍照常计入；设置自动保存。'},
+ {page:'schedule',target:'#schedule-grid-shell',title:'设置固定位与行列',text:'行头可空或固定最多两人，与格内角色合计三人为一队。漂泊者属性可在自己的卡片内选择。拖角色卡只移动角色；拖行列把手交换整行或整列。悬停行头或列头，点击“＋”在相邻位置插入；标题菜单可移动和删除，也支持右键打开。'}
 ];
 const editorTourStart=tourSteps.findIndex(s=>s.modal),editorTourEnd=tourSteps.findLastIndex(s=>s.modal);
 let tourIndex=0,tourPreviousTab='characters',tourPreviousFocus=null,tourTarget=null,tourFrame=0,tourSavedDraft=null,tourModalOpen=false,tourEditorOnly=false;

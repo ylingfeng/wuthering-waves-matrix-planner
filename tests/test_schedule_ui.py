@@ -76,6 +76,13 @@ class ScheduleUiTests(unittest.TestCase):
     def blank(self):
         self.page.locator('#schedule-new').click()
 
+    def insert_after_last(self, kind):
+        row=kind=='row'
+        trigger=self.page.locator('[data-grid-menu-row]' if row else '[data-grid-menu-column]').last
+        trigger.click()
+        label='在下方插入行' if row else '在右侧插入列'
+        self.page.get_by_role('menuitem',name=label,exact=True).click()
+
     def test_legacy_default_compacts_without_losing_teams_or_members(self):
         self.assertTrue(self.page.locator('#schedule').is_visible())
         self.assertEqual(self.page.locator('#schedule-table tbody tr').count(),7)
@@ -116,10 +123,71 @@ class ScheduleUiTests(unittest.TestCase):
 
     def test_all_roster_budgets_ignore_ownership_and_use_weekly_override(self):
         self.page.evaluate("state.characters.find(c=>c.name==='守岸人').available=false;renderSchedule()")
+        self.page.locator('#schedule-count-unowned').check()
         self.assertIn('4 / 2',self.fixed('守岸人','守岸人').inner_text())
         self.page.evaluate("state.characters.find(c=>c.name==='守岸人').weekly=5;renderSchedule()")
         self.assertIn('4 / 5',self.fixed('守岸人','守岸人').inner_text())
         self.assertNotIn('card-over',self.template('守岸人').get_attribute('class'))
+
+    def test_unowned_cards_remain_draggable_and_budget_toggle_persists(self):
+        self.blank()
+        self.page.evaluate("for(const c of state.characters)c.available=true;state.characters.find(c=>c.name==='椿').available=false;renderSchedule()")
+        toggle=self.page.locator('#schedule-count-unowned')
+        self.assertFalse(toggle.is_checked())
+        self.assertIn('card-unowned',self.template('椿').get_attribute('class'))
+        self.drag(self.template('椿'),self.slot('白芷').locator('[data-cell-place]'))
+        placed=self.slot('白芷').locator('[data-member-card="椿"]')
+        self.assertIn('card-unowned',placed.get_attribute('class'))
+        self.assertEqual(placed.evaluate('el=>getComputedStyle(el).borderStyle'),'dashed')
+        self.assertIn('未拥有',placed.locator('strong').get_attribute('title'))
+        self.assertIn('0 / 2',self.fixed('白芷','白芷').inner_text())
+        toggle.check()
+        self.assertIn('1 / 2',self.fixed('白芷','白芷').inner_text())
+        self.assertIn('1/1',self.template('椿').inner_text())
+        self.page.evaluate("state.characters.find(c=>c.name==='椿').weekly=0;renderSchedule()")
+        self.assertIn('card-over',placed.get_attribute('class'))
+        self.assertEqual(placed.evaluate('el=>getComputedStyle(el).borderStyle'),'dashed')
+        self.assertTrue(self.page.evaluate("LocalPlanner.importConfig(LocalPlanner.exportConfig(state)).preferences['schedule-count-unowned']"))
+        self.page.evaluate('persistLocally()')
+        self.page.reload();self.page.locator('#tour-skip').click()
+        self.assertTrue(toggle.is_checked())
+        toggle.uncheck()
+        self.assertIn('0 / 2',self.fixed('白芷','白芷').inner_text())
+        self.assertNotIn('card-over',placed.get_attribute('class'))
+        self.drag(placed,self.page.locator('[data-row-header="莉莉"] [data-fixed-place]'))
+        self.assertIn('card-unowned',self.fixed('莉莉','椿').get_attribute('class'))
+        self.page.evaluate("state.characters.find(c=>c.name==='椿').available=true;renderSchedule()")
+        self.assertNotIn('card-unowned',self.template('椿').get_attribute('class'))
+        self.assertNotIn('card-unowned',self.fixed('莉莉','椿').get_attribute('class'))
+
+    def test_budget_switch_is_compact_in_topbar_and_table_controls_are_removed(self):
+        toggle=self.page.locator('#schedule-count-unowned')
+        self.assertTrue(toggle.locator('xpath=ancestor::div[contains(@class,"schedule-toolbar")]').count())
+        self.assertEqual(toggle.evaluate('el=>el.getBoundingClientRect().height'),20)
+        self.assertEqual(toggle.evaluate('el=>el.parentElement.getBoundingClientRect().height'),30)
+        self.assertEqual(self.page.locator('#schedule-table-controls').count(),0)
+        self.assertEqual(self.page.locator('.schedule-edge-add').count(),0)
+        self.assertEqual(self.page.locator('#schedule-compact').count(),1)
+
+    def test_unowned_team_excludes_every_member_with_empty_and_two_fixed_heads(self):
+        report=self.page.evaluate('''()=>{
+            const chars=structuredClone(state.characters);
+            for(const c of chars)c.available=c.name!=='椿';
+            const plan={rows:['r1','r2','r3'],row_fixed:{r1:['守岸人'],r2:['莫宁','琳奈'],r3:[]},cells:[
+                {row:'r1',members:['椿','洛可可']},
+                {row:'r1',members:['今汐','长离']},
+                {row:'r2',members:['椿']},
+                {row:'r3',members:['守岸人','椿','洛可可']}
+            ]};
+            const before=JSON.stringify({plan,chars});
+            return {excluded:SchedulePlanner.analyse(plan,chars),included:SchedulePlanner.analyse(plan,chars,{countUnowned:true}),
+                unchanged:before===JSON.stringify({plan,chars})};
+        }''')
+        self.assertTrue(report['unchanged'])
+        for name,count in {'守岸人':1,'椿':0,'洛可可':0,'莫宁':0,'琳奈':0,'今汐':1,'长离':1}.items():
+            self.assertEqual(report['excluded']['usage'][name],count)
+        for name,count in {'守岸人':3,'椿':3,'洛可可':2,'莫宁':1,'琳奈':1}.items():
+            self.assertEqual(report['included']['usage'][name],count)
 
     def test_exceeded_character_colors_match_all_occurrences_and_differ(self):
         self.page.evaluate("for(const name of ['珂莱塔','椿'])state.characters.find(c=>c.name===name).weekly=1;renderSchedule()")
@@ -147,7 +215,7 @@ class ScheduleUiTests(unittest.TestCase):
         self.assertEqual(self.slot('白芷').locator('[data-member-card]').count(),1)
         self.assertEqual(self.page.evaluate("SchedulePlanner.analyse(schedulePlan(),state.characters).usage['丹瑾']"),1)
         self.assertFalse(self.slot('白芷').locator('[data-cell-place]').count())
-        self.page.locator('#schedule-add-column').click()
+        self.insert_after_last('column')
         column=self.page.evaluate('schedulePlan().columns[1].id')
         self.template('秧秧').click()
         self.page.locator(f'[data-schedule-row="白芷"][data-schedule-column="{column}"] [data-cell-place]').click()
@@ -188,7 +256,7 @@ class ScheduleUiTests(unittest.TestCase):
         self.template('莫宁').click()
         self.fixed('守岸人','守岸人').locator('[data-pick-fixed]').click()
         self.assertEqual(self.page.evaluate("scheduleFixed('守岸人')"),['莫宁'])
-        report=self.page.evaluate('SchedulePlanner.analyse(schedulePlan(),state.characters)')
+        report=self.page.evaluate('SchedulePlanner.analyse(schedulePlan(),state.characters,{countUnowned:true})')
         self.assertEqual(report['usage']['莫宁'],6)
         self.assertEqual(report['usage']['守岸人'],0)
         before=self.page.evaluate('JSON.stringify(state.schedules)')
@@ -198,7 +266,7 @@ class ScheduleUiTests(unittest.TestCase):
         self.assertEqual(self.page.evaluate('JSON.stringify(state.schedules)'),before)
 
     def test_rows_columns_add_reorder_compact_and_undo_persist(self):
-        self.page.locator('#schedule-add-row').click()
+        self.insert_after_last('row')
         row=self.page.evaluate('schedulePlan().rows.at(-1)')
         self.template('丹瑾').click()
         self.page.locator(f'[data-row-header="{row}"] [data-fixed-place]').click()
@@ -210,7 +278,7 @@ class ScheduleUiTests(unittest.TestCase):
         self.drag(self.page.locator(f'[data-move-column="{original[0]}"]'),self.page.locator(f'[data-column-header="{original[1]}"]'))
         self.assertEqual(self.page.evaluate('schedulePlan().columns[0].id'),original[1])
         self.assertIn('日月',self.slot('守岸人',1).inner_text())
-        self.page.locator('#schedule-add-column').click()
+        self.insert_after_last('column')
         self.assertEqual(self.page.evaluate('schedulePlan().columns.length'),5)
         self.page.locator('#schedule-compact').click()
         self.assertEqual(self.page.evaluate('schedulePlan().columns.length'),4)
@@ -300,6 +368,7 @@ class ScheduleUiTests(unittest.TestCase):
         for width,height in [(1920,1080),(1440,1000),(1440,900),(1280,900)]:
             with self.subTest(viewport=(width,height)):
                 self.page.set_viewport_size({'width':width,'height':height})
+                self.page.evaluate('new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))')
                 layout=self.page.evaluate('''()=>{
                     const deck=document.querySelector('.schedule-deck').getBoundingClientRect();
                     const board=document.querySelector('.schedule-board').getBoundingClientRect();
@@ -342,6 +411,28 @@ class ScheduleUiTests(unittest.TestCase):
         handle.press('End');self.assertEqual(handle.get_attribute('aria-valuenow'),'60')
         handle.dblclick();self.assertEqual(handle.get_attribute('aria-valuenow'),'40')
         self.assertEqual(self.page.evaluate('JSON.stringify({characters:state.characters,teams:state.teams,schedules:state.schedules})'),before)
+
+    def test_short_desktop_fits_without_clipping_and_resizes_after_adding_rows(self):
+        for width,height in [(1024,768),(1366,768),(1280,720),(1536,800)]:
+            with self.subTest(viewport=(width,height)):
+                self.page.set_viewport_size({'width':width,'height':height})
+                self.page.wait_for_function('document.documentElement.scrollHeight<=innerHeight && document.documentElement.scrollWidth<=innerWidth')
+                self.assertLessEqual(self.page.locator('.schedule-board').bounding_box()['y']+self.page.locator('.schedule-board').bounding_box()['height'],height)
+                self.assertNotIn(self.page.locator('.schedule-workspace').evaluate('el=>getComputedStyle(el).overflowY'),['hidden','clip'])
+        self.insert_after_last('row')
+        self.page.wait_for_function('document.documentElement.scrollHeight<=innerHeight')
+        self.assertEqual(self.page.locator('#schedule-table tbody tr').count(),8)
+        self.page.locator('#schedule-undo').click()
+        trigger=self.page.locator('[data-grid-menu-column]').last
+        anchor=trigger.bounding_box();trigger.click()
+        menu=self.page.locator('#schedule-grid-menu').bounding_box()
+        self.assertGreaterEqual(menu['y'],anchor['y']+anchor['height'])
+        self.assertGreaterEqual(menu['x']+menu['width'],anchor['x'])
+        self.page.locator('#schedule-grid-menu').press('Escape')
+        self.drag(self.template('丹瑾'),self.slot('白芷').locator('[data-cell-place]'))
+        self.assertIn('丹瑾',self.slot('白芷').inner_text())
+        self.page.set_viewport_size({'width':1920,'height':1080})
+        self.page.wait_for_function("!document.querySelector('.schedule-workspace').style.zoom")
 
     def test_empty_fixed_head_accepts_three_members_and_stays_empty_after_reload(self):
         self.blank()
