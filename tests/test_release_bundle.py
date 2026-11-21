@@ -102,11 +102,17 @@ class PlatformBundleTests(unittest.TestCase):
             page=context.new_page()
             errors=[]
             page.on('pageerror',lambda error:errors.append(str(error)))
+            # Reproduce an upgrade in one browser: legacy file pages share this key.
+            page.goto((ROOT/'web/team_planner/index.html').as_uri())
+            page.wait_for_function('typeof state!=="undefined" && !!state')
+            page.evaluate("schedulePlan().name='旧包的排表';persistLocally()")
+            legacy=page.evaluate("localStorage.getItem('matrix-planner.configuration.v1')")
             page.goto((bundle/'鸣潮矩阵配队.html').as_uri())
             page.wait_for_function('typeof state!=="undefined" && !!state')
             self.assertTrue(page.locator('#tour-skip').is_visible())
             actual=page.evaluate('LocalPlanner.exportConfig(state)')
             self.assertEqual(actual,snapshot)
+            self.assertEqual(page.evaluate("localStorage.getItem('matrix-planner.configuration.v1')"),legacy)
             self.assertEqual(page.evaluate('state.teams.find(t=>t.id===state.teams[0].id).default_priority'),
                              page.evaluate('PLANNER_SEED.teams[0].default_priority'))
             page.evaluate('''()=>{
@@ -114,11 +120,27 @@ class PlatformBundleTests(unittest.TestCase):
                 schedulePlan().name='使用者自己的排表';persistLocally();
             }''')
             # Changing the distributed snapshot must not overwrite saved browser settings.
-            page.add_init_script("document.addEventListener('DOMContentLoaded',()=>{PLANNER_SEED.initial_config.characters[0].weight=9}, {capture:true})")
+            first_base=(bundle/'web').as_uri()+'/'
+            page.add_init_script("document.addEventListener('DOMContentLoaded',()=>{if(new URL('.',document.baseURI).href==="+
+                                 json.dumps(first_base)+")PLANNER_SEED.initial_config.characters[0].weight=9}, {capture:true})")
             page.reload();page.wait_for_function('typeof state!=="undefined" && !!state')
             self.assertEqual(page.evaluate('state.characters[0].weight'),7)
             self.assertEqual(page.evaluate('state.teams[0].user_weight'),8)
             self.assertEqual(page.evaluate('schedulePlan().name'),'使用者自己的排表')
+            page.goto((bundle/'web/schedule/index.html').as_uri())
+            page.wait_for_function('typeof state!=="undefined" && !!state')
+            self.assertEqual(page.evaluate('state.characters[0].weight'),7)
+            self.assertEqual(page.evaluate('schedulePlan().name'),'使用者自己的排表')
+            second=build_platform_bundle(self.root/'second', 'macOS','9.9.10',self.notes,
+                                          self.changelog,initial_config=snapshot)
+            page.goto((second/'鸣潮矩阵配队.html').as_uri())
+            page.wait_for_function('typeof state!=="undefined" && !!state')
+            self.assertEqual(page.evaluate('LocalPlanner.exportConfig(state)'),snapshot)
+            page.goto((bundle/'web/index.html').as_uri())
+            page.wait_for_function('typeof state!=="undefined" && !!state')
+            self.assertEqual(page.evaluate('state.characters[0].weight'),7)
+            self.assertEqual(page.evaluate('schedulePlan().name'),'使用者自己的排表')
+            self.assertEqual(page.evaluate("localStorage.getItem('matrix-planner.configuration.v1')"),legacy)
             self.assertEqual((ROOT/'web/team_planner/seed.js').read_bytes(),source_seed)
             self.assertFalse((bundle/'web/personal_config.json').exists())
             self.assertEqual(errors,[])

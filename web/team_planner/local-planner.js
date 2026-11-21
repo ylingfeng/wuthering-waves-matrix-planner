@@ -1,6 +1,10 @@
 /* Browser-only storage and integer optimization. No network API. */
 function createLocalPlanner(){
- const key='matrix-planner.configuration.v1';
+ // Chrome shares file: storage across local HTML files. Keep each packaged site separate,
+ // while its index and tab entrypoints share the same <base> directory.
+ const key='matrix-planner.configuration.v1'+
+  (PLANNER_SEED.initial_config&&typeof document!=='undefined'&&location.protocol==='file:'?
+   ':'+new URL('.',document.baseURI).href:'');
  const clone=x=>structuredClone(x);
  const identity=t=>[...t.members].sort().join('|');
  const retiredDanjin=t=>t.origin==='user_recommendation'&&identity(t)===['丹瑾','秋水','灯灯'].sort().join('|');
