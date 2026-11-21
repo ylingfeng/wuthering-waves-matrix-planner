@@ -34,8 +34,9 @@ MatrixPlanner/
 
 - 默认角色和配队数据由 `web/team_planner/seed.js` 提供，图片在 `portraits/`；发布包不需要附带 `character.csv`。
 - 个人修改在纯网站包中自动保存到浏览器；导出JSON为个人配置备份。不能声称纯网站包会回写磁盘配置。
-- 开发服务 `tools/planner_dev_server.py` 的磁盘同步另存于 `config/team_planner/personal_config.json`，不默认打入发布包。
-- 不默认打包开发日志、浏览器个人数据、缓存或用户个人配置。用户明确要求将个人配置作为分发初始配置时另行处理，并核对内容。
+- 用户已要求以后每次打包均以开发时的配置作为默认状态。打包前确认网页保存状态为“已自动同步本地”，读取 `config/team_planner/personal_config.json` 的 `config`，包含角色拥有、体力、链度、练度、队伍增删、用户权重、必选、输出轴、手动排表及偏好。脚本将这一份快照写入两个平台的 `seed.js`，不要只复制原始资料库。
+- 只在浏览器尚未保存配置时应用包内默认状态；已有浏览器配置优先，后续使用者修改不被默认快照覆盖。这是打包时快照，不是发布包与开发服务实时双向同步。
+- 不复制开发配置原文件、revision、备份、日志、浏览器存储或缓存。默认不包含教程的“不再显示”记录，新使用者仍看到引导。
 
 ## 发布步骤
 
@@ -48,7 +49,7 @@ MatrixPlanner/
 
 1. 查看 `dist/` 已有版本。用户指定版本优先；用户要求“小版本”时顺延补丁号，否则功能发布递增次版本，修复递增补丁版本。
 2. 检查当前发布脚本的使用说明、发布说明、固定分特例和候选数量是否符合实际，不沿用过时数字。
-3. 执行 `python -m tools.release_static VERSION`。脚本同步四页静态入口，复制网页资源，使用 Windows .NET Framework 的 `csc.exe` 编译带图标启动器，并生成 ZIP 和 SHA-256 清单。
+3. 执行 `python -m tools.release_static VERSION`。脚本读取一次已保存开发配置，作为两个平台同一份默认快照；配置缺失或没有排表时停止，不回退到原始布局。可用 `--config PATH` 指定同格式的开发配置文件。脚本同步四页静态入口，复制网页资源，使用 Windows .NET Framework 的 `csc.exe` 编译带图标启动器，并生成 ZIP 和 SHA-256 清单。
 4. 产物保存在 `dist/vVERSION/`：`Windows/MatrixPlanner/`、`macOS/MatrixPlanner/`、两个 ZIP、`SHA256SUMS.txt`、`CHANGELOG.md`、`RELEASE_NOTES.md`、`manifest.json`。dist根目录不散放应用目录或ZIP。
 5. 默认不覆盖历史快照。用户明确要求改同一版本时，先将旧目录移到 `tmp/` 的唯一备份路径，再重新生成该版本；保持旧版内容可找回。Windows移动前检查解析后的源/目标路径位于本项目预期目录。
 
@@ -73,6 +74,7 @@ MatrixPlanner/
 - 不要在首次引导测试中预先设置“不再显示”。单独验证勾选后不再弹出、手动入口可打开。
 - 修改图标时确认PNG和ICO包含真实透明像素；移动端布局或界面有变化时检查代表性窄屏。
 - 检查包里没有 `personal_config.json` 等开发个人文件。
+- 用隔离存储比较包内初始状态与开发配置：角色、队伍、权重、必选、全部排表及当前排表一致；再修改并刷新，确认使用者设置保留。已有配置不被快照重置。不能用开发浏览器的真实存储做测试。
 - 确认 ZIP 内 `MatrixPlanner/web/CHANGELOG.md` 与根目录完整更新日志内容一致，且归档目录也有相同副本；`RELEASE_NOTES.md` 仅含本版增量。
 - 运行与当前变更有关的测试；失败先修复，再交付。
 

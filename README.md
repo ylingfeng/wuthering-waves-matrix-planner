@@ -95,7 +95,7 @@ macOS 在仓库根目录的终端执行 `python3 -X utf8 -m tools.planner_dev_se
 
 ### 开发环境保存与备份
 
-开发服务会把网页修改同步到 `config/team_planner/personal_config.json`，保留 `personal_config.previous.json`。这两份个人文件不提交到 Git，也不默认打进发布包。迁移项目目录不会重置配置；开发网址维持不变。
+开发服务会把网页修改同步到 `config/team_planner/personal_config.json`，保留 `personal_config.previous.json`。这两份原文件不提交到 Git。打包时将已保存的角色、队伍、权重、必选、排表及偏好写入包内 `seed.js`，作为首次使用的默认状态；已有浏览器配置优先保留。迁移项目目录不会重置配置；开发网址维持不变。
 
 静态 ZIP 中的个人修改保存在浏览器；导出 JSON 用于备份或迁移，包含手动排表。默认资料来自 `seed.js`，修改 CSV 后应使用对应资料维护工具更新默认库。
 
@@ -108,6 +108,6 @@ python -X utf8 -m unittest discover -s tests -v
 
 浏览器测试使用本机 Chrome，运行前应安装 Chrome。`requirements.txt` 提供旧版 Python 求解器依赖，网页本身不需要这些库。
 
-只有明确要求打包时才执行 `python -m tools.release_static 版本号`。先维护对应的更新日志章节；发布包自动附带完整 `CHANGELOG.md` 与本版 `RELEASE_NOTES.md`。版本号与后续 Git Tag / Release 对应，未发布改动不挪入既有标签。
+只有明确要求打包时才执行 `python -m tools.release_static 版本号`。先确认开发网页已同步本地，维护对应的更新日志章节；两个包共用同一份开发配置快照，自动附带完整 `CHANGELOG.md` 与本版 `RELEASE_NOTES.md`。版本号与后续 Git Tag / Release 对应，未发布改动不挪入既有标签。
 
 `tools/build_planner.cmd`、`tools/package_planner.py` 和 `tools/planner_launcher.py` 仅保留用于早期 Python 便携包维护；当前发布入口是 `tools/release_static.py`。

@@ -173,7 +173,8 @@ function createLocalPlanner(){
  function read(){
   const raw=localStorage.getItem(key);
   if(raw&&!localStorage.getItem(key+'.before-update'))localStorage.setItem(key+'.before-update',raw);
-  return validate(raw?JSON.parse(raw):clone(PLANNER_SEED));
+  if(raw)return validate(JSON.parse(raw));
+  return PLANNER_SEED.initial_config?importConfig(clone(PLANNER_SEED.initial_config)):validate(clone(PLANNER_SEED));
  }
  function save(s){
   const next=validate(clone(s)),old=localStorage.getItem(key);
@@ -243,6 +244,7 @@ function createLocalPlanner(){
   if(data.format==='matrix-planner-v1')return validate(clone(data.state));
   if(data.format!=='matrix-planner-v2'||!Array.isArray(data.characters)||!Array.isArray(data.teams))throw Error('配置文件格式不支持');
   const current=validate(clone(PLANNER_SEED));
+  delete current.initial_config;
   current.characters=data.characters.map(c=>{const base=current.characters.find(x=>x.name===c.name);return {...base,...Object.fromEntries(['name','available','base','weekly','roles','chain','weight'].map(k=>[k,c[k]])),healer:c.roles?.includes('奶妈')}});
   current.preferences=clone(data.preferences||{});
   if(data.schedules!==undefined)current.schedules=clone(data.schedules);

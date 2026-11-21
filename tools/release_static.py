@@ -11,18 +11,43 @@ from datetime import datetime, timezone
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def read_development_defaults(path):
+    """Freeze only exported planner settings, without store revisions or backups."""
+    payload = json.loads(Path(path).read_text(encoding='utf-8-sig'))
+    config = payload.get('config')
+    if not isinstance(config, dict) or config.get('format') != 'matrix-planner-v2':
+        raise ValueError('开发配置无效，请先在开发网页保存配置')
+    if not isinstance(config.get('characters'), list) or not isinstance(config.get('teams'), list):
+        raise ValueError('开发配置缺少角色或队伍')
+    if not isinstance(config.get('schedules'), dict) or not config['schedules'].get('plans'):
+        raise ValueError('开发配置缺少手动排表，请先在开发网页保存配置')
+    fields = ('format', 'characters', 'teams', 'schedules', 'preferences')
+    return {key: config[key] for key in fields if key in config}
+
+
+def write_initial_config(site, config):
+    """Keep catalogue evidence intact and initialize new browser storage from the snapshot."""
+    seed = site / 'seed.js'
+    with seed.open('a', encoding='utf-8') as output:
+        output.write('\nPLANNER_SEED.initial_config = ' +
+                     json.dumps(config, ensure_ascii=False, separators=(',', ':')) + ';\n')
+
+
 def copy_browser_launcher(bundle):
     """Both platforms enter the same page, keeping one browser storage path."""
     shutil.copyfile(ROOT / 'tools/WebsiteLauncher.html', bundle / '鸣潮矩阵配队.html')
 
 
-def build_platform_bundle(destination, platform, version, notes, changelog, site_source=None):
+def build_platform_bundle(destination, platform, version, notes, changelog, site_source=None,
+                          initial_config=None):
     """Prepare one platform's files; archive creation is reserved for main()."""
     if platform not in ('Windows', 'macOS'):
         raise ValueError('Unsupported platform')
     bundle = destination / 'MatrixPlanner'
     site = bundle / 'web'
     shutil.copytree(site_source or ROOT / 'web/team_planner', site)
+    if initial_config is not None:
+        write_initial_config(site, initial_config)
     if platform == 'Windows':
         compiler = Path(r'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe')
         subprocess.run([str(compiler), '/nologo', '/target:winexe', '/optimize+',
@@ -42,8 +67,9 @@ def build_platform_bundle(destination, platform, version, notes, changelog, site
         '更换浏览器、路径或网址前，请导出个人配置备份，再导入恢复（兼容v1/v2配置）。\n'
         '手动排表：拖入角色卡组队，行头固定角色参与全行队伍；支持行列增删、撤销及多张排表。\n'
         '排表代码：可分享当前排表，接收方粘贴后始终新建排表，不覆盖原表；体力按接收方配置计算。\n'
-        '部分浏览器限制本地文件存储；这时请使用静态托管网址。\n'
-        '附带当前默认角色及队伍资料，不打入开发环境的个人配置文件，请按自己的账号调整。\n'
+        '部分浏览器限制本地文件存储；这时请使用静态托管网址。\n' +
+        ('初始角色、队伍和排表采用打包时已保存的开发配置；已有浏览器配置优先保留。\n'
+         if initial_config is not None else '附带当前默认角色及队伍资料，请按自己的账号调整。\n') +
         '固定基础分：B站矩阵2.5、工坊矩阵2、Wiki明确配队1.5；再乘用户配队加权（默认1）及角色权重。角色权重=(链度+1)×基础分×用户练度。\n'
         '指定特例：爱达千、爱琳莫固定基础分5。导出的用户配置不会覆盖资料库基础分。\n'
         '完整更新日志：web/CHANGELOG.md；当前版本说明：web/RELEASE_NOTES.md。\n'
@@ -57,6 +83,9 @@ def build_platform_bundle(destination, platform, version, notes, changelog, site
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('version', help='For example 1.0.0')
+    parser.add_argument('--config', type=Path,
+                        default=ROOT / 'config/team_planner/personal_config.json',
+                        help='Saved development profile used as the package initial state')
     args = parser.parse_args()
     if not re.fullmatch(r'\d+\.\d+\.\d+', args.version):
         parser.error('Version must be MAJOR.MINOR.PATCH')
@@ -66,6 +95,8 @@ def main():
     if not section or not section.group(1).strip():
         parser.error('Add release changes to CHANGELOG.md under ## v' + args.version + ' before packaging')
     notes = '# v' + args.version + '\n\n' + section.group(1).strip() + '\n'
+    # Read once so both platforms contain the exact same saved development state.
+    initial_config = read_development_defaults(args.config)
     release = ROOT / 'dist' / ('v' + args.version)
     release.mkdir(parents=True, exist_ok=False)
     if __package__:
@@ -76,7 +107,8 @@ def main():
     archives = []
     for platform in ('Windows', 'macOS'):
         destination = release / platform
-        bundle = build_platform_bundle(destination, platform, args.version, notes, changelog_bytes)
+        bundle = build_platform_bundle(destination, platform, args.version, notes, changelog_bytes,
+                                       initial_config=initial_config)
         archive = Path(shutil.make_archive(str(release / f'MatrixPlanner-{platform}-v{args.version}'),
                                           'zip', destination, bundle.name))
         archives.append(archive)
